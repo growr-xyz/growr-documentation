@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant Borrower
     participant Distributor App
@@ -42,3 +43,4 @@ sequenceDiagram
     end
     deactivate Pond SC
     deactivate Distributor App  
+```

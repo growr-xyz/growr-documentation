@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant Borrower
     participant Distributor App
@@ -44,4 +45,5 @@ sequenceDiagram
             Distributor App-->>Borrower: "Loan approved"
         end
     deactivate Pond SC
-    deactivate Distributor App  
+    deactivate Distributor App
+```

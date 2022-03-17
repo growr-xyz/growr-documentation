@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant Borrower
     participant Distributor App
@@ -18,4 +19,4 @@ sequenceDiagram
         Distributor App-->>Borrower: "Issued credential"
     end
     deactivate Distributor App
-
+```

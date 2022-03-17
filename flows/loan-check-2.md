@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant Borrower
     participant Distributor App
@@ -20,3 +21,4 @@ sequenceDiagram
     Distributor App->>Distributor App: Compare offers
     Distributor App->>Borrower: Provide loan parameters
     deactivate Distributor App
+```
