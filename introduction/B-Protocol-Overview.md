@@ -12,15 +12,18 @@ Growr protocol addresses the problems stated above with the following components
 - **Growr DAO** - a future decentralized autonomous organization for protocol governance and fair compensation of protocol contributors
 ## Benefits
 The Growr protocol distributes the generated value fairly between all ecosystem participants.
+#### For Global Investors
 Growr protocol delivers value to **global investors**:
 - Yield generation on excess capital
 - Flexibility in defining risk/reward preferences in a global marketplace
-- End-to-end transparency in capital allocation  
+- End-to-end transparency in capital allocation
+#### For Local Communities
 Growr protocol delivers value to **local communities**:
 - Access to credit from a global marketplace
 - Facilitation of access to credit for community members by managing local risk policies and enabling social vouching 
 - Yield generation for local investors
-- Revenue growth for merchants through buy now, pay later scheme  
+- Revenue growth for merchants through buy now, pay later scheme
+#### For Borrowers
 Growr protocol delivers value to **borrowers**:
 - Access to loans for unbanked and excluded population
 - Loans with fair conditions 
