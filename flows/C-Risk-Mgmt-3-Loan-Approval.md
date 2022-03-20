@@ -60,7 +60,7 @@ sequenceDiagram
     deactivate Pond SC
     deactivate Distributor App
 ```
-TBD - description
+TBD - description  
 Before approving the loan, the pond performs the following check:
 - General pond check:
   * Pond is not stopped
@@ -70,7 +70,7 @@ Before approving the loan, the pond performs the following check:
   * Requested loan amount -> between Min and Max amount; if outside of the range, the pond approves the nearest amount but does not reject the request
   * Request loan duration -> between Min and Max duration; if outside of the range, the pond approves the nearest amount but does not reject the request
 - Eligibility check:
-  * By providing the verification result to the Verification Registry smart contract
+  * By providing the verification result to the Verification Registry smart contract  
 Once the loan is approved, the smart contract registers it on the chain and returns a response with the following parameters:
 - Approved amount
 - Approved duration (in months)
