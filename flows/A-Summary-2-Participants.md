@@ -44,3 +44,7 @@ Growr protocol will integrate with third-party bridges to enable direct payouts 
 traditional ﬁnancial providers (e.g., card rails, instant payments, ACHs, etc.).
 ### On-ramp (account to Growr)
 Similarly, for the needs of depositing funds into the Growr lending pools by investors, and for the repayment of loans by the borrowers, the protocol will support integration with various on-ramp methods speciﬁc for each geography. We plan to utilize third-party services, including decentralized on-ramp networks.
+## Protocol Governance Board
+For the ﬁrst version of the protocol, we envision to begin with a more centralized governance. At a later stage, decentralization will be implemented through a governance token that will be progressively airdropped to the most active 
+contributors based on a predeﬁned scheme. The protocol will ultimately be governed by a **DAO**, whose members will be all the protocol stakeholders. Each stakeholder will have voting rights based on their contribution to the protocol development and governance.
+The Protocol Governance Board covers activities related to smart contract governance and fraud prevention. 
