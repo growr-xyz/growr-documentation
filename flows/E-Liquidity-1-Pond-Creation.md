@@ -21,6 +21,7 @@ sequenceDiagram
     Pond Factory SC-->>-Lender (via dApp): "Pond address"
     loop
         Lender (via dApp)->>Pond SC: Deposit funds
+        Note right of Lender (via dApp): See: Pond funding
     end
     deactivate Lender (via dApp)
 ```

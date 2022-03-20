@@ -1,6 +1,6 @@
 # Loan Approval
 ## Custodial Model
-TBD-description
+Smart contracts are usually not technically capable and economically practical at executing the verification operations themselves, and they cannot call upon external verification services beyond the constraints of their own chain. Therefore, the exchange and verification of credentials are executed off-chain and then confirmed on-chain.
 ```mermaid
 sequenceDiagram
     participant Borrower
@@ -17,6 +17,7 @@ sequenceDiagram
     Note right of Distributor App: Provide credentials
     Risk Assessor->>Pond SC: Get loan requirements
     Risk Assessor->>Risk Assessor: Verify credentials
+    Note right of Risk Assessor: See: Credential verification
     alt credentials not OK?
         Risk Assessor-->>Distributor App: Failed verification
         Distributor App-->>Borrower: "Verification failed"
@@ -52,7 +53,7 @@ sequenceDiagram
     else result OK?
         Pond SC->>Pond SC: Approve loan & register on-chain
         opt
-            Note over Pond SC: Loan disbursement...
+            Note over Pond SC: See: Loan disbursement
         end
         Pond SC-->>Distributor App: Loan approvedx
         Distributor App-->>Borrower: "Loan approved"
@@ -60,8 +61,14 @@ sequenceDiagram
     deactivate Pond SC
     deactivate Distributor App
 ```
-TBD - description  
-Before approving the loan, the pond performs the following check:
+The key role in the process goes to the Risk Assessor who safely and securely perform the following assessment:  
+- Verify that the Borrower has all the necessary credentials
+- Verify that the presented credentials have valid signatures
+- Optionally request and ensure that the loan application is reviewed and confirmed
+- Optionally request and ensure that the Borrower has the necessary credit score  
+Upon succesful completion of all verification checks, the Risk Assessor creates a lightweight privacy-preserving **Verification Result** assesting that a given Borrower matches the eligibility criteria of a given pond. The Risk Assessor hashes and signs the result and return it back to the Distributor App for further use in the smart contract transaction. Note that the verification result does not contain credentials to prevent leakage of sensitive personal information on-chain.  
+Having the result from the Risk Assessor, the Distributor calls the loan application function of the Pond smart contract. The latter passes the verification result and Risk Assessor's signature as parameters to the Verification Registry contract function for validation. The registry uses the signature and the verification result to confirm whether or not the result corresponds to the public address of a known verifier configured in the registry contract.   
+After validating the Borrower and before approving the loan, the pond performs the following final checks:
 - General pond check:
   * Pond is not stopped
   * There are available funds in the pond i.e. pond available funds > requested amount
@@ -81,4 +88,4 @@ Once the loan is approved, the smart contract registers it on the chain and retu
 - Total amount to be repaid ( = Amount + Interest amount)
 - Installment amount ( = Total amount / Duration)
 ## Non-Custodial Model
-TBD-description
+The non-custodial loan approval flow is almost the same. The main difference is that instead of Distributor App, the borrower would use an agent app with connected self-managed wallet.

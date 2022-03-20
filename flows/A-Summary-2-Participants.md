@@ -26,7 +26,7 @@ A key participant is the **Risk Assessor** who provides a verification result as
 The Risk Assessors could be "owned" by Liquidity Providers or Distributors to ensure they can manage their own policies, or provided by third parties (even by TradFi players).  
 The Risk Assessor may play one or several of the roles below.
 ### Credential Verifier
-TBD-description
+Credential Verifiers consumes credential presentations and verify that the credentials are valid i.e. issued from trusted Issuer, not expired, and not revoked.
 ### Credit Risk Scoring
 In case of a more sophisticated pond eligibility requirements, Risk Assessor might implement a module for additional credit assessment/scoring techniques, including scorecards, ML models, and others. The result of this additional assessment is as a credit score, which is then matched with the pond's credit score requirements.  
 The Credit Risk Scoring could also participate in the protocol as a standalone Credential Issuer. 

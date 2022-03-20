@@ -3,6 +3,7 @@ The Growr protocol relies on a new type of decentralized identity that we call t
 The verifiable credentials are issued from different sources and are used to assert creditworthness in front of the lending ponds.  
 ## Credentials Issuing
 Credentials are provided by **Credential Issuers** – that is, centralized or decentralized third parties, asserting certain facts about the user.  
+Below is a standard process for credential issuing for Borrowers using a custodial Distributor App. In non-custodial model, the process is the almost the same - instead of Distributor App, the user would use an agent app with connected self-managed wallet. The process follows the same pattern when credentials are issued to other protocol participants (eg. Lenders and Liquidity providers).
 ```mermaid
 sequenceDiagram
     participant Borrower
@@ -10,8 +11,10 @@ sequenceDiagram
     participant Credential Issuer
     Borrower->>Distributor App: Provide data
     activate Distributor App
-    Distributor App->>Credential Issuer: Claim credential
+    Distributor App->>Credential Issuer: Request credential requirements & fee
     activate Credential Issuer
+    Credential Issuer-->>Distributor App: Provide credential offer
+    Distributor App->>Credential Issuer: Claim credential
     Credential Issuer->>Distributor App: Request proof
     Distributor App->>Credential Issuer: Provide signed proof
     Credential Issuer->>Credential Issuer: Issue credential
@@ -21,6 +24,7 @@ sequenceDiagram
     Distributor App-->>Borrower: "Issued credential"
     deactivate Distributor App
 ```
+This issuing process could be part of the Onboarding process ([Borrower Onboarding section](./B-Borrower-Onboarding.md)) or could be executed on-demand.  
 Several examples of verifiable credentials are presented in the sections below.
 ### KYC Credentials
 In regulated custodial model, a verifiable credential for successfully passed KYC process (including AML/CFT risk check) is a must. Individual KYC credential can be requested from the Borrowers, when applying for a loan. In addition, institutional KYC credential could be requsted from investors, when trying to create a pond or pool, or when trying to deposit funds in it.  
@@ -38,8 +42,45 @@ Social Vouching Credential Issuer could be any risk rewiver, accredited by a tru
 Growr protocol aims at incentivizing positive borrowin behavior. With this regards, regular on-time loan payments of past loans should help the Borrower build a positive on-chain credit score, which can be further translated to better loan conditions. This is achieved through the issuing of "loan history" credentials.  
 Loan History Credential Issuer is the Growr protocol itself. For more details, see [Loan disbursement section](./D-Loan-Payment-1-Disbursement.md) and [Loan repayment section](./D-Loan-Payment-2-Repayment.md).
 ## Credentials Verification
-Verifiable credentials are consumed by **Verifiers** using the concepts and data models for **presentation exchange**.  
-TBD-diagram
-This verification process is part of the overall loan approval process. For more details, see [Loan Approval section](./C-Risk-Mgmt-3-Loan-Approval.md)
+Verifiable credentials are consumed by **Verifiers** using the concepts and data models for **presentation exchange**.   
+Below is a standard process for credential verification using a custodial Distributor App for the verification request. In non-custodial model, the process is the almost the same - instead of Distributor App, the user would use an agent app with connected self-managed wallet. The process follows the same pattern when credentials of other protocol participants (eg. Lenders and Liquidity providers) must be verified.  
+```mermaid
+sequenceDiagram
+    participant Borrower (Subject)
+    participant Distributor App
+    participant Credential Verifier
+    participant Trusted Registries
+    Borrower (Subject)->>Distributor App: Request credentials verification
+    activate Distributor App
+    Distributor App->>Borrower (Subject): Select credentials
+    Distributor App->>Distributor App: Build and sign credential presentation
+    Distributor App->>Credential Verifier: Send credential presentation
+    activate Credential Verifier
+    opt
+        Credential Verifier->>Trusted Registries: Check in Trusted Issuers registry
+        Credential Verifier->>Trusted Registries: Check in Status registry
+    end
+    Credential Verifier->>Credential Verifier: Verify credentials
+    alt If OK?
+        opt
+            Credential Verifier->>Credential Verifier: Build & sign verification result
+            Credential Verifier->>Trusted Registries: Store verification result in registry
+        end
+        Credential Verifier->>Distributor App: Credential verified
+        Note left of Credential Verifier: (Optionally) Send verification result
+        Distributor App-->>Borrower (Subject): "Verified credential"
+    else If not OK
+        Credential Verifier->>Distributor App: Verification failed
+        Distributor App-->>Borrower (Subject): "Invalid credential"
+    end
+    deactivate Credential Verifier
+    deactivate Distributor App
+```
+The credential verification performed by the Verifier includes the following tasks:  
+- Verify that the credential presentation is signed with the Subject's DID
+- Verify that the credential is signed by a trusted Issuer
+- Verify that the credential is not expired
+- Verify that the credential is not revoked
+This verification process is part of the overall loan approval process. For more details, see [Loan Approval section](./C-Risk-Mgmt-3-Loan-Approval.md).
 ## Credentials Revocation
-TBD-description
+Issuers might need to revoke a certain credential before is expires - when the subject is not longer eligible for the credential or when they need to correct or update the information in the credential. In order to achieve this, they must implement the W3C's standard for Status List - during credential issuing they would embed in the credential a url to fetch the revocation list and the index in the list that corresponds to the given credential.
