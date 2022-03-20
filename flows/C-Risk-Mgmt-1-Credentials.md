@@ -1,6 +1,6 @@
-# Borrower Credentials
+# Credentials
 The Growr protocol relies on a new type of decentralized identity that we call the **Self-sovereign Financial Identity (SSFI)**. It stores a user's unique global identity and contains various **Veriﬁable Credentials (VCs)** - provable claims associated with the DID of the user. For the SSFI implementaion, the protocol relies on W3C’s standards for Verifiable Credentials (VC).  
-The verifiable credentials are issued from different sources and are used to assert creditworthness in front of the lending ponds.  
+The verifiable credentials are issued from different sources and are used to assert creditworthness in front of the protocol.  
 ## Credentials Issuing
 Credentials are provided by **Credential Issuers** – that is, centralized or decentralized third parties, asserting certain facts about the user.  
 Below is a standard process for credential issuing for Borrowers using a custodial Distributor App. In non-custodial model, the process is the almost the same - instead of Distributor App, the user would use an agent app with connected self-managed wallet. The process follows the same pattern when credentials are issued to other protocol participants (eg. Lenders and Liquidity providers).
