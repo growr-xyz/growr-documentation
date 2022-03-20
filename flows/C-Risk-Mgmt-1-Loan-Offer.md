@@ -47,4 +47,4 @@ sequenceDiagram
 ```
 TBD-description
 ## Non-Custodial Model
-The non-custodial onboarding flow is almost the same. The main difference is that instead of Distributor App, the borrower would use an agent app with connected self-managed wallet.
+The non-custodial loan offer flow is almost the same. The main difference is that instead of Distributor App, the borrower would use an agent app with connected self-managed wallet.
