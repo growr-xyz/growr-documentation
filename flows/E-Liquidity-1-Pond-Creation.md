@@ -10,8 +10,8 @@ sequenceDiagram
         Lender (via dApp)->>Verification Registry SC: Create Verification Registry SC
         Note left of Verification Registry SC: Lender might rely on existing registry
         loop
-            Lender (via dApp)->>+Verification Registry SC: Add/remove trusted verifier(s)
-            Verification Registry SC->>-Lender (via dApp): "Registered verifier"
+            Lender (via dApp)->>+Verification Registry SC: Add/remove trusted Verifier(s)
+            Verification Registry SC->>-Lender (via dApp): "Registered Verifier"
         end
     end
     Lender (via dApp)->>+Pond Factory SC: Request pond creation

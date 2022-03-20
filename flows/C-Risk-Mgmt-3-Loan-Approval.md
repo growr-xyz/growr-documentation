@@ -43,7 +43,7 @@ sequenceDiagram
     Note right of Distributor App: Provide verification result
     Pond SC->>Verification Registry SC: Send verification result
     activate Verification Registry SC
-    Verification Registry SC->>Verification Registry SC: Validate verifier
+    Verification Registry SC->>Verification Registry SC: Validate Verifier
     Verification Registry SC-->>Pond SC: Validation result
     deactivate Verification Registry SC
     alt result not OK?

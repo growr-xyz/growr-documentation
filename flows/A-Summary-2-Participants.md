@@ -1,7 +1,7 @@
 # Protocol Participants
 ## Borrowers
 **Borrowers** get easy access to fair loans. They apply for funds from ponds with matching risk requirements and repay the funds with added interest and/or fees.
-Borrowers gradually receive better conditions for positive behavior and improved ﬁnancial health. They will receive “cash back”-style rewards based on their improved ﬁnancial health (i.e., regular loan repayment and proof of ﬁnancial learning), as well as for referral of good borrowers.  
+Borrowers gradually receive better conditions for positive behavior and improved ﬁnancial health. They will receive “cash back”-style rewards based on their improved ﬁnancial health (i.e., regular loan repayment and proof of ﬁnancial learning), as well as for referral of good Borrowers.  
 Borrowers can access the protocol via a Distributor in custodial model or via a decentralized App in non-custodial model.
 ## Distributors
 ### Custodial Model
@@ -19,10 +19,10 @@ Liquidity Providers allocate capital to lending pools and get rewarded with yiel
 Some Liquidity Providers could play a role of **Guarantor** to provide first-loss capital and cover for missing credentials certain specific borrower groups (e.g., women, employees, unemployed, community members, companies of a given chamber, etc.). Guarantors will deposit funds into a Safety Fund, from which certain ponds can claim money in case of payment incidents.
 ## Credential Issuers
 **Credential Issuers** serves an important risk management role in the protocol. They are centralized or decentralized third parties that provide **verifiable credentials (VCs)** to protocol participants.  
-Credential Issuers will receive a fee for the credentials they are issuing to borrowers and other participants.
+Credential Issuers will receive a fee for the credentials they are issuing to Borrowers and other participants.
 ## Risk Assessors
 Credit risk assessment is a crucial component of the Growr protocol. Due to the decentralized nature of the protocol, we envision a decentralized credit risk assessment process with several participants in it.  
-A key participant is the **Risk Assessor** who provides a verification result assesting that a given Borrower matches the eligibility criteria of a given pond. For this service, the risk assessor is rewarded with a fee according to its usage.  
+A key participant is the **Risk Assessor** who provides a verification result assesting that a given Borrower matches the eligibility criteria of a given pond. For this service, the Risk Assessor is rewarded with a fee according to its usage.  
 The Risk Assessors could be "owned" by Liquidity Providers or Distributors to ensure they can manage their own policies, or provided by third parties (even by TradFi players).  
 The Risk Assessor may play one or several of the roles below.
 ### Credential Verifier
@@ -36,7 +36,7 @@ The Credit Risk Reviewers could also participate in the protocol as individual C
 ## Payment Processor
 Payment Processors facilitates the payment processes in the protocol by providing different off-chain payment services.
 ### Custodian
-With this role, the Payment Processor facilitates the payments between the lenders and the borrowers in the custodial model and issues VCs to attest the payments are settled. The Payment Processor might also faciliate the payments between liquidity providers and the lenders in case of off-chain pond funding.
+With this role, the Payment Processor facilitates the payments between the Lenders and the Borrowers in the custodial model and issues VCs to attest the payments are settled. The Payment Processor might also faciliate the payments between Liquidity Providers and the Lenders in case of off-chain pond funding.
 ### Off-ramp (Growr to account)
 Growr protocol will integrate with third-party bridges to enable direct payouts after loan disbursement and for withdrawal of investments from the lending pools. Those third parties will provide access to payment rails currently operated by traditional ﬁnancial providers (e.g., card rails, instant payments, ACHs, etc.).
 ### On-ramp (account to Growr)
