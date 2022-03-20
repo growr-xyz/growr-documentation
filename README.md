@@ -6,12 +6,10 @@ Repository for detailed protocol documentation
 - [How it works](/flows/)
 - [Architecture](/architecture/)
 
-# Full index:
+# Table of contents:
 {% assign doclist = site.pages | sort: 'url'  %}
-    <ul>
        {% for doc in doclist %}
             {% if doc.name contains '.md' %}
-                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.url }}</a></li>
+                - [{{ doc.url }}]({{ site.baseurl }}{{ doc.url }})
             {% endif %}
         {% endfor %}
-    </ul>
