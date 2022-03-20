@@ -30,7 +30,7 @@ Several examples of verifiable credentials are presented in the sections below.
 In regulated custodial model, a verifiable credential for successfully passed KYC process (including AML/CFT risk check) is a must. Individual KYC credential can be requested from the Borrowers, when applying for a loan. In addition, institutional KYC credential could be requsted from investors, when trying to create a pond or pool, or when trying to deposit funds in it.  
 KYC Credential Issuer could be ... (TBD) 
 ### Credit Score Credential
-TBD-description
+TBD-description  
 Credit Score Credential Issuer could be any risk scoring services, owned or accredited by a trusted Verifier.
 ### Financial Health Credential
 The Growr protocol incentivizes good ﬁnancial health – that is, improving ﬁnancial literacy and behaviors. Thus, the protocol encourages including the Financial Health credentials to every pond eligibility criteria; that is, before applying for a loan, the user must go through education and mentoring for "financial health treatment".  
@@ -80,7 +80,7 @@ The credential verification performed by the Verifier includes the following tas
 - Verify that the credential presentation is signed with the Subject's DID
 - Verify that the credential is signed by a trusted Issuer
 - Verify that the credential is not expired
-- Verify that the credential is not revoked
+- Verify that the credential is not revoked  
 This verification process is part of the overall loan approval process. For more details, see [Loan Approval section](./C-Risk-Mgmt-3-Loan-Approval.md).
 ## Credentials Revocation
 Issuers might need to revoke a certain credential before is expires - when the subject is not longer eligible for the credential or when they need to correct or update the information in the credential. In order to achieve this, they must implement the W3C's standard for Status List - during credential issuing they would embed in the credential a url to fetch the revocation list and the index in the list that corresponds to the given credential.
