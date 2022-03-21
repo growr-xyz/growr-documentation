@@ -29,5 +29,6 @@ The **self-sovereign financial identity (SSFI)** ensures a unique global digital
 To promote improving financial literacy and behaviors, Growr protocol encourages:
 - **"Fnancial health treatment"**; that is, before applying for a loan, the user must go through education and mentoring program in order to collect credentials for positive financial health.
 - **"Goal-based" lending**; that is, before applying for a loan, the user must create a goal related to his/her real-life need, and deposit regular savings towards it.
+- **"Savings discipline"**; that is, before applying for a loan, the user must create a saving habit by executing regular micro-payments to his saving account.
 ## Non-custodial Model
 The non-custodial onboarding flow is almost the same. The main difference is that instead of Distributor App, the Borrower would use an agent app with connected self-managed wallet.

@@ -77,7 +77,7 @@ After validating the Borrower and before approving the loan, the pond performs t
   * Requested loan amount -> between Min and Max amount; if outside of the range, the pond approves the nearest amount but does not reject the request
   * Request loan duration -> between Min and Max duration; if outside of the range, the pond approves the nearest amount but does not reject the request
 - Eligibility check:
-  * By providing the verification result to the Verification Registry smart contract  
+  * By receiving confirmation of the verification result from the Verification Registry smart contract  
 Once the loan is approved, the smart contract registers it on the chain and returns a response with the following parameters:
 - Approved amount
 - Approved duration (in months)

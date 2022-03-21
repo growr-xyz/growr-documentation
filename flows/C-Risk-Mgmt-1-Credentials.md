@@ -28,13 +28,16 @@ This issuing process could be part of the Onboarding process ([Borrower Onboardi
 Several examples of verifiable credentials are presented in the sections below.
 ### KYC Credentials
 In regulated custodial model, a verifiable credential for successfully passed KYC process (including AML/CFT risk check) is a must. Individual KYC credential can be requested from the Borrowers, when applying for a loan. In addition, institutional KYC credential could be requsted from investors, when trying to create a pond or pool, or when trying to deposit funds in it.  
-KYC Credential Issuer could be ... (TBD) 
+KYC Credential Issuer could be any traditional identity verification service or the Distributor itself.
 ### Credit Score Credential
-TBD-description
+Issuing of credit score credentials can simplify the loan application process, especially in a custodial model. Instead of defining a complex eligibility criteria for the pond that will require Borrowers to collect multiple credentials in their SSFI, the Lender might request only one "combined" credential representing the overall credit score of the Borrower.
 Credit Score Credential Issuer could be any risk scoring services, owned or accredited by a trusted Verifier.
 ### Financial Health Credential
 The Growr protocol incentivizes good ﬁnancial health – that is, improving ﬁnancial literacy and behaviors. Thus, the protocol encourages including the Financial Health credentials to every pond eligibility criteria; that is, before applying for a loan, the user must go through education and mentoring for "financial health treatment".  
 Financial Health Credential Issuer could be any educational service, voted as "trusted" by the protocol.
+### Savings History Credential
+The Growr protocol incentivizes good ﬁnancial discipline and habits. With this regard, the protocol encourages including "savings history" credentials to every pond eligibility criteria; that is, before applying for a loan, the user must create a habit for regular micro-payments to his saving account.    
+Savings History Credential Issuer could be any financial institution (where the user has a saving account) or financial data processing service (to which the user provides account statement information), voted as "trusted" by the protocol.
 ### Social Vouching Credentials
 Through social vouching, the Borrowers have the opportunity to create their personal networks. They can request and receive endorsement (in the form of Social Vouching credentials) from other users, and thus improve their creditworthness. We believe that endorsement and social affiliation will prove to be key instruments for reducing the cost of risk in decentralized lending environment.  
 Social Vouching Credential Issuer could be any risk rewiver, accredited by a trusted Verifier, or any protocol user with certain reputation level (rules to be decided and voted by the protocol community).

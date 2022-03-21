@@ -1,7 +1,7 @@
 # Pond funding
 The Growr protocol enables institutional investors to fund lending pools and ponds according to their risk/reward appetite. The protocol allows both funding model - custodial and non-custodial.
 ## Off-chain Custodian Model
-The model with a Custodian has lower technology learning curve and protect the user funds from malicious actors. In this scenario, no matter whether the Lender uses with own funds or applies to Liquidity Providers for funds, all transactions occur off-chain.
+The model with a Custodian has lower technology learning curve and protect the user funds from malicious actors. In this scenario, no matter whether the Lender uses own funds or applies to Liquidity Providers for funds, all transactions occur off-chain.
 ## On-chain Model
 A pond can be funded in 2 ways – directly (independently) or by applying for funds from a global pool (with or without local self-participation). The sections below presents those 2 scenarios.
 ### Direct pond funding
