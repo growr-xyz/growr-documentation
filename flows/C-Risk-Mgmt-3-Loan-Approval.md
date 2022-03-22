@@ -74,7 +74,7 @@ After validating the Borrower and before approving the loan, the pond performs t
   * Pond is not stopped
   * There are available funds in the pond i.e. pond available funds > requested amount
 - Loan request check - compare loan request parameters with smart contract's parameters:
-  * User DID with verifiable credentials -> not empty
+  * User SSFI address with verifiable credentials -> not empty
   * Requested loan amount -> between Min and Max amount; if outside of the range, the pond approves the nearest amount but does not reject the request
   * Request loan duration -> between Min and Max duration; if outside of the range, the pond approves the nearest amount but does not reject the request
 - Eligibility check:

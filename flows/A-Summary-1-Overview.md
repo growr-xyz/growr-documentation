@@ -1,7 +1,10 @@
 # Growr Lending Protocol
+## Layers
+![Growr protocol layers](../images/growr-layers.png)
+TBD-description
 ## Custodial Model
-TBD - short description  
-TBD - flow diagram
+![Growr Custodial model](../images/growr-custodial.png)
+TBD-description
 ## Non-Custodial Model
-TBD - short description  
-TBD - flow diagram
+![Growr Custodial model](../images/growr-non-custodial.png)
+TBD-description

@@ -1,9 +1,9 @@
 # Growr protocol integrations
 ## Credential Issuers
-TBD
+TBD-sample service
 ## Credential Verifiers
-TBD
+TBD-sample service
 ## SSFI Storages
-TBD
+TBD-sample integration
 ## Payment Processors
-TBD
+TBD-sample integration

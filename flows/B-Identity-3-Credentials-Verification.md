@@ -35,7 +35,7 @@ sequenceDiagram
     deactivate SSFI App
 ```
 The credential verification performed by the Verifier includes the following tasks:  
-- Verify that the credential presentation is signed with the Subject's DID
+- Verify that the credential presentation is signed with the Subject's SSFI
 - Verify that the credential is signed by a trusted Issuer
 - Verify that the credential is not expired
 - Verify that the credential is not revoked

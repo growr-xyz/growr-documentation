@@ -28,7 +28,7 @@ Growr onboarding process requires several steps to be completed:
 - The user must collect one or more verifiable credentials and store them in his SSFI
 The **self-sovereign financial identity (SSFI)** ensures a unique global digital identity of each user. For the SSFI implementaion, the protocol relies on W3C’s standards for Decentralized Identifiers (DID) The required verifiable credentials for loan application depends on the eligibility criteria of each pond, to which the Borrower has intention to apply. For more details, check [Credentials Issuing section](./B-Identity-2-Credentials-Issuing.md).  
 To promote improving financial literacy and behaviors, Growr protocol encourages:
-- **"Fnancial health treatment"**; that is, before applying for a loan, the user must go through education and mentoring program in order to collect credentials for positive financial health.
+- **"Learn and earn"**; that is, before applying for a loan, the user must go through education and mentoring program in order to collect credentials for financial health improvement.
 - **"Goal-based" lending**; that is, before applying for a loan, the user must create a goal related to his/her real-life need, and deposit regular savings towards it.
 - **"Savings discipline"**; that is, before applying for a loan, the user must create a saving habit by executing regular micro-payments to his saving account.
 ## Non-custodial Model
