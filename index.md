@@ -24,4 +24,9 @@
             {% endif %}
         {% endfor %}
 
+```mermaid
+sequenceDiagram
+    Test1->>Test2
+```
+
 <script src="js/enable-mermaid.js"></script>
