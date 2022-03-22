@@ -26,7 +26,13 @@
 
 ```mermaid
 sequenceDiagram
-       participant Test1
-       participant Test2
-       Test1->>Test2
+    participant Lender (via dApp)
+    participant Pond Factory SC
+    activate Lender (via dApp)
+    Lender (via dApp)->>+Pond Factory SC: Request pond creation
+    Note right of Lender (via dApp): Provide parameters, eligibility criteria, VR address
+    Pond Factory SC->>Pond Factory SC: Validate parameters
+    Pond Factory SC->>Pond SC: Create pond
+    Pond Factory SC-->>-Lender (via dApp): "Pond address"
+    deactivate Lender (via dApp)
 ```
