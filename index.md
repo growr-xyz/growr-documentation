@@ -24,7 +24,7 @@
             {% endif %}
         {% endfor %}
 
-```mermaid!
+```mermaid
 sequenceDiagram;
     participant Lender (via dApp);
     participant Pond Factory;
