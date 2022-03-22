@@ -1,5 +1,5 @@
 # Pond funding
-The Growr protocol enables institutional investors to fund lending pools and ponds according to their risk/reward appetite. The protocol allows both funding model - custodial and non-custodial.
+The Growr protocol enables institutional investors to fund lending pools and ponds according to their risk/reward appetite. The protocol allows both funding models - custodial and non-custodial.
 ## Off-chain Custodian Model
 The model with a Custodian has lower technology learning curve and protect the user funds from malicious actors. In this scenario, no matter whether the Lender uses own funds or applies to Liquidity Providers for funds, all transactions occur off-chain.
 ## On-chain Model
@@ -69,7 +69,7 @@ sequenceDiagram
     Pool SC-->>-Pond SC: Confirm repayment
     deactivate Pond SC
 ```
-If a lender consider using liquidity from a Pool, he configures the Pool's address during Pond creation so the newly created Pond smart contract automatically registers credit limit request on the Pool smart contract function.  
-The Pool owner (Liquidity Provider) can approve this request by whitelisting the Pond in the Pool smart contract. At any time, the Pool owner can block or change this credit limit.  
+If a Lender considers using liquidity from a Pool, he configures the Pool's address during Pond creation so the newly created Pond smart contract automatically registers credit limit request on the Pool smart contract function.  
+The Pool owner (Liquidity Provider) can approve this request by whitelisting the Pond address in the Pool smart contract. At any time, the Pool owner can block or change this credit limit.  
 Based on the Pond utilization, the Pond smart contract can automatically apply to the Pool smart contract for a loan (up to the credit limit). The Pond is required to regularly repay the interest fee to the Pool. Depending on the configured utilization threshold, the Pond can repay partially or fully the loan to the Pool smart contract.  
 This process ensures automatic liquidity management between the Pool smart contract and the whitelisted Pond smart contracts.

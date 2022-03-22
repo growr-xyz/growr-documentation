@@ -15,7 +15,7 @@ Distributors usually operate on the __Distribution__ layer and interact with __R
 The end-user access to the protocol might be also provided in a fully decentralized non-custodial model. In this scenario, the user can access the protocol directly or through an agent wallet (decentralized web app with connected self-managed SSFI).
 ## Lenders
 **Lenders** facilitates the interaction with the protocol as they create and fund ponds using own funds or by borrowing from global pools.  
-They will receive yield based on the pond proﬁtability, and the pond yield will tend to be higher than the pool yield, rewarding the skin-in-the-game participation of the lender.  
+They will receive yield based on the pond proﬁtability, and the pond yield will tend to be higher than the pool yield, rewarding the skin-in-the-game participation of the Lender.  
 Lenders operate on __Risk Management__ and __Liquidity__ layers.
 ## Liquidity Proviers
 **Liquidity Providers (LPs)** are institutional investors and high-net-worth individuals (HNWIs) who provide funding to the lending pools in the protocol and then delegate the actual lending activity to the Lenders.  
@@ -41,7 +41,7 @@ The Credit Risk Scoring could also participate in the protocol as a standalone C
 **Risk Reviewers** are employed by a Risk Assesor (or the protocol itself) to review a loan application and interview the Borrower in order to generate additional confirmation or vouching credentials used to endorse her/him.  
 The Credit Risk Reviewers could also participate in the protocol as individual Credential Issuers.
 ## Payment Processor
-Payment Processors facilitates the payment processes in the protocol by providing different off-chain payment services. The settle the payments between:
+Payment Processors facilitates the payment processes in the protocol by providing different off-chain payment services. They settle the payments between:
 - Borrowers and Lenders
 - Lenders and Liquidity Providers
 For more information, see [Payments section](./E-Payments.md).  

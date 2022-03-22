@@ -38,7 +38,7 @@ The parameters for pond creation includes:
 - Reserve requirements
 - Verification Registry address  
 Once created, pond parameters cannot be changed. If the pond owner wants to modify certain parameters, they would create a new pond.  
-An important parameter of every pond is the configred address of Verification Registry. This pond will rely on this smart contract to validate that the eligibility check was performed by a trusted Risk Assesor. Verification Registry contracts can be created either by pond owners (more risky) or by the protocol governance body (more secure).  
+An important parameter of every pond is the configured address of Verification Registry smart contract. The pond will rely on this smart contract to validate that the eligibility check was performed by a trusted Risk Assesor. Verification Registry contracts can be created either by pond owners (more risky) or by the protocol governance body (more secure).  
 The protocol envisions a possibility for the owner to stop or pause the lending from a pond i.e. to permanently or temporary block future loan approvals from a pond.  
 Pond funding in this model occurs entirely off-chain.
 ## On-chain Model
