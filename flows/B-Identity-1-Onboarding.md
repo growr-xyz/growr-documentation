@@ -1,6 +1,7 @@
 # Borrower Onboarding
+The Growr protocol relies on a new type of decentralized identity that we call the **Self-sovereign Financial Identity (SSFI)**. It is intended to represent user's unique global identity and to store various verifiable credentials.
 ## Custodial Model
-In a custodial model, the borrowers onboard using a custodial mobile or web application in order to claim credentials and apply for a loan from the protocol.
+In a custodial model, the borrowers onboard using a custodial mobile or web application in order to create their SSFI, claim credentials and apply for a loan from the protocol.
 ```mermaid
 sequenceDiagram
     participant Borrower
@@ -25,10 +26,10 @@ sequenceDiagram
 Growr onboarding process requires several steps to be completed:
 - The user must have SSFI (DID) address
 - The user must collect one or more verifiable credentials and store them in his SSFI
-The **self-sovereign financial identity (SSFI)** ensures a unique global digital identity of each user. For the SSFI implementaion, the protocol relies on W3C’s standards for Decentralized Identifiers (DID) The required verifiable credentials for loan application depends on the eligibility criteria of the each pond, to which the Borrower has intention to apply. For more details on verifiable credentials, check [Credentials section](./C-Risk-Mgmt-1-Credentials.md).  
+The **self-sovereign financial identity (SSFI)** ensures a unique global digital identity of each user. For the SSFI implementaion, the protocol relies on W3C’s standards for Decentralized Identifiers (DID) The required verifiable credentials for loan application depends on the eligibility criteria of each pond, to which the Borrower has intention to apply. For more details, check [Credentials Issuing section](./B-Identity-2-Credentials-Issuing.md).  
 To promote improving financial literacy and behaviors, Growr protocol encourages:
 - **"Fnancial health treatment"**; that is, before applying for a loan, the user must go through education and mentoring program in order to collect credentials for positive financial health.
 - **"Goal-based" lending**; that is, before applying for a loan, the user must create a goal related to his/her real-life need, and deposit regular savings towards it.
 - **"Savings discipline"**; that is, before applying for a loan, the user must create a saving habit by executing regular micro-payments to his saving account.
 ## Non-custodial Model
-The non-custodial onboarding flow is almost the same. The main difference is that instead of Distributor App, the Borrower would use an agent app with connected self-managed wallet.
+The non-custodial onboarding flow is almost the same. The main difference is that instead of Distributor App, the Borrower would create and self-manage its SSFI using an agent app.
