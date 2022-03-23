@@ -1,4 +1,4 @@
-# Growr Lending Protocol
+# Overview
 ## Layers
 ![Growr protocol layers](../images/growr-layers.png)
 TBD-description
