@@ -9,12 +9,11 @@
   position: absolute;
   z-index: 1;
   left: 0;
-  overflow-x: hidden;
   padding-top: 20px;
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 1px 1px 1px 1px;
   text-decoration: none;
   font-size: 16px;
   display: block;
@@ -30,20 +29,17 @@
   padding: 0px 10px;
 }
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6, .btnBack,
+.sidenav h1, .sidenav h2, .sidenav h3, .sidenav h4, .sidenav h5, .sidenav h6 {
     color: #009D8B;
     font-weight: normal;
-}
-
-h1, h2, h3, h4, h5, h6, .btnBack {
-    color: #009D8B;
 }
 
 .page-header {
     padding: 2rem 3rem;
 }
 
-.page-header {
+.page-header, .page-header h1, .page-header.h2 {
     color: #fff;
     text-align: center;
     background-color: #009D8B;
