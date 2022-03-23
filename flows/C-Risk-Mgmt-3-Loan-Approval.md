@@ -55,7 +55,7 @@ sequenceDiagram
         opt
             Note over Pond SC: See: Loan disbursement
         end
-        Pond SC-->>SSFI App: Loan approvedx
+        Pond SC-->>SSFI App: Loan approved
         SSFI App-->>Borrower: "Loan approved"
     end
     deactivate Pond SC
