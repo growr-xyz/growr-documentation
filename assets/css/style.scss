@@ -5,10 +5,9 @@
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 250px;
   position: fixed;
   z-index: 1;
-  top: 0;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
@@ -17,7 +16,7 @@
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   display: block;
 }
 
@@ -27,11 +26,15 @@
 }
 
 .main-content {
-  margin-left: 200px; /* Same as the width of the sidebar */
+  margin-left: 250px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+    color: #009D8B;
+}
+
+h1, h2, h3, h4, h5, h6, .btnBack {
     color: #009D8B;
 }
 
@@ -46,6 +49,7 @@
     background-image: linear-gradient(120deg, #16D1BA, #009D8B);
 }
 
-.btn {
-  color: #009D8B;
+body {
+    font-weight: 300;
+    font-family: Rubik, sans-serif;
 }
