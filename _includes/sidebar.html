@@ -1,7 +1,6 @@
 <div class="sidenav">
-    <h2>Introduction</h2>
-    <h2>How it works</h2>
     {% assign doclist = site.pages | sort: 'url' %}
+    <h2>Introduction</h2>
     <ul>
         {% for doc in doclist %}
         {% if doc.name contains '.md' and doc.url contains '/introduction/' %}
@@ -10,7 +9,6 @@
         {% endfor %}
     </ul>
     <h2>How it works</h2>
-    {% assign doclist = site.pages | sort: 'url' %}
     <ul>
         {% for doc in doclist %}
         {% if doc.name contains '.md' and doc.url contains '/flows/' %}
@@ -19,8 +17,6 @@
         {% endfor %}
     </ul>
     <h2>Architecture</h2>
-    <h2>How it works</h2>
-    {% assign doclist = site.pages | sort: 'url' %}
     <ul>
         {% for doc in doclist %}
         {% if doc.name contains '.md' and doc.url contains '/architecture/' %}
