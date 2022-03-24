@@ -37,13 +37,40 @@
 
         {{ content }}
 
-        <a href="javascript:history.back()" class="btnBack">Go Back</a>
+        <div class="navSection">
+            <a id="prev-section" href="#" class="navBtn">Go to Previous</a>
+            <a id="next-section" href="#" class="navBtn">Go to Next</a>
+        </div>
 
         <footer class="site-footer">
 
         </footer>
     </main>
 </body>
+<script>
+    var prev_a = document.getElementById('prev-section');
+    var next_a = document.getElementById('next-section');
+    const collection = document.getElementsByClassName("sidenav-a");
+    let prev = null; let next = null; let last = null;
+    for (var i = 0; i < collection.length; i++) {
+        let curr = collection[i];
+        if (curr.id == document.title) {
+            if (last) {
+                prev_a.href = last.href;
+            } else {
+                prev_a.href = curr.href;
+            }
+            i++;
+            if (collection[i]) {
+                next_a.href = collection[i].href;
+            } else {
+                next_a.href = curr.href;
+            }
+            break;
+        }
+        last = curr;
+    };
+</script>
 <script>
     const config = {
         startOnLoad: true,

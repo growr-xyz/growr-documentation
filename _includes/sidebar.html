@@ -4,7 +4,7 @@
     <ul id="ul-introduction" style="list-style: none;">
         {% for doc in doclist %}
         {% if doc.name contains '.md' and doc.url contains '/introduction/' %}
-        <li><a class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
@@ -12,7 +12,7 @@
     <ul id="ul-flows" style="list-style: none;">
         {% for doc in doclist %}
         {% if doc.name contains '.md' and doc.url contains '/flows/' %}
-        <li><a class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
@@ -20,7 +20,7 @@
     <ul id="ul-architecture" style="list-style: none;">
         {% for doc in doclist %}
         {% if doc.name contains '.md' and doc.url contains '/architecture/' %}
-        <li><a class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
