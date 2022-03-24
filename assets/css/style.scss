@@ -20,6 +20,10 @@
   display: block;
 }
 
+.sidenav ul {
+  padding-left: 20px;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -38,7 +42,6 @@
 .sidenav h1, .sidenav h2, .sidenav h3, .sidenav h4, .sidenav h5, .sidenav h6 {
     color: #009D8B;
     font-weight: normal;
-    margin: 10px;
 }
 
 .page-header {
