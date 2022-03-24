@@ -12,7 +12,7 @@
     <meta name="theme-color" content="#009D8B">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.14.0/mermaid.min.js"></script>
 </head>
 
 <body>
@@ -59,7 +59,9 @@
             fontFamily: 'Rubik, sans-serif',
             primaryTextColor: '#157878',
             noteBkgColor: '#A9F5EB',
-            noteTextColor: '#157878'
+            noteTextColor: '#157878',
+            actorBkg: '#009D8B',
+            actorTextColor: '#000000'
         }
     };
     mermaid.initialize(config);
