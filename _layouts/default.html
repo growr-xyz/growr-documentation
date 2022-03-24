@@ -51,7 +51,15 @@
 <script>
     const config = {
         startOnLoad: true,
-        theme: 'jekyll-theme-cayman'
+        theme: 'base',
+        themeVariables: {
+            primaryColor: '#6BE8DD',
+            background: '#f4f4f4',
+            fontFamily: 'Rubik, sans-serif',
+            primaryTextColor: '#157878',
+            noteBkgColor: '#A9F5EB',
+            noteTextColor: '#157878'
+        }
     };
     mermaid.initialize(config);
     window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
