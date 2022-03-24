@@ -1,4 +1,4 @@
-# Protocol Overview
+# Summary
 ## Layers
 ![Growr protocol layers](../images/growr-layers.png)
 TBD-description

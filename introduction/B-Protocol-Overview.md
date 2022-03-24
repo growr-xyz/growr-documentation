@@ -12,6 +12,7 @@ Growr protocol addresses the problems stated above with the following components
 - **Protocol access via web and mobile applications** - a simple and secure way for consumers and merchants to easily apply and obtain fair loans.
 - **Credit risk assessment** – a framework for establishing trust using a combination of alternative approaches such as on-chain activity, trusted off-chain sources, peer vouching, and others.
 - **Growr DAO** - a future decentralized autonomous organization for protocol governance and fair compensation of protocol contributors
+  
 ## Benefits
 The Growr protocol distributes the generated value fairly between all ecosystem participants.
 ### For Global Investors
@@ -31,4 +32,4 @@ Growr protocol delivers value to **borrowers**:
 - Loans with fair conditions 
 - Self-sovereign credit record 
 - Promotion of financial health and savings accumulation
-  
+
