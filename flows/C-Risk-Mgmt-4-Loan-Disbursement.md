@@ -22,7 +22,8 @@ sequenceDiagram
     end
     deactivate Pond SC
 ```
-Loan disbursement is executed as a final step of the Loan Application process immediately after [Loan Approval](./C-Risk-Mgmt-3-Loan-Approval.md).  
+Loan disbursement is executed as a final step of the Loan Application process immediately after [Loan Approval](./C-Risk-Mgmt-3-Loan-Approval.md).
+  
 Before releasing the amount to the Borrower's account, the Pond smart contract creates a lightweight privacy-preserving message called **"repayment commitment"**. The message contains information about the Borrower's SSFI address, Loan Id and next installment date and amount. It represents a promise that the Borrower will make this payment. The messages is hashed and signed using Borrower's SSFI and then registered in the Loan Registry smart contract.
 ## Off-chain Custodian Model
 In this scenario, the disbursement transactions are executed off-chain but the protocol receives "proof-of-pay" notifications about them.

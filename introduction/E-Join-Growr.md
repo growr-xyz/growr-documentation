@@ -9,8 +9,10 @@ Growr protocol is built around the foundation Growr values:
 - **Empowerment**: Growr delivers global life-first innovative financial services.
 ## Join us!
 Growr protocol is an open-source decentralized project and anyone can permissionlessly contribute to its development.
-We truly hope that the mission and values we describe inspires teams across the space to join us and help contribute to the protocol.  
+We truly hope that the mission and values we describe inspires teams across the space to join us and help contribute to the protocol.
+
 Join us!
 - [Growr on web](https://www.growr.xyz/protocol/index.html)
 - [Growr documentation](https://github.com/growr-xyz/growr-documentation)
 - [Growr in Twitter](link)
+  

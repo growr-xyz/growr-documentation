@@ -1,5 +1,6 @@
 # Risk Management Introduction
-Growr protocol introduces an innovative approach for decentralized credit risk management, designed to work equally efficient in both custodial and non-custodial model.  
+Growr protocol introduces an innovative approach for decentralized credit risk management, designed to work equally efficient in both custodial and non-custodial model.
+
 The approach follows several key principles.
 ## Responsibility split
 Each participant in the ecosystem has a risk management role:
@@ -16,5 +17,6 @@ Each participant is incentivized by the protocol to fairly fulfil its duties, as
 - **Credential Issuers**, **Credential Verifiers** and **Risk Assessors** receive a fee for the services they provide. In case of poor execution of their risk management function, the respective participant is blacklisted from the protocol. In addition, risk management service providers might be required to stake protocol tokens as a guarantee for their fair participation.
 - **Lenders** and **Liquidity** Providers are incentivized to ensure sufficient level of risk management in order to decrease the cost of default and respectively to increase their profit.
 ## Privacy-preservation
-The loan information stored on-chain does not contain any personal data. In the future protocol implementation, we also envision the usage of zero-knowledge proof (ZKF) model, in which even the SSFI address of the user could not be revealed.  
+The loan information stored on-chain does not contain any personal data. In the future protocol implementation, we also envision the usage of zero-knowledge proof (ZKF) model, in which even the SSFI address of the user could not be revealed.
+  
 TBD-description
