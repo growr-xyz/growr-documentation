@@ -19,7 +19,7 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-        <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+        <h1 class="project-name">Growr protocol</h1>
         <h2 class="project-tagline">{{ site.description | default:
             site.github.project_tagline }}</h2>
         {% if site.github.is_project_page %}
@@ -48,12 +48,12 @@
     </main>
 </body>
 <script>
-    var prev_a = document.getElementById('prev-section'); console.log(prev_a);
-    var next_a = document.getElementById('next-section'); console.log(next_a);
+    var prev_a = document.getElementById('prev-section');
+    var next_a = document.getElementById('next-section');
     const collection = document.getElementsByClassName("sidenav-a");
     let prev = null; let next = null; let last = null;
     for (var i = 0; i < collection.length; i++) {
-        let curr = collection[i];
+        let curr = collection[i]; console.log(curr);
         if (curr.id == document.title) {
             if (last) {
                 prev_a.href = last.href;
