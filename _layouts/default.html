@@ -57,7 +57,7 @@
         if (curr.id == document.title.split(' | ', 1)[0]) {
             if (last) {
                 prev_a.href = last.href;
-                prev_a.text = "Previous (" + last.id + ")";
+                prev_a.text = "« Back to \"" + last.id + "\" ";
                 prev_a.hidden = false;
             } else {
                 prev_a.hidden = true;
@@ -65,7 +65,7 @@
             i++;
             if (collection[i]) {
                 next_a.href = collection[i].href;
-                next_a.text = "Previous (" + collection[i].id + ")";
+                next_a.text = " Go to \"" + collection[i].id + "\" »";
                 next_a.hidden = false;
             } else {
                 next_a.hidden = true;
