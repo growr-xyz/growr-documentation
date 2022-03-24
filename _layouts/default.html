@@ -51,9 +51,9 @@
     var prev_a = document.getElementById('prev-section');
     var next_a = document.getElementById('next-section');
     const collection = document.getElementsByClassName("sidenav-a");
-    let prev = null; let next = null; let last = null;
+    let prev = null; let next = null; let last = null; console.log(document.title);
     for (var i = 0; i < collection.length; i++) {
-        let curr = collection[i]; console.log(curr);
+        let curr = collection[i]; console.log(curr.id);
         if (curr.id == document.title) {
             if (last) {
                 prev_a.href = last.href;
@@ -66,9 +66,6 @@
             } else {
                 next_a.href = curr.href;
             }
-            console.log(curr);
-            console.log(prev_a.href);
-            console.log(next_a.href);
             break;
         }
         last = curr;
