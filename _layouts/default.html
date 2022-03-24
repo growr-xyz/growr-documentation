@@ -48,8 +48,8 @@
     </main>
 </body>
 <script>
-    var prev_a = document.getElementById('prev-section');
-    var next_a = document.getElementById('next-section');
+    var prev_a = document.getElementById('prev-section'); console.log(prev_a);
+    var next_a = document.getElementById('next-section'); console.log(next_a);
     const collection = document.getElementsByClassName("sidenav-a");
     let prev = null; let next = null; let last = null;
     for (var i = 0; i < collection.length; i++) {
@@ -66,6 +66,9 @@
             } else {
                 next_a.href = curr.href;
             }
+            console.log(curr);
+            console.log(prev_a.href);
+            console.log(next_a.href);
             break;
         }
         last = curr;
