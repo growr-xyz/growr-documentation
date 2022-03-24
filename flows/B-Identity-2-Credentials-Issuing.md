@@ -37,7 +37,7 @@ Issuing of credit score credentials can simplify the loan application process, e
 
 Credit Score Credential Issuer could be any risk scoring services, owned or accredited by a trusted Verifier.
 ### Financial Health Credential
-The Growr protocol incentivizes good ﬁnancial health – that is, improving ﬁnancial literacy and behaviors. Thus, the protocol encourages including the Financial Health credentials to every pond eligibility criteria; that is, before applying for a loan, the user must go through education and mentoring for "financial health treatment".
+The Growr protocol incentivizes good ﬁnancial health and improving ﬁnancial literacy and behaviors through gamification. Thus, the protocol encourages including the Financial Health credentials to every pond eligibility criteria; that is, before applying for a loan, the user must go through education and mentoring for "financial health treatment".
 
 Financial Health Credential Issuer could be any educational service, voted as "trusted" by the protocol.
 ### Savings History Credential

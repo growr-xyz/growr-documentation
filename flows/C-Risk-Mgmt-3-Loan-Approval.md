@@ -72,7 +72,7 @@ The key role in the process is played by the Risk Assessor who safely and secure
 Upon succesful completion of all verification checks, the Risk Assessor creates a lightweight privacy-preserving **Verification Result** assesting that a given Borrower matches the eligibility criteria of a given pond. The Risk Assessor hashes and signs the result and return it back to the SSFI App for further use in the smart contract transaction. Note that the verification result does not contain credentials to prevent leakage of sensitive personal information on-chain.
 
 Having the result from the Risk Assessor, the Distributor calls the loan application function of the Pond smart contract. The latter passes the verification result and Risk Assessor's signature as parameters to the Verification Registry contract function for validation. The registry uses the signature and the verification result to confirm whether or not the result corresponds to the public address of a trusted Verifier configured in the registry contract.
-   
+
 After validating the Borrower and before approving the loan, the pond performs the following final checks:
 - General pond check:
   * Pond is not stopped
@@ -93,5 +93,5 @@ Once the loan is approved, the smart contract registers it on the chain and retu
 - Interest amount ( = Amount x APR x Duration/12)
 - Total amount to be repaid ( = Amount + Interest amount)
 - Installment amount ( = Total amount / Duration)
-
+  
 

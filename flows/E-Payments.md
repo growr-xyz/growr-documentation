@@ -5,6 +5,7 @@ In the on-chain payments model, all transactions are executed on-chain, includin
 - Pond smart contract to Pool smart contract
 - Borrower account to Pond smart contract
 - Pond smart contract to Borrower account
+
 ### Off-ramp (Growr to off-chain account)
 Growr protocol will integrate with third-party bridges to enable direct payouts after loan disbursement and for withdrawal of investments from the lending pools. Those third parties will provide access to payment rails currently operated by traditional ﬁnancial providers (e.g., card rails, instant payments, ACHs, etc.).
 ### On-ramp (off-chain account to Growr)

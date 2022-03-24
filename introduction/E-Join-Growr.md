@@ -7,6 +7,7 @@ Growr protocol is built around the foundation Growr values:
 - **Transparency**. Growr provides services with fair conditions, end-to-end transparency in the process and visible impact.
 - **Contribution**: Growr promotes open-source, community-driven, and safe environment.
 - **Empowerment**: Growr delivers global life-first innovative financial services.
+
 ## Join us!
 Growr protocol is an open-source decentralized project and anyone can permissionlessly contribute to its development.
 We truly hope that the mission and values we describe inspires teams across the space to join us and help contribute to the protocol.
