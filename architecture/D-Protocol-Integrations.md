@@ -1,4 +1,4 @@
-# Growr protocol integrations
+# Protocol Integrations
 ## Credential Issuers
 TBD-sample service
 ## Credential Verifiers

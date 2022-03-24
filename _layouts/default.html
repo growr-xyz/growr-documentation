@@ -48,7 +48,7 @@
     const config = {
         startOnLoad: true,
         securityLevel: 'loose',
-        theme: 'base',
+        theme: null,
         themeVariables: {
             primaryColor: '#A9F5EB',
             background: '#f4f4f4',
@@ -69,7 +69,8 @@
             loopTextColor: '#000000',
             activationBkgColor: '#16D1BA',
             activationBorderColor: '#16D1BA'
-        }
+        },
+        themeCSS: 'text.actor, .messageText, .labelText, .noteText { font-family: Rubik, sans-serif; font-size: 16px; font-weight: 200; }'
     };
     mermaid.initialize(config);
     window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));

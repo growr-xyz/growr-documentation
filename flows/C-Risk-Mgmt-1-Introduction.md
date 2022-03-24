@@ -1,4 +1,4 @@
-# Risk Management Introduction
+# Loan Risk Management
 Growr protocol introduces an innovative approach for decentralized credit risk management, designed to work equally efficient in both custodial and non-custodial model.
 
 The approach follows several key principles.
