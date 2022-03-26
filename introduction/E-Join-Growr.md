@@ -1,4 +1,4 @@
-# Join Growr
+# Mission
 ## Mission
 Growr protocol advances financial inclusion by enabling borrowers to receive instant unsecured loans based on a decentralized identity.
 ## Values

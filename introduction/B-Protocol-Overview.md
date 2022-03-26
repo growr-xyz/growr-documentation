@@ -20,12 +20,14 @@ Growr protocol delivers value to **global investors** as Liquidity Providers:
 - Yield generation on excess capital
 - Flexibility in defining risk/reward preferences in a global marketplace
 - End-to-end transparency in capital allocation
+
 ### For Local Communities
 Growr protocol delivers value to **local communities** and **last-mile financial service providers** as Lenders:
 - Access to credit from a global marketplace
 - Facilitation of access to credit for community members by managing local risk policies and enabling social vouching 
 - Yield generation for local lenders
 - Revenue growth for merchants through buy now, pay later scheme
+
 ### For Borrowers
 Growr protocol delivers value to **borrowers**:
 - Access to loans for unbanked and excluded population

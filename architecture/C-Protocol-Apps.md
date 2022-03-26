@@ -8,6 +8,7 @@ Usually, those applications include the following features:
 - Withdrawal funds from pools/ponds
 - Monitoring pools/ponds utilization and profitability performance
 - Overall marketplace overview
+
 ### Growr Protocol App
 Growr Protocol App is an open-source application, built to demostrate the concepts of the protocol from investment and governance perspective.
 

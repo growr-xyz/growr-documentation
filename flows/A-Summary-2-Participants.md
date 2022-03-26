@@ -5,14 +5,14 @@
 Borrowers gradually receive better conditions for positive behavior and improved ﬁnancial health. They will receive “cash back”-style rewards based on their improved ﬁnancial health (i.e., regular loan repayment and proof of ﬁnancial learning), as well as for referral of good Borrowers.
 
 Borrowers can access the protocol via a Distributor in custodial model or via a decentralized App in non-custodial model.  
-Borrowers usually operate on the __Distribution__ layer.
+Borrowers usually operate on the *Distribution* layer.
 ## Distributors
 ### Custodial Model
 **Distributors**, or also called **Last-mile Providers**, intermediates access to the protocol to a speciﬁc group of Borrowers in custodial model with a simple UX. Distributors can be regulated financial institutions/fintechs, merchants, employers, or others. We envision that some Distributors may even operate as decentralized entities (DAOs).  
 The role of the Distributor is to onboard and vet the users into its own digital means (e.g., a mobile application) and then facilitate access to the protocol. In this model, the user will have their SSFI under the custody of the Distributor.  
 Often, a Distributor might be the same as a Lender.
 
-Distributors usually operate on the __Distribution__ layer and interact with __Risk Management__ layer. In some cases, they might also have a role in the __Payments__ layer.
+Distributors usually operate on the *Distribution* layer and interact with *Risk Management* layer. In some cases, they might also have a role in the *Payments* layer.
 ### Non-Custodial Model
 The end-user access to the protocol might be also provided in a fully decentralized non-custodial model. In this scenario, the user can access the protocol directly or through an agent wallet (decentralized web app with connected self-managed SSFI).
 ## Lenders
@@ -20,7 +20,7 @@ The end-user access to the protocol might be also provided in a fully decentrali
 
 They will receive yield based on the pond proﬁtability, and the pond yield will tend to be higher than the pool yield, rewarding the skin-in-the-game participation of the Lender.
 
-Lenders operate on __Risk Management__ and __Liquidity__ layers.
+Lenders operate on *Risk Management* and *Liquidity* layers.
 ## Liquidity Proviers
 **Liquidity Providers (LPs)** are global institutional investors and high-net-worth individuals (HNWIs) who provide funding to the lending pools in the protocol and then delegate the actual lending activity to the Lenders.
 
@@ -28,13 +28,13 @@ Liquidity Providers allocate capital to lending pools and get rewarded with yiel
 
 Some Liquidity Providers could play a role of **Guarantor** to provide first-loss capital and cover for missing credentials certain specific borrower groups (e.g., women, employees, unemployed, community members, companies of a given chamber, etc.). Guarantors will deposit funds into a Safety Fund, from which certain ponds can claim money in case of payment incidents.
 
-Liquidity Providers operate on __Liqudity__ layer.
+Liquidity Providers operate on *Liqudity* layer.
 ## Credential Issuers
 **Credential Issuers** serves an important risk management role in the protocol. They are centralized or decentralized third parties that provide **verifiable credentials (VCs)** to protocol participants.
 
 Credential Issuers will receive a fee for the credentials they are issuing to Borrowers and other participants.
 
-Credential Issuers operate on __Risk Management__ layer.
+Credential Issuers operate on *Risk Management* layer.
 ## Risk Assessors
 Credit risk assessment is a crucial component of the Growr protocol. Due to the decentralized nature of the protocol, we envision a decentralized credit risk assessment process with several participants in it.
 
@@ -44,7 +44,7 @@ The Risk Assessors could be "owned" by Lenders, Liquidity Providers or Distribut
 
 The Risk Assessor may play one or several of the roles below. For the execution of its service, the Risk Assessor is rewarded with a fee according to its usage.
 
-Risk Assessors operate on __Risk Management__ layer.
+Risk Assessors operate on *Risk Management* layer.
 ### Credential Verifier
 Credential Verifiers consumes credential presentations and verify that the credentials are valid i.e. issued from trusted Issuer, not expired, and not revoked.
 ### Credit Risk Scoring
@@ -62,10 +62,10 @@ Payment Processors facilitates the payment processes in the protocol by providin
   
 For more information, see [Payments section](./E-Payments.md).
 
-Payment Processors operate on __Payments__ layer.
+Payment Processors operate on *Payments* layer.
 ## Protocol Governance Board
 For the ﬁrst version of the protocol, we envision to begin with a more centralized governance. At a later stage, decentralization will be implemented through a governance token that will be progressively airdropped to the most active contributors based on a predeﬁned scheme. The protocol will ultimately be governed by a **DAO**, whose members will be all the protocol stakeholders. Each stakeholder will have voting rights based on their contribution to the protocol development and governance.
 
 The Protocol Governance Board covers activities related to smart contract governance and fraud prevention. For more information, see [Protocol Governance section](./F-Protocol-Governance.md).
 
-Naturally, Protocol Governance Board operates on __Governance__ layer.
+Naturally, Protocol Governance Board operates on *Governance* layer.
