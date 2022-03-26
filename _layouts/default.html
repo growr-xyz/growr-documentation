@@ -20,10 +20,10 @@
 
     <header class="page-header" role="banner">
         <h1 class="project-name">Growr protocol</h1>
-        <h2 class="project-tagline">{{ site.description | default:
-            site.github.project_tagline }}</h2>
+        <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
         {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        <a href="#" class="btn">Downdload as PDF</a>
         {% endif %}
         {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
@@ -76,18 +76,22 @@
     };
 </script>
 <script>
+    //activate mermaid diagrams:
     const config = {
         startOnLoad: true,
+        bottomMarginAdj: '1',
         securityLevel: 'loose',
         theme: 'base',
         themeVariables: {
             primaryColor: '#A9F5EB',
-            primaryTextColor: '#157878',
             background: '#f4f4f4',
             fontFamily: 'Rubik, sans-serif',
+            primaryTextColor: '#157878',
             noteBkgColor: '#A9F5EB',
             actorBkg: '#009D8B',
             actorTextColor: '#ffffff',
+            noteTextColor: '#000000',
+            signalTextColor: '#157878',
             activationBkgColor: '#16D1BA',
             activationBorderColor: '#16D1BA',
             loopTextColor: '#000000'
@@ -95,17 +99,26 @@
         sequence: {
             actorFontSize: '16px',
             actorFontFamily: 'Rubik, sans-serif',
-            actorFontWeight: '200',
-            messageFontSize: '14px',
+            actorFontWeight: '300',
+            messageFontSize: '16px',
             messageFontFamily: 'Rubik, sans-serif',
             messageFontWeight: '200',
-            noteFontSize: '14px',
             noteFontFamily: 'Rubik, sans-serif',
+            noteFontSize: '14px',
             noteFontWeight: '200',
-        }
+            showSequenceNumbers: 'true'
+        },
+        themeCSS: '.messageText { stroke: none; }'
     };
     mermaid.initialize(config);
     window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    //set auto height of the diagrams:
+    const diagrams = document.getElementsByTagName('svg');
+    console.log(diagrams);
+    for (let diagram of diagrams) {
+        diagram.setAttribute('height', 'auto');
+    }
+
 </script>
 
 </html>

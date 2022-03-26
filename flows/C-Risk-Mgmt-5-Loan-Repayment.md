@@ -51,8 +51,8 @@ sequenceDiagram
     Pond SC->>Pond SC: Prepare new "repayment commitment" message
     Pond SC->>+Distributor App: Request signature of new "repayment commitment" message
     Distributor App->>-Pond SC: Sign message
-    Pond SC->>Loan Registry SC: Expire old "repayment commitment" message
-    Pond SC->>Loan Registry SC: Register new "repayment commitment" message
+    Pond SC->>Loan Registry SC: Expire old message
+    Pond SC->>Loan Registry SC: Register new message
     deactivate Pond SC
 ```
 Loan repayment is initiated and executed off-chain. The Pond smart contract receives a **"proof-of-pay"** receipt from the Distributor App and based on it the smart contrat prepares the repayment commitment message, requests signature on it and registers it.

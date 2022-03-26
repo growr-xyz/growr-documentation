@@ -6,12 +6,12 @@ TBD. Details on protocol token economics will be provided in the next version of
 ### Pool Factory governance
 The Governance Board will manage the deployed instance of the Pool Factory smart contract and will decide on:
 - Applicable lending pool parameters
-- Backstop potentially fraudulent pools
+- Backstop pools of potentially fraudulent Liquidity Providers
 
 ### Pond Factory governance
 The Governance Board will manage the deployed instance of the Pond Factory smart contract and will decide on:
 - Applicable lending pond parameters
-- Backstop potentially fraudulent ponds
+- Backstop ponds of potentially fraudulent Lenders
 
 ### Trusted Service Registry governance
 The Governance Board will manage the deployed instance of the global Trusted Service Registry smart contract and will decide on:

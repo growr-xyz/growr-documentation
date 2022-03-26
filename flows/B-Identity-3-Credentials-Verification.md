@@ -19,7 +19,7 @@ sequenceDiagram
     activate Credential Verifier
     Credential Verifier->>Trusted Service Registry SC: Check issuer
     opt  
-        Credential Verifier->>Credential Status Registry: Check status
+        Credential Verifier->>Credential Status Registry SC: Check status
     end
     Credential Verifier->>Credential Verifier: Verify credentials
     alt If OK?

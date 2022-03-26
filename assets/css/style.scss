@@ -25,7 +25,7 @@
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {padding-top: 15px}
   .sidenav a {font-size: 18px;}
 }
 
@@ -51,14 +51,15 @@
 .page-header, .page-header h1, .page-header h2 {
     color: #fff;
     text-align: center;
-    background-color: #009D8B;
-    background-image: linear-gradient(120deg, #16D1BA, #009D8B);
+    background-color: #157878;
+    background-image: linear-gradient(120deg, #16D1BA, #157878);
 }
 
-.navBtn {
-  padding: 1em;
+div.navSection .btn {
+	color: #009D8B;
+	font-size: 1rem;
+  margin: 0px 0px;
 }
-
 body {
     font-weight: 300;
     font-family: Rubik, sans-serif;
