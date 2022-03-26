@@ -7,7 +7,9 @@ sequenceDiagram
     participant Borrower (Subject)
     participant SSFI App
     participant Credential Verifier
-    participant Trusted Registries
+    participant Trusted Service Registry SC
+    participant Credential Status Registry SC
+    participant Verification Registry SC
     Note over SSFI App: Custodial Distributor App or Self-managed wallet
     Borrower (Subject)->>SSFI App: Request credentials verification
     activate SSFI App
@@ -15,15 +17,15 @@ sequenceDiagram
     SSFI App->>SSFI App: Build and sign credential presentation
     SSFI App->>Credential Verifier: Send credential presentation
     activate Credential Verifier
-    opt
-        Credential Verifier->>Trusted Registries: Check in Trusted Issuers registry
-        Credential Verifier->>Trusted Registries: Check in Status registry
+    Credential Verifier->>Trusted Service Registry SC: Check issuer
+    opt  
+        Credential Verifier->>Credential Status Registry: Check status
     end
     Credential Verifier->>Credential Verifier: Verify credentials
     alt If OK?
         opt
             Credential Verifier->>Credential Verifier: Build & sign verification result
-            Credential Verifier->>Trusted Registries: Store verification result in registry
+            Credential Verifier->>Verification Registry SC: Send verification result
         end
         Credential Verifier->>SSFI App: Credential verified
         Note left of Credential Verifier: (Optionally) Send verification result
@@ -40,5 +42,5 @@ The credential verification performed by the Verifier includes the following tas
 - Verify that the credential is signed by a trusted Issuer
 - Verify that the credential is not expired
 - Verify that the credential is not revoked
-  
+
 This verification process is part of the overall loan approval process. For more details, see [Loan Approval section](./C-Risk-Mgmt-3-Loan-Approval.md).

@@ -1,9 +1,9 @@
 # Protocol Integrations
-## Credential Issuers
-TBD-sample service
-## Credential Verifiers
-TBD-sample service
-## SSFI Storages
-TBD-sample integration
+## Credential Issuer service
+TBD-link to Issuing service repo
+## Credential Verifier service
+TBD-link to Verifier service repo
+## SSFI Storage
+TBD-link/info about Data Vault
 ## Payment Processors
-TBD-sample integration
+TBD-link/info about LN integration

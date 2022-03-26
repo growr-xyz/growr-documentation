@@ -6,7 +6,7 @@ sequenceDiagram
     participant SSFI App
     participant Risk Assessor
     participant Pond SC
-    participant Verification Registry SC
+    participant Trusted Service Registry SC
     Note over SSFI App: Custodial Distributor App or Self-managed wallet
     Note over Borrower: ...Borrower has credentials and loan offer
     Borrower->>SSFI App: Accept loan offer
@@ -42,11 +42,11 @@ sequenceDiagram
     SSFI App->>Pond SC: Apply for loan
     activate Pond SC
     Note right of SSFI App: Provide verification result
-    Pond SC->>Verification Registry SC: Send verification result
-    activate Verification Registry SC
-    Verification Registry SC->>Verification Registry SC: Validate Verifier
-    Verification Registry SC-->>Pond SC: Validation result
-    deactivate Verification Registry SC
+    Pond SC->>Trusted Service Registry SC: Send verification result
+    activate Trusted Service Registry SC
+    Trusted Service Registry SC->>Trusted Service Registry SC: Validate Verifier
+    Trusted Service Registry SC-->>Pond SC: Validation result
+    deactivate Trusted Service Registry SC
     alt result not OK?
         Pond SC-->>SSFI App: Loan rejected
         SSFI App-->>Borrower: "Loan rejected"
@@ -71,7 +71,7 @@ The key role in the process is played by the Risk Assessor who safely and secure
   
 Upon succesful completion of all verification checks, the Risk Assessor creates a lightweight privacy-preserving **Verification Result** assesting that a given Borrower matches the eligibility criteria of a given pond. The Risk Assessor hashes and signs the result and return it back to the SSFI App for further use in the smart contract transaction. Note that the verification result does not contain credentials to prevent leakage of sensitive personal information on-chain.
 
-Having the result from the Risk Assessor, the Distributor calls the loan application function of the Pond smart contract. The latter passes the verification result and Risk Assessor's signature as parameters to the Verification Registry contract function for validation. The registry uses the signature and the verification result to confirm whether or not the result corresponds to the public address of a trusted Verifier configured in the registry contract.
+Having the result from the Risk Assessor, the Distributor calls the loan application function of the Pond smart contract. The latter passes the verification result and Risk Assessor's signature as parameters to the Trusted Service Registry contract function for validation. The registry uses the signature and the verification result to confirm whether or not the result corresponds to the public address of a trusted Verifier configured in the registry contract.
 
 After validating the Borrower and before approving the loan, the pond performs the following final checks:
 - General pond check:
@@ -82,7 +82,7 @@ After validating the Borrower and before approving the loan, the pond performs t
   * Requested loan amount -> between Min and Max amount; if outside of the range, the pond approves the nearest amount but does not reject the request
   * Request loan duration -> between Min and Max duration; if outside of the range, the pond approves the nearest amount but does not reject the request
 - Eligibility check:
-  * By receiving confirmation of the verification result from the Verification Registry smart contract
+  * By receiving confirmation of the verification result from the Trusted Service Registry smart contract
   
 Once the loan is approved, the smart contract registers it on the chain and returns a response with the following parameters:
 - Approved amount

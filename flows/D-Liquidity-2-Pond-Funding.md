@@ -1,5 +1,5 @@
 # Pond Funding
-The Growr protocol enables institutional investors to fund lending pools and ponds according to their risk/reward appetite. The protocol allows both funding models - custodial and non-custodial.
+The Growr protocol enables Liquidity Providers to fund lending pools and ponds according to their risk/reward appetite. The protocol allows both funding models - custodial and non-custodial.
 ## Off-chain Custodian Model
 The model with a Custodian has lower technology learning curve and protect the user funds from malicious actors. In this scenario, no matter whether the Lender uses own funds or applies to Liquidity Providers for funds, all transactions occur off-chain.
 ## On-chain Model
@@ -16,7 +16,7 @@ sequenceDiagram
     Lender (via dApp)->>Pond Factory SC: Get pond address
     Lender (via dApp)->>+Pond SC: Deposit funds to pond address
     Pond SC->>Pond SC: Register deposit transaction
-    Pond SC-->>-Lender (via dApp): Returns deposit receipt
+    Pond SC-->>-Lender (via dApp): Return deposit receipt
     deactivate Lender (via dApp)
     Pond SC->>Pond SC: Generate yield through lending
     activate Lender (via dApp)
@@ -24,12 +24,12 @@ sequenceDiagram
     Lender (via dApp)->>+Pond SC: Request withdrawal
     Pond SC->>Pond SC: Check available funds
     Pond SC->>Pond SC: Register withdrawal transaction
-    Pond SC->>-Lender (via dApp): Sends fund + yield
+    Pond SC->>-Lender (via dApp): Send fund + yield
     deactivate Lender (via dApp)
 ```
 ### Pool-to-pond funding
-The Growr protocol is able to operate on 2 levels – global pools and local ponds. Global pools are funded by institutional investors who then delegate the actual lending activity to local guilds with local lending ponds.  
-A lending pool can be created by any institutional investor with enough capital (threshold to be deﬁned by the protocol governance) who speciﬁes the initial pool parameters. Investors can safely deposit funds into lending pools according to their preferences and based on automatic vetting using their own SSFI and veriﬁable credentials, e.g., applicable AML/CFT checks, required by the pool creator.
+The Growr protocol is able to operate on 2 levels – global pools and local ponds. Global pools are funded by Liqudity Providers who then delegate the actual lending activity to local guilds with local lending ponds.  
+A lending pool can be created by any institutional investor with enough capital (threshold to be deﬁned by the protocol governance) who speciﬁes the initial pool parameters. Liquidity Providers can safely deposit funds into lending pools according to their preferences and based on automatic vetting using their own SSFI and veriﬁable credentials, e.g., applicable AML/CFT checks, required by the pool creator.
 
 The flow for pool creation and funding is the same as the flow for pond creation and funding. For more details, visit [Pond Creation section](./D-Liquidity-1-Pond-Creation.md).
 

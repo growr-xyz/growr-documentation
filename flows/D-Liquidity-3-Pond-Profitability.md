@@ -1,5 +1,5 @@
 # Pond Profitability
 ## Off-chain Custodian Model
-TBD-description
+TBD. Details will be provided in the next version of the protocol documentation.
 ## On-chain Model
-TBD-description
+TBD. Details will be provided in the next version of the protocol documentation.

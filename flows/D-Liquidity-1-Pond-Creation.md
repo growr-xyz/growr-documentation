@@ -5,13 +5,14 @@ Below is a diagram that illustrates the steps for creation of a lending pond.
 sequenceDiagram
     participant Lender (via dApp)
     participant Pond Factory SC
+    participant Trusted Service Registry SC
     activate Lender (via dApp)
     opt optional
-        Lender (via dApp)->>Verification Registry SC: Create Verification Registry SC
-        Note left of Verification Registry SC: Lender might rely on existing registry
+        Lender (via dApp)->>Trusted Service Registry SC: Create Trusted Service Registry SC
+        Note left of Trusted Service Registry SC: Lender might rely on existing registry
         loop
-            Lender (via dApp)->>+Verification Registry SC: Add/remove trusted Verifier(s)
-            Verification Registry SC->>-Lender (via dApp): "Registered Verifier"
+            Lender (via dApp)->>+Trusted Service Registry SC: Add/remove trusted Verifier(s)
+            Trusted Service Registry SC->>-Lender (via dApp): "Registered Verifier"
         end
     end
     Lender (via dApp)->>+Pond Factory SC: Request pond creation
@@ -40,7 +41,7 @@ The parameters for pond creation includes:
 
 Once created, pond parameters cannot be changed. If the pond owner wants to modify certain parameters, they would create a new pond.
 
-An important parameter of every pond is the configured address of Verification Registry smart contract. The pond will rely on this smart contract to validate that the eligibility check was performed by a trusted Risk Assesor. Verification Registry contracts can be created either by pond owners (more risky) or by the protocol governance body (more secure).  
+An important parameter of every pond is the configured address of Trusted Service Registry smart contract. The pond will rely on this smart contract to validate that the eligibility check was performed by a trusted Risk Assesor. Trusted Service Registry contracts can be created either by pond owners or by the protocol governance body (recommended).  
 The protocol envisions a possibility for the owner to stop or pause the lending from a pond i.e. to permanently or temporary block future loan approvals from a pond.
 
 Pond funding in this model occurs entirely off-chain.

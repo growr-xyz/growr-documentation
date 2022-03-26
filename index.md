@@ -4,6 +4,7 @@ Growr is an open, fair and sustainable lending protocol on top of Bitcoin. Growr
 The Growr protocol incentivizes good financial health – that is, improving financial literacy and behaviors. This ultimately leads to a better lifestyle and financial independence. Financial health metrics are combined with additional off-chain and on-chain data to create a new type of decentralized identity that we call the Self-sovereign Financial Identity. It contains verifiable credentials from different sources and is presented in front of the lending pools to assert creditworthiness.
   
 By building Growr, we are addressing significant global challenges such as access to financial services at fair conditions, gender inequality and bad financial health. Bringing true value to all protocol participants, Growr could be a catalyst for the next wave of exponential adoption of DeFi ecosystem and in particular RSK network.
+
 ## That's cool!
 If you are excited to know more about Growr, please, select a chapter from the left to continue your journey in Growr protocol documentation.
 

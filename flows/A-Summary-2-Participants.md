@@ -8,7 +8,7 @@ Borrowers can access the protocol via a Distributor in custodial model or via a 
 Borrowers usually operate on the __Distribution__ layer.
 ## Distributors
 ### Custodial Model
-**Distributors**, or also called **Custodial Providers**, intermediates access to the protocol to a speciﬁc group of Borrowers in custodial model with a simple UX. Distributors can be regulated financial institutions/fintechs, merchants, employers, or others. We envision that some Distributors may even operate as decentralized entities (DAOs).  
+**Distributors**, or also called **Last-mile Providers**, intermediates access to the protocol to a speciﬁc group of Borrowers in custodial model with a simple UX. Distributors can be regulated financial institutions/fintechs, merchants, employers, or others. We envision that some Distributors may even operate as decentralized entities (DAOs).  
 The role of the Distributor is to onboard and vet the users into its own digital means (e.g., a mobile application) and then facilitate access to the protocol. In this model, the user will have their SSFI under the custody of the Distributor.  
 Often, a Distributor might be the same as a Lender.
 
@@ -16,13 +16,13 @@ Distributors usually operate on the __Distribution__ layer and interact with __R
 ### Non-Custodial Model
 The end-user access to the protocol might be also provided in a fully decentralized non-custodial model. In this scenario, the user can access the protocol directly or through an agent wallet (decentralized web app with connected self-managed SSFI).
 ## Lenders
-**Lenders** facilitates the interaction with the protocol as they create and fund ponds using own funds or by borrowing from global pools.
+**Lenders** facilitates the interaction with the protocol as they create and fund ponds using own funds or by borrowing from global pools. Lenders can be regulated financial service providers, local communities or even governments.
 
 They will receive yield based on the pond proﬁtability, and the pond yield will tend to be higher than the pool yield, rewarding the skin-in-the-game participation of the Lender.
 
 Lenders operate on __Risk Management__ and __Liquidity__ layers.
 ## Liquidity Proviers
-**Liquidity Providers (LPs)** are institutional investors and high-net-worth individuals (HNWIs) who provide funding to the lending pools in the protocol and then delegate the actual lending activity to the Lenders.
+**Liquidity Providers (LPs)** are global institutional investors and high-net-worth individuals (HNWIs) who provide funding to the lending pools in the protocol and then delegate the actual lending activity to the Lenders.
 
 Liquidity Providers allocate capital to lending pools and get rewarded with yield based on the pool profitability. Generally, the global pool yield will tend to be lower that the pond yield due to the wholesale lending nature of pools.
 
@@ -65,7 +65,7 @@ For more information, see [Payments section](./E-Payments.md).
 Payment Processors operate on __Payments__ layer.
 ## Protocol Governance Board
 For the ﬁrst version of the protocol, we envision to begin with a more centralized governance. At a later stage, decentralization will be implemented through a governance token that will be progressively airdropped to the most active contributors based on a predeﬁned scheme. The protocol will ultimately be governed by a **DAO**, whose members will be all the protocol stakeholders. Each stakeholder will have voting rights based on their contribution to the protocol development and governance.
-  
+
 The Protocol Governance Board covers activities related to smart contract governance and fraud prevention. For more information, see [Protocol Governance section](./F-Protocol-Governance.md).
 
 Naturally, Protocol Governance Board operates on __Governance__ layer.

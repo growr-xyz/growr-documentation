@@ -29,7 +29,7 @@ This issuing process could be part of an Onboarding process ([Borrower Onboardin
 
 Several examples of verifiable credentials are presented in the sections below.
 ### KYC Credentials
-In regulated custodial model, a verifiable credential for successfully passed KYC process (including AML/CFT risk check) is a must. Individual KYC credential can be requested from the Borrowers, when applying for a loan. In addition, institutional KYC credential could be requsted from investors, when trying to create a pond or pool, or when trying to deposit funds in it.
+In regulated custodial model, a verifiable credential for successfully passed KYC process (including AML/CFT risk check) is a must. Individual KYC credential can be requested from the Borrowers, when applying for a loan. In addition, institutional KYC credential could be requsted from Lenders, when trying to create or fund a lending pond, or from Liqudity Providers, when trying to create or fund a lending pool.
 
 KYC Credential Issuer could be any traditional identity verification service or the Distributor itself.
 ### Credit Score Credential
