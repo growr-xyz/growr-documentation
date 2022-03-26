@@ -82,28 +82,30 @@
         theme: 'base',
         themeVariables: {
             primaryColor: '#A9F5EB',
+            primaryTextColor: '#157878',
             background: '#f4f4f4',
             fontFamily: 'Rubik, sans-serif',
-            primaryTextColor: '#157878',
             noteBkgColor: '#A9F5EB',
             actorBkg: '#009D8B',
             actorTextColor: '#ffffff',
+            activationBkgColor: '#16D1BA',
+            activationBorderColor: '#16D1BA',
+            loopTextColor: '#000000'
+        },
+        sequence: {
             actorFontSize: '16px',
             actorFontFamily: 'Rubik, sans-serif',
             actorFontWeight: '200',
+            messageFontSize: '14px',
+            messageFontFamily: 'Rubik, sans-serif',
+            messageFontWeight: '200',
             noteFontSize: '14px',
             noteFontFamily: 'Rubik, sans-serif',
-            noteFontWeight: '100',
-            messageFontSize: '16px',
-            messageFontFamily: 'Rubik, sans-serif',
-            messageFontWeight: '100',
-            loopTextColor: '#000000',
-            activationBkgColor: '#16D1BA',
-            activationBorderColor: '#16D1BA'
-        },
-        themeCSS: 'text.actor, .messageText, .labelText, .noteText { font-family: Rubik, sans-serif; font-size: 16px; font-weight: 200; }'
+            noteFontWeight: '200',
+        }
     };
-
+    mermaid.initialize(config);
+    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
 </script>
 
 </html>
