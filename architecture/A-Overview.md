@@ -1,5 +1,5 @@
 # Components Overview
-TBD-Overall-Components-diagram
+![Components](../images/components.png)
 
 Growr protocol ecosystem consists of the following components:
 - **Core Protocol**. Growr protocol is a smart contract system for decentralized lending on top of RSK.
@@ -9,9 +9,9 @@ Growr protocol ecosystem consists of the following components:
   * *Governance Apps*. dApps for protocol monitoring and changes implementation.
   * Combination of some of the above.
 - Integration with **Third-party services**.
-  * *Credential issuing service*
-  * *Credential vefication service*
-  * *Profile and credential storage service*
-  * *Payment service*
+  * *Credential issuing services*
+  * *Credential vefication services*
+  * *Profile and credential storage services*
+  * *Payment services*
 
-More details on the components are presented in the following sections.
+More details on each component are presented in the following sections.

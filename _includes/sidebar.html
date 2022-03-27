@@ -8,18 +8,18 @@
         {% endif %}
         {% endfor %}
     </ul>
-    <h2>How it works</h2>
-    <ul id="ul-flows" style="list-style: none;">
-        {% for doc in doclist %}
-        {% if doc.name contains '.md' and doc.url contains '/flows/' %}
-        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
     <h2>Components</h2>
     <ul id="ul-architecture" style="list-style: none;">
         {% for doc in doclist %}
         {% if doc.name contains '.md' and doc.url contains '/architecture/' %}
+        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <h2>How it works</h2>
+    <ul id="ul-flows" style="list-style: none;">
+        {% for doc in doclist %}
+        {% if doc.name contains '.md' and doc.url contains '/flows/' %}
         <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
         {% endif %}
         {% endfor %}
