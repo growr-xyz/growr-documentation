@@ -19,6 +19,6 @@ Each participant is incentivized by the protocol to fairly fulfil its duties, as
 - **Lenders** and **Liquidity Providers** are incentivized to ensure sufficient level of risk management in order to decrease the cost of default and respectively to increase their profit.
   
 ## Privacy-preservation
-The loan information stored on-chain does not contain any personal data. In the future protocol implementation, we also envision the usage of zero-knowledge proof (ZKF) model, in which even the SSFI address of the user could not be revealed.
+The loan information stored on-chain does not contain any personal data. In the future protocol implementation, we also envision the usage of zero-knowledge proof (ZKP) model, in which even the SSFI address of the user could not be revealed.
 
 TBD. More details on data privacy will be provided in the next version of the protocol documentation.
