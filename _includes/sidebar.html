@@ -1,6 +1,7 @@
 <div class="sidenav">
     {% assign doclist = site.pages | sort: 'url' %}
-    <h2>Introduction</h2>
+
+    <h3>Introduction</h3>
     <ul id="ul-introduction" style="list-style: none;">
         {% for doc in doclist %}
         {% if doc.name contains '.md' and doc.url contains '/introduction/' %}
@@ -8,20 +9,59 @@
         {% endif %}
         {% endfor %}
     </ul>
-    <h2>Components</h2>
-    <ul id="ul-architecture" style="list-style: none;">
+
+    <h3>Distribution & Identity</h3>
+    <ul id="ul-distribution" style="list-style: none;">
         {% for doc in doclist %}
-        {% if doc.name contains '.md' and doc.url contains '/architecture/' %}
+        {% if doc.name contains '.md' and doc.url contains '/layer-identity/' %}
         <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
-    <h2>How it works</h2>
-    <ul id="ul-flows" style="list-style: none;">
+
+    <h3>Risk Management</h3>
+    <ul id="ul-risk-mgmt" style="list-style: none;">
         {% for doc in doclist %}
-        {% if doc.name contains '.md' and doc.url contains '/flows/' %}
+        {% if doc.name contains '.md' and doc.url contains '/layer-risk/' %}
         <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
+
+    <h3>Liquidity</h3>
+    <ul id="ul-liquidity" style="list-style: none;">
+        {% for doc in doclist %}
+        {% if doc.name contains '.md' and doc.url contains '/layer-liquidity/' %}
+        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h3>Risk Payments</h3>
+    <ul id="ul-payments" style="list-style: none;">
+        {% for doc in doclist %}
+        {% if doc.name contains '.md' and doc.url contains '/layer-payments/' %}
+        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h3>Governance</h3>
+    <ul id="ul-governance" style="list-style: none;">
+        {% for doc in doclist %}
+        {% if doc.name contains '.md' and doc.url contains '/layer-governance/' %}
+        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h3>Protocol Implementation</h3>
+    <ul id="ul-implementation" style="list-style: none;">
+        {% for doc in doclist %}
+        {% if doc.name contains '.md' and doc.url contains '/implementation/' %}
+        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
 </div>

@@ -1,26 +1,26 @@
 # Loan Approval
-Smart contracts are usually not technically capable and economically practical at executing the verification operations themselves, and they cannot call upon external verification services beyond the constraints of their own chain. Therefore, the exchange and verification of credentials are executed off-chain and then confirmed on-chain.
+The risk assessment activities in Growr protocol are executed off-chain and then confirmed on-chain.
 ```mermaid
 sequenceDiagram
     participant Borrower
-    participant SSFI App
+    participant Borrowing App
     participant Risk Assessor
     participant Pond SC
     participant Trusted Service Registry SC
-    Note over SSFI App: Custodial Distributor App or Self-managed wallet
+    Note over Borrowing App: Custodial distribution app or Self-custody wallet
     Note over Borrower: ...Borrower has credentials and loan offer
-    Borrower->>SSFI App: Accept loan offer
-    activate SSFI App
-    SSFI App->>SSFI App: Create credential presentation
-    SSFI App->>Risk Assessor: Request loan risk assessment
+    Borrower->>Borrowing App: Accept loan offer
+    activate Borrowing App
+    Borrowing App->>Borrowing App: Create credential presentation
+    Borrowing App->>Risk Assessor: Request loan risk assessment
     activate Risk Assessor
-    Note right of SSFI App: Provide credentials
+    Note right of Borrowing App: Provide credentials
     Risk Assessor->>Pond SC: Get loan requirements
     Risk Assessor->>Risk Assessor: Verify credentials
     Note right of Risk Assessor: See: Credential verification
     alt credentials not OK?
-        Risk Assessor-->>SSFI App: Failed verification
-        SSFI App-->>Borrower: "Verification failed"
+        Risk Assessor-->>Borrowing App: Failed verification
+        Borrowing App-->>Borrower: "Verification failed"
     end
     opt optional
         Risk Assessor->>Risk Assessor: Request loan application review
@@ -32,36 +32,36 @@ sequenceDiagram
     end
     Risk Assessor->>Risk Assessor: Validate eligibility
     alt requirements not met?
-        Risk Assessor-->>SSFI App: Failed eligibility check
-        SSFI App-->>Borrower: "Not eligible for the loan"
+        Risk Assessor-->>Borrowing App: Failed eligibility check
+        Borrowing App-->>Borrower: "Not eligible for the loan"
     end
     Risk Assessor->>Risk Assessor: Issue & sign verification result
-    Risk Assessor-->>SSFI App: Return verification result
+    Risk Assessor-->>Borrowing App: Return verification result
     Note right of Risk Assessor: Result is not stored on-chain!
     deactivate Risk Assessor
-    SSFI App->>Pond SC: Apply for loan
+    Borrowing App->>Pond SC: Apply for loan
     activate Pond SC
-    Note right of SSFI App: Provide verification result
+    Note right of Borrowing App: Provide verification result
     Pond SC->>Trusted Service Registry SC: Send verification result
     activate Trusted Service Registry SC
     Trusted Service Registry SC->>Trusted Service Registry SC: Validate Verifier
     Trusted Service Registry SC-->>Pond SC: Validation result
     deactivate Trusted Service Registry SC
     alt result not OK?
-        Pond SC-->>SSFI App: Loan rejected
-        SSFI App-->>Borrower: "Loan rejected"
+        Pond SC-->>Borrowing App: Loan rejected
+        Borrowing App-->>Borrower: "Loan rejected"
     else result OK?
         Pond SC->>Pond SC: Approve loan & register on-chain
         opt
             Note over Pond SC: See: Loan disbursement
         end
-        Pond SC-->>SSFI App: Loan approved
-        SSFI App-->>Borrower: "Loan approved"
+        Pond SC-->>Borrowing App: Loan approved
+        Borrowing App-->>Borrower: "Loan approved"
     end
     deactivate Pond SC
-    deactivate SSFI App
+    deactivate Borrowing App
 ```
-In a custodial model, the Borrowers applys for a loan to the protocol using a custodial mobile or web application. The non-custodial loan approval flow is almost the same. The main difference is that instead of SSFI App, the borrower would use an Agent App with connected self-managed wallet.
+In a custodial model, the Borrowers applys for a loan to the protocol using a custodial mobile or web application. The non-custodial loan approval flow is almost the same. The main difference is that instead of Borrowing App, the borrower would use an Agent App with connected self-managed wallet.
 
 The key role in the process is played by the Risk Assessor who safely and securely perform the following assessment:
 - Verify that the Borrower has all the necessary credentials
@@ -69,7 +69,7 @@ The key role in the process is played by the Risk Assessor who safely and secure
 - Optionally request and ensure that the loan application is reviewed and confirmed
 - Optionally request and ensure that the Borrower has the necessary credit score
   
-Upon succesful completion of all verification checks, the Risk Assessor creates a lightweight privacy-preserving **Verification Result** assesting that a given Borrower matches the eligibility criteria of a given pond. The Risk Assessor hashes and signs the result and return it back to the SSFI App for further use in the smart contract transaction. Note that the verification result does not contain credentials to prevent leakage of sensitive personal information on-chain.
+Upon succesful completion of all verification checks, the Risk Assessor creates a lightweight privacy-preserving **Verification Result** assesting that a given Borrower matches the eligibility criteria of a given pond. The Risk Assessor hashes and signs the result and return it back to the Borrowing App for further use in the smart contract transaction. Note that the verification result does not contain credentials to prevent leakage of sensitive personal information on-chain.
 
 Having the result from the Risk Assessor, the Distributor calls the loan application function of the Pond smart contract. The latter passes the verification result and Risk Assessor's signature as parameters to the Trusted Service Registry contract function for validation. The registry uses the signature and the verification result to confirm whether or not the result corresponds to the public address of a trusted Verifier configured in the registry contract.
 

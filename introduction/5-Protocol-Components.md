@@ -1,17 +1,17 @@
-# Components Overview
+# Protocol Components
+
 ![Components](../images/components.png)
 
 Growr protocol ecosystem consists of the following components:
 - **Core Protocol**. Growr protocol is a smart contract system for decentralized lending on top of RSK.
+- **SSFI**. A unique global decentralized identity storing various protocol-specific verifiable credentials.
 - **Protocol Apps**. Custodial or non-cunsotidal web and mobile applications, integrated with the protocol. Include:
-  * *Distribution Apps*. End-user web or mobile application for the Borrowers.
-  * *Liquidity Management Apps*. dApps for lending pools and pond management.
+  * *Borrowing Apps*. End-user web or mobile application for the Borrowers.
+  * *Lending Apps*. dApps for lending pools and pond management.
   * *Governance Apps*. dApps for protocol monitoring and changes implementation.
-  * Combination of some of the above.
+  * Apps that combines more than 1 function.
 - Integration with **Third-party services**.
   * *Credential issuing services*
-  * *Credential vefication services*
-  * *Profile and credential storage services*
+  * *Credential verification services*
+  * *Credential storage services*
   * *Payment services*
-
-More details on each component are presented in the following sections.

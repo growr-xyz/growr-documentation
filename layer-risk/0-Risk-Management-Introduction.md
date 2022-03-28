@@ -21,4 +21,4 @@ Each participant is incentivized by the protocol to fairly fulfil its duties, as
 ## Privacy-preservation
 The loan information stored on-chain does not contain any personal data. In the future protocol implementation, we also envision the usage of zero-knowledge proof (ZKF) model, in which even the SSFI address of the user could not be revealed.
 
-TBD. More details on data privacy will be provided in the next version of the protocol documentation.
+This concept is still in early stage and is under research at the moment. More details on data privacy will be provided in the next version of the protocol documentation.
