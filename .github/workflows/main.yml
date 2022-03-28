@@ -30,8 +30,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Upload PDF file
-        uses: actions/upload-artifact@v2
-        id: upload-document
+        uses: actions/upload-release-asset@v1
         with:
-          name: 'Growr-litepaper.pdf'
-          path: ${{ steps.publish-document.outputs.pdf }}
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: ${{ steps.publish-document.outputs.pdf }}
+          asset_name: 'Growr-litepaper.pdf'
+          asset_content_type: application/pdf
