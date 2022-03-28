@@ -1,6 +1,6 @@
 # Protocol Components
 
-![Components](../images/components.png)
+![Components](../images/components.svg)
 
 Growr protocol ecosystem consists of the following components:
 - **Core Protocol**. Growr protocol is a smart contract system for decentralized lending on top of RSK.

@@ -51,14 +51,15 @@ sequenceDiagram
     deactivate Lending App (Lender)
     Pond Factory SC->>Pond Factory SC: Validate parameters
     Pond Factory SC->>+Pond SC: Create pond
+    activate Pond SC
     Pond Factory SC-->>-Lending App (Lender): "Pond address"
     activate Lending App (Lender)
     Pond SC->>Pool SC: Register credit limit application
     deactivate Pond SC
-    Lending App (Lender)-->>+LP (via dApp): Request for credit limit
+    Lending App (Lender)-->>+Lending App (LP): Request for credit limit
     deactivate Lending App (Lender)
-    Lending App (Lender)->>Lending App (Lender): Approve credit limit
-    Lending App (Lender)->>-Pool SC: Whitelist the pond
+    Lending App (LP)->>Lending App (LP): Approve credit limit
+    Lending App (LP)->>-Pool SC: Whitelist the pond
     Note over Pond SC: Utilization above %
     activate Pond SC
     Pond SC->>+Pool SC: Request loan amount

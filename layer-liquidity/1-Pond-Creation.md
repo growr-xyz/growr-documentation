@@ -24,11 +24,11 @@ sequenceDiagram
     Pond Factory SC->>Pond SC: Create pond
     Pond Factory SC-->>-Lending App: "Pond address"
     Lending App-->>Lender: "Pond created"
-    loop
-        Lending App->>Pond SC: Deposit funds
-        Note right of Lending App: See: Pond funding
-    end
     deactivate Lending App
+    loop
+        Lender->>Pond SC: Deposit funds
+        Note right of Lender: See: Pond funding
+    end
 ```
 The parameters for pond creation includes:
 - Owner
@@ -63,11 +63,11 @@ sequenceDiagram
     Pool Factory SC->>Pool SC: Create Pool
     Pool Factory SC-->>-Lending App: "Pool address"
     Lending App-->>Liquidity Provider: "Pool created"
-    loop
-        Lending App->>Pool SC: Deposit funds
-        Note right of Lending App: See: Pond funding
-    end
     deactivate Lending App
+    loop
+        Lender->>Pool SC: Deposit funds
+        Note right of Lender: See: Pond funding
+    end
 ```
 The parameters for pond creation includes:
 - Owner

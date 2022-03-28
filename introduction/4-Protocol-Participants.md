@@ -11,7 +11,8 @@ Growr is a DeFi protocol operating on several layers:
 - The processes for smart contract governance and fraud prevention are covered in the **Governance layer**.
 
 There are different players operating on each protocol layer, as well as between layers. Overview of all participants is presented below:
-![Protocol Layers & Participants](../images/growr-layers-participants.png)
+
+![Protocol Layers & Participants](../images/growr-layers-participants.svg)
 
 ## Borrowers
 **Borrowers** get easy access to fair loans. They apply for funds from ponds with matching risk requirements and repay the funds with added interest and/or fees.

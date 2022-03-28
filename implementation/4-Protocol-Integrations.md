@@ -10,5 +10,3 @@
 ## SSFI Storage services
 [Sample decentralized storage service](https://github.com/rsksmart/rif-data-vault)
 
-## On-ramp/off-ramp Payment services
-TBD-link/info about LN integration
