@@ -27,5 +27,5 @@ Growr onboarding process requires several steps to be completed:
 - The user must have SSFI (DID) address
 - The user must collect one or more verifiable credentials and store them in his SSFI
   
-The required verifiable credentials for loan application depends on the eligibility criteria of each pond, to which the Borrower has intention to apply. For more details, check [Credentials Issuing section](../layer-identity/2-Credentials-Issuing.md).  
+The required verifiable credentials for loan application depends on the eligibility criteria of each pond, to which the Borrower has intention to apply. For more details, check [Credentials Issuing section](../layer-distribution-identity/2-Credentials-Issuing.md).  
 
