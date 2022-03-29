@@ -34,7 +34,7 @@ jobs:
         id: upload-document
         with:
           name: 'Growr-litepaper.pdf'
-          path: 'introduction/Growr-litepaper.pdf'
+          path: ${{ steps.publish-document.outputs.pdf }}
           
       # Concat MD files
       - name: Concat document files
