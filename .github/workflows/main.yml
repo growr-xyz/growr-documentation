@@ -35,7 +35,7 @@ jobs:
       - name: Add to repo
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'Commit PDF'
+          message: 'Add new Litepaper PDF'
           add: './Growr-litepaper.pdf --force'
       
       # Concat MD files
@@ -43,10 +43,10 @@ jobs:
         uses: bayssmekanique/action-md-concat@v1.1.0
         with:
           srcDir: './introduction'
-          destFile: './Growr-litepaper.md'
+          destFile: './litepaper/Growr-litepaper.md'
       
       - name: Add to repo
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'Commit MD'
-          add: './Growr-litepaper.md --force'
+          message: 'Add new Litepaper MD'
+          add: './litepaper/Growr-litepaper.md --force'
