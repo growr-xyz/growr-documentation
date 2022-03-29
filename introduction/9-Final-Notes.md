@@ -6,7 +6,7 @@ You are reading first version of Growr protocol documentation, intended to prese
 The present Growr documentation version is *0.2*.
 
 ## Feedback
-Our goal is to develop Growr as an open source protocol. Lending, yet decentralized uncollateralized lending, is a very complex topic and there are many aspects that yet to consider. We welcome your input on how to improve the protocol.
+Our goal is to develop Growr as an open source protocol. Lending, and especially *decentralized uncollateralized lending*, is a very complex topic and there are many aspects that are yet to consider. We welcome your input on how to improve the protocol.
 
 Please, submit an issue or pull request at [Growr documentation repo in GitHub](https://github.com/growr-xyz/growr-documentation/).
 
