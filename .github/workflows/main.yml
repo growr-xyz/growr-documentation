@@ -27,18 +27,26 @@ jobs:
         id: publish-document
         with:
           sources: 'introduction/*.md'
-
-      # Runs a single command
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v2
-        id: upload-document
+      
+      # Try to push the file to the repo
+      - name: Copy file
+        run: cp -p ${{ steps.publish-document.outputs.pdf }} ./Growr-litepaper.pdf
+        
+      - name: Add to repo
+        uses: EndBug/add-and-commit@v9
         with:
-          name: 'Growr-litepaper.pdf'
-          path: ${{ steps.publish-document.outputs.pdf }}
-          
+          message: 'Commit PDF'
+          add: './Growr-litepaper.pdf --force'
+      
       # Concat MD files
       - name: Concat document files
         uses: bayssmekanique/action-md-concat@v1.1.0
         with:
-          srcDir: 'introduction'
-          destFile: 'Growr-litepaper.md'
+          srcDir: './introduction'
+          destFile: './Growr-litepaper.md'
+      
+      - name: Add to repo
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Commit MD'
+          add: './Growr-litepaper.md --force'
