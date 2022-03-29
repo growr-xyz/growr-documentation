@@ -1,6 +1,7 @@
 # Key Concepts
 
 ## Decentralized identity
+
 ### DIDs
 Growr protocol implements W3C’s standard for decentralized identity (DID). DID is a new type of identifier that enables verifiable, decentralized digital identity. A DID refers to any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) as determined by the controller of the DID. DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help enable the discovery of information related to a DID, the design enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject
 
@@ -25,6 +26,7 @@ The SSFI is intended to represent user's unique global identity and to store var
 - *Loan History Credentials*. This is a credential, issued by the protocol and earned through regular on-time repayments of past loans.
 
 ## Decentralized lending
+
 ### Lending protocols
 Decentralized Finance (DeFi) have the potential to fundamentally reinvent the financial infrastructure enabling people to transact with each other globally, securely and permissionless. Important share in the DeFi ecosystem is taken by decentralized lending protocols and liquidity markets.
 
