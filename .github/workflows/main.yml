@@ -35,8 +35,8 @@ jobs:
         with:
           input_dir: litepaper
           output_dir: litepaper
-          images_dir: ../images
-          image_import: ../images
+          images_dir: ./images
+          image_import: ./images
           build_html: false
 
       - name: Add to repo
