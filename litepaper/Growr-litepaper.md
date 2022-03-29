@@ -1,5 +1,5 @@
 # Abstract
-Growr is an open, fair and sustainable lending protocol on top of Bitcoin. Growr enables institutional and individual investors to fund lending pools according to their risk/reward appetite, and borrowers to apply for and receive unsecured or partially secured loans. It combines instant unsecured loans, innovative credit assessment models, decentralized identity and ﬁnancial health incentivization in order to address ﬁnancial inclusion globally.
+Growr is an open, fair and sustainable lending protocol on top of Bitcoin. Growr enables institutional and individual investors to fund lending pools according to their risk/reward appetite, and borrowers to apply for and receive unsecured or partially secured loans. It combines instant unsecured loans, innovative credit assessment models, decentralized identity and financial health incentivization in order to address financial inclusion globally.
 
 Financial health metrics are combined with additional off-chain data and on-chain loan reputation to create a new type of decentralized identity that we call the Self-sovereign Financial Identity. It contains verifiable credentials from different sources and is presented in front of lending pools to assert creditworthiness. For its part, the lending part of the protocol operates on 2 levels. Global lending pools are funded by large investors who then delegate the actual lending activity to local guilds having their local lending ponds.
 
@@ -8,9 +8,9 @@ By building Growr, we are addressing significant global challenges such as acces
 # Protocol Overview
 
 ## Problem
-Financial health is an important factor in our daily life. However, bad ﬁnancial health is plaguing the world. More than half of the global population is living paycheck-to-paycheck without any savings [(link)](https://globalﬁndex.worldbank.org/sites/globalﬁndex/ﬁles/chapters/2017%20Findex%20full%20report_chapter5.pdf). In addition, almost 2 billion adults in the world do not have access to ﬁnancial services [(link)](https://ufa.worldbank.org/en/ufa) or if they do, they  fall prey to financial sharks and receive loans at a very high interest rate. Moreover, there are still 72 countries where women from speciﬁc social groups do not have the right to open a bank account or obtain credit [(link)](https://www3.weforum.org/docs/WEF_GGGR_2020.pdf).
+Financial health is an important factor in our daily life. However, bad financial health is plaguing the world. More than half of the global population is living paycheck-to-paycheck without any savings [(link)](https://globalﬁndex.worldbank.org/sites/globalﬁndex/ﬁles/chapters/2017%20Findex%20full%20report_chapter5.pdf). In addition, almost 2 billion adults in the world do not have access to financial services [(link)](https://ufa.worldbank.org/en/ufa) or if they do, they  fall prey to financial sharks and receive loans at a very high interest rate. Moreover, there are still 72 countries where women from specific social groups do not have the right to open a bank account or obtain credit [(link)](https://www3.weforum.org/docs/WEF_GGGR_2020.pdf).
 
-At the same time, even people who have savings in cash or in a bank account are also impacted. On the one hand, macroeconomic events, such as high inﬂation, are literally “eating their money” and on the other hand, they are not able to acknowledge the disruptive change that is happening to the ﬁnancial system.
+At the same time, even people who have savings in cash or in a bank account are also impacted. On the one hand, macroeconomic events, such as high inflation, are literally “eating their money” and on the other hand, they are not able to acknowledge the disruptive change that is happening to the financial system.
 
 Today, most financial service providers do not solve those problems. They are clueless about people's real-life problems, needs and aspirations. There's a complete disconnect between the person and the provider. Banks, and even more so non-banking lenders, have a negative image especially with younger generation, who, as a result, are more likely to go to the dentist than visit a bank
 
@@ -19,7 +19,7 @@ We propose the **Growr protocol** as a bridge to a new global financial environm
 
 Growr protocol addresses the problems stated above with the following elements: 
 - **Growr core protocol** – a decentralized smart contract ecosystem for funding and consuming loans on top of the RSK blockchain, with open access for everyone.
-- **Self-sovereign ﬁnancial identity (SSFI)** – a digital identity, based on W3C DID standard, owned and managed by the user.
+- **Self-sovereign financial identity (SSFI)** – a digital identity, based on W3C DID standard, owned and managed by the user.
 - **Protocol access via web and mobile applications** - a simple and secure way for consumers and merchants to easily apply and obtain fair loans.
 - **Credit risk assessment** – a framework for establishing trust using a combination of alternative approaches such as on-chain activity, trusted off-chain sources, peer vouching, and others.
 - **Growr DAO** - a future decentralized autonomous organization for protocol governance and fair compensation of protocol contributors.
@@ -61,7 +61,7 @@ Growr protocol delivers value to **borrowers**:
 Growr protocol implements W3C’s standard for decentralized identity (DID). DID is a new type of identifier that enables verifiable, decentralized digital identity. A DID refers to any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) as determined by the controller of the DID. DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help enable the discovery of information related to a DID, the design enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject
 
 ### VCs
-Growr protocol implements W3C’s standard for **Veriﬁable Credentials (VCs)**. VC is a tamper-evident credential that has cryptographically-verified authorship. They can be used to build universally verifiable presentations, which can also be cryptographically verified. Verifiable Credentials (VC) are global uniformed provable claims associated with the subject of the DID. They are cryptographically secure, privacy respecting, and machine verifiable.
+Growr protocol implements W3C’s standard for **Verifiable Credentials (VCs)**. VC is a tamper-evident credential that has cryptographically-verified authorship. They can be used to build universally verifiable presentations, which can also be cryptographically verified. Verifiable Credentials (VC) are global uniformed provable claims associated with the subject of the DID. They are cryptographically secure, privacy respecting, and machine verifiable.
 
 Verifiable credentials are provided by **Credential Issuers** – that is, centralized or decentralized third parties, asserting certain facts about the DID owner. Verifiable credentials are consumed by **Verifiers** using the concepts and data models for **presentation exchange**. Verifiers verify that:
 - The credential presentation is signed with the subject's DID.
@@ -105,11 +105,11 @@ Each participant is incentivized by the protocol to fairly fulfil its duties, as
 ### Growr's 2-level pooling
 The Growr protocol is able to operate on 2 levels – global pools and local ponds. Global pools are funded by Liqudity Providers who then delegate the actual lending activity to local guilds with local lending ponds.
 
-A lending pool can be created by any institutional investor with enough capital (threshold to be deﬁned by the protocol governance) who speciﬁes the initial pool parameters. Liquidity Providers can safely deposit funds into lending pools according to their preferences and based on automatic vetting using their own SSFI and veriﬁable credentials, e.g., applicable AML/CFT checks, required by the pool creator.
+A lending pool can be created by any institutional investor with enough capital (threshold to be defined by the protocol governance) who specifies the initial pool parameters. Liquidity Providers can safely deposit funds into lending pools according to their preferences and based on automatic vetting using their own SSFI and Verifiable credentials, e.g., applicable AML/CFT checks, required by the pool creator.
 
 Lending ponds are created by local lenders. Different lenders have varying levels of risk tolerance, depending on the laws and regulations in their jurisdictions, as well as on their profit goals. Therefore, each pond can have its own parameters (such as loan amount and duration ranges), rates and eligibility criteria.
 
-Local ponds apply for funds from the pool resulting in so called "contract-to-contract (C2C) lending". Depending on the pond ﬁnancing period, fund requirements, proposed risk model and eligibility criteria, the pool owner decides to approve (whitelist the Pond address in the Pool smart contract) or not the funding to the pond.
+Local ponds apply for funds from the pool resulting in so called "contract-to-contract (C2C) lending". Depending on the pond financing period, fund requirements, proposed risk model and eligibility criteria, the pool owner decides to approve (whitelist the Pond address in the Pool smart contract) or not the funding to the pond.
 
 Based on the Pond utilization, the Pond smart contract can automatically apply to the Pool smart contract for a loan (up to the approved credit limit). The Pond is required to regularly repay the interest fee to the Pool. Depending on the configured utilization threshold, the Pond can repay partially or fully the loan to the Pool smart contract. 
 
@@ -153,14 +153,14 @@ There are different players operating on each protocol layer, as well as between
 
 ## Borrowers
 **Borrowers** get easy access to fair loans. They apply for funds from ponds with matching risk requirements and repay the funds with added interest and/or fees.
-Borrowers gradually receive better conditions for positive behavior and improved ﬁnancial health. They will receive “cash back”-style rewards based on their improved ﬁnancial health (i.e., regular loan repayment and proof of ﬁnancial learning), as well as for referral of good Borrowers.
+Borrowers gradually receive better conditions for positive behavior and improved financial health. They will receive “cash back”-style rewards based on their improved financial health (i.e., regular loan repayment and proof of financial learning), as well as for referral of good Borrowers.
 
 Borrowers can access the protocol via a Distributor in custodial model or via a decentralized App in non-custodial model.  
 Borrowers usually operate on the *Distribution* layer.
 
 ## Distributors
 ### Custodial Model
-**Distributors**, or also called **Last-mile Providers** or **Custodial Wallet Providers**, intermediates access to the protocol to a speciﬁc group of Borrowers in custodial model with a simple UX. Distributors can be regulated financial institutions/fintechs, merchants, employers, or others. We envision that some Distributors may even operate as decentralized entities (DAOs).  
+**Distributors**, or also called **Last-mile Providers** or **Custodial Wallet Providers**, intermediates access to the protocol to a specific group of Borrowers in custodial model with a simple UX. Distributors can be regulated financial institutions/fintechs, merchants, employers, or others. We envision that some Distributors may even operate as decentralized entities (DAOs).  
 The role of the Distributor is to onboard and vet the users into its own digital means (e.g., a mobile application) and then facilitate access to the protocol. In this model, the user will have their SSFI under the custody of the Distributor.  
 Often, a Distributor might be the same as a Lender.
 
@@ -172,7 +172,7 @@ The end-user access to the protocol might be also provided in a fully decentrali
 ## Lenders
 **Lenders** facilitates the interaction with the protocol as they create and fund ponds using own funds or by borrowing from global pools. Lenders can be regulated financial service providers, local communities or even governments.
 
-They will receive yield based on the pond proﬁtability, and the pond yield will tend to be higher than the pool yield, rewarding the skin-in-the-game participation of the Lender.
+They will receive yield based on the pond profitability, and the pond yield will tend to be higher than the pool yield, rewarding the skin-in-the-game participation of the Lender.
 
 Lenders operate on *Risk Management* and *Liquidity* layers.
 
@@ -226,7 +226,7 @@ For more information, see [Off-Chain Payments section](../layer-payments/2-Offch
 Payment Processors operate on *Payments* layer.
 
 ## Protocol Governance Board
-For the ﬁrst version of the protocol, we envision to begin with a more centralized governance. At a later stage, decentralization will be implemented through a governance token that will be progressively airdropped to the most active contributors based on a predeﬁned scheme. The protocol will ultimately be governed by a **DAO**, whose members will be all the protocol stakeholders. Each stakeholder will have voting rights based on their contribution to the protocol development and governance.
+For the first version of the protocol, we envision to begin with a more centralized governance. At a later stage, decentralization will be implemented through a governance token that will be progressively airdropped to the most active contributors based on a predefined scheme. The protocol will ultimately be governed by a **DAO**, whose members will be all the protocol stakeholders. Each stakeholder will have voting rights based on their contribution to the protocol development and governance.
 
 The Protocol Governance Board covers activities related to smart contract governance and fraud prevention. For more information, see [Protocol Governance section](../layer-governance/2-Protocol-Governance.md).
 

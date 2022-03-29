@@ -10,12 +10,12 @@ Usually, those applications include the following features:
 - Overall marketplace overview
 
 ### Growr Protocol App
-Growr Protocol App is an open-source application, built to demostrate the concepts of the protocol from investment and governance perspective.
+Growr Protocol App is an open-source application, built to demonstrate the concepts of the protocol from investment and governance perspective.
 
-For more details on Growr protocol app, please vist [Growr protocol app's repo in Github](https://github.com/growr-xyz/growr-protocol-app/wiki).
+For more details on Growr protocol app, please visit [Growr protocol app's repo in Github](https://github.com/growr-xyz/growr-protocol-app/wiki).
 
 ## Borrowing Apps
-Borrowing Apps are end-user web and mobile applications. Such applications can be provided either by an independent last-mile ﬁnancial service providers in a regulated custodial scenario, by local communities or as completely decentralized dApps providing the necessary access to the protocol.
+Borrowing Apps are end-user web and mobile applications. Such applications can be provided either by an independent last-mile financial service providers in a regulated custodial scenario, by local communities or as completely decentralized dApps providing the necessary access to the protocol.
 
 The features of those application might vary significantly, but some of the most common features are:
 - Onboarding and creation of blockchain-based financial profile (SSFI).

@@ -50,5 +50,5 @@ sequenceDiagram
     Pond SC->>Loan Registry SC: Register "repayment commitment" message
     deactivate Pond SC
 ```
-Loan disbursement is initiated after the loan is approved and it occurs off-chain. The Pond smart contract receives a **"proof-of-pay"** receipt from the Borrowing App and based on it the smart contrat prepares the repayment commitment message, requests signature on it and registers it.
+Loan disbursement is initiated after the loan is approved and it occurs off-chain. The Pond smart contract receives a **"proof-of-pay"** receipt from the Borrowing App and based on it the smart contract prepares the repayment commitment message, requests signature on it and registers it.
 

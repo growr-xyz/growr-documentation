@@ -14,7 +14,7 @@ Each participant in the ecosystem has a risk management role:
   
 ## Incentivization
 Each participant is incentivized by the protocol to fairly fulfil its duties, as follows:
-- With positive behaviour in terms of regularly repaid loans, **Borrowers** increase their credit risk score. And better risk score translates to better lending conditions - increased amount limit and decreased interest rate.
+- With positive behavior in terms of regularly repaid loans, **Borrowers** increase their credit risk score. And better risk score translates to better lending conditions - increased amount limit and decreased interest rate.
 - **Credential Issuers**, **Credential Verifiers** and **Risk Assessors** receive a fee for the services they provide. In case of poor execution of their risk management function, the respective participant is blacklisted from the protocol. In addition, risk management service providers might be required to stake protocol tokens as a guarantee for their fair participation.
 - **Lenders** and **Liquidity Providers** are incentivized to ensure sufficient level of risk management in order to decrease the cost of default and respectively to increase their profit.
   

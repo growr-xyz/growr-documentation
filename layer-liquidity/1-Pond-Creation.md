@@ -45,7 +45,7 @@ The parameters for pond creation includes:
 
 Once created, pond parameters cannot be changed. If the pond owner wants to modify certain parameters, they would create a new pond.
 
-An important parameter of every pond is the configured address of Trusted Service Registry smart contract. The pond will rely on this smart contract to validate that the eligibility check was performed by a trusted Risk Assesor. Trusted Service Registry contracts can be created either by pond owners or by the protocol governance body (recommended).  
+An important parameter of every pond is the configured address of Trusted Service Registry smart contract. The pond will rely on this smart contract to validate that the eligibility check was performed by a trusted Risk Assessor. Trusted Service Registry contracts can be created either by pond owners or by the protocol governance body (recommended).  
 The protocol envisions a possibility for the owner to stop or pause the lending from a pond i.e. to permanently or temporary block future loan approvals from a pond.
 
 ## Pool Creation

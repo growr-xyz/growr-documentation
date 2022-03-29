@@ -25,7 +25,7 @@ sequenceDiagram
     Lending App-->>Lender: "Successful deposit"
     deactivate Lending App
     Pond SC->>Pond SC: Generate yield through lending
-    Lender->>Lending App: Request widhrawal
+    Lender->>Lending App: Request withdrawal
     activate Lending App
     Lending App->>+Pond SC: Request withdrawal
     Pond SC->>Pond SC: Check available funds
@@ -36,7 +36,7 @@ sequenceDiagram
 ```
 
 ### Pool-to-pond funding
-Local ponds can apply for funds from the pool resulting in so called "contract-to-contract (C2C) lending". Depending on the pond ﬁnancing period, fund requirements, proposed risk model and eligibility criteria, the pool owner (Liquidity Provider) decides to approve or not the funding to the pond. This is how it works:
+Local ponds can apply for funds from the pool resulting in so called "contract-to-contract (C2C) lending". Depending on the pond financing period, fund requirements, proposed risk model and eligibility criteria, the pool owner (Liquidity Provider) decides to approve or not the funding to the pond. This is how it works:
 ```mermaid
 sequenceDiagram
     participant Lending App (Lender)
@@ -101,7 +101,7 @@ sequenceDiagram
     Lending App-->>Liquidity Provider: "Successful deposit"
     deactivate Lending App
     Pool SC->>Pool SC: Generate yield through funding ponds
-    Liquidity Provider->>Lending App: Request widhrawal
+    Liquidity Provider->>Lending App: Request withdrawal
     activate Lending App
     Lending App->>+Pool SC: Request withdrawal
     Pool SC->>Pool SC: Check available funds

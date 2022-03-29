@@ -28,7 +28,7 @@ This issuing process could be part of an Onboarding process ([Borrower Onboardin
 Several examples of verifiable credentials are presented in the sections below.
 
 ### KYC Credential
-In regulated custodial model, a verifiable credential for successfully passed KYC process (including AML/CFT risk check) is a must. Individual KYC credential can be requested from the Borrowers, when applying for a loan. In addition, institutional KYC credential could be requsted from Lenders, when trying to create or fund a lending pond, or from Liqudity Providers, when trying to create or fund a lending pool.
+In regulated custodial model, a verifiable credential for successfully passed KYC process (including AML/CFT risk check) is a must. Individual KYC credential can be requested from the Borrowers, when applying for a loan. In addition, institutional KYC credential could be requested from Lenders, when trying to create or fund a lending pond, or from Liquidity Providers, when trying to create or fund a lending pool.
 
 KYC Credential Issuer could be any traditional identity verification service or the Distributor itself.
 
@@ -38,17 +38,17 @@ Issuing of credit score credentials can simplify the loan application process, e
 Credit Score Credential Issuer could be any risk scoring services, owned or accredited by a trusted Verifier.
 
 ### Financial Health Credential
-The Growr protocol incentivizes good ﬁnancial health and improving ﬁnancial literacy and behaviors through gamification. Thus, the protocol encourages including the Financial Health credentials to every pond eligibility criteria; that is, before applying for a loan, the user must go through education and mentoring for "financial health treatment".
+The Growr protocol incentivizes good financial health and improving financial literacy and behaviors through gamification. Thus, the protocol encourages including the Financial Health credentials to every pond eligibility criteria; that is, before applying for a loan, the user must go through education and mentoring for "financial health treatment".
 
 Financial Health Credential Issuer could be any educational service, voted as "trusted" by the protocol.
 
 ### Savings History Credential
-The Growr protocol incentivizes good ﬁnancial discipline and habits. With this regard, the protocol encourages including "savings history" credentials to every pond eligibility criteria; that is, before applying for a loan, the user must create a habit for regular micro-payments to his saving account.
+The Growr protocol incentivizes good financial discipline and habits. With this regard, the protocol encourages including "savings history" credentials to every pond eligibility criteria; that is, before applying for a loan, the user must create a habit for regular micro-payments to his saving account.
   
 Savings History Credential Issuer could be any financial institution (where the user has a saving account) or financial data processing service (to which the user provides account statement information), voted as "trusted" by the protocol.
 
 ### Social Vouching Credentials
-Through social vouching, the Borrowers have the opportunity to create their personal networks. They can request and receive endorsement (in the form of Social Vouching credentials) from other users, and thus improve their creditworthness. We believe that endorsement and social affiliation will prove to be key instruments for reducing the cost of risk in decentralized lending environment.
+Through social vouching, the Borrowers have the opportunity to create their personal networks. They can request and receive endorsement (in the form of Social Vouching credentials) from other users, and thus improve their creditworthiness. We believe that endorsement and social affiliation will prove to be key instruments for reducing the cost of risk in decentralized lending environment.
 
 Social Vouching Credential Issuer could be any risk reviewer, accredited by a trusted Verifier, or any protocol user with certain reputation level (rules to be decided and voted by the protocol community).
 

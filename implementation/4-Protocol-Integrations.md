@@ -1,4 +1,4 @@
-# Third-pary services
+# Third-party services
 ## Credential Issuing services
 [Sample VC Issuing service](https://github.com/growr-xyz/vc-issuer)
 

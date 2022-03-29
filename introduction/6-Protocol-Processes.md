@@ -31,6 +31,6 @@ In custodial model, the Borrowers access the protocol via Borrowing app, provide
 ![Growr Custodial model](../images/growr-custodial.png)
 
 ## Non-Custodial Model
-The non-custodial model allows full decentralization of the protocol. Borrowers access the protol using a dApp having their wallet connected and all translactions are executed on-chain.
+The non-custodial model allows full decentralization of the protocol. Borrowers access the protocol using a dApp having their wallet connected and all transactions are executed on-chain.
 
 ![Growr Non-Custodial model](../images/growr-non-custodial.png)

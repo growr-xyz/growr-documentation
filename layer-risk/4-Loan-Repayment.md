@@ -57,4 +57,4 @@ sequenceDiagram
     Pond SC->>Loan Registry SC: Register new message
     deactivate Pond SC
 ```
-Loan repayment is initiated and executed off-chain. The Pond smart contract receives a **"proof-of-pay"** receipt from the Borrowing App and based on it the smart contrat prepares the repayment commitment message, requests signature on it and registers it.
+Loan repayment is initiated and executed off-chain. The Pond smart contract receives a **"proof-of-pay"** receipt from the Borrowing App and based on it the smart contract prepares the repayment commitment message, requests signature on it and registers it.

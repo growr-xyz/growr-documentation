@@ -1,10 +1,15 @@
 # Welcome to Growr!
 
-# Introduction
-- [click here](/introduction/)
+## Introduction
+- [Introduction](/introduction/)
+- [Litepaper PDF](/litepaper/Growr-litepaper.pdf)
 
-# How it works
-- [click here](/flows/)
+## How it works
+- [Distribution & Identity](/layer-distribution-identity/)
+- [Risk Management](/layer-risk/)
+- [Liquidity](/layer-liquidity/)
+- [Payments](/layer-payments/)
+- [Governance](/layer-governance/)
 
-# Architecture
-- [click here](/architecture/)
+## Implementation
+- [Implementation](/implementation/)

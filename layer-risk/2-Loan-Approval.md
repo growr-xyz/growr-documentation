@@ -61,7 +61,7 @@ sequenceDiagram
     deactivate Pond SC
     deactivate Borrowing App
 ```
-In a custodial model, the Borrowers applys for a loan to the protocol using a custodial mobile or web application. The non-custodial loan approval flow is almost the same. The main difference is that instead of Borrowing App, the borrower would use an Agent App with connected self-managed wallet.
+In a custodial model, the Borrowers apply for a loan to the protocol using a custodial mobile or web application. The non-custodial loan approval flow is almost the same. The main difference is that instead of Borrowing App, the borrower would use an Agent App with connected self-managed wallet.
 
 The key role in the process is played by the Risk Assessor who safely and securely perform the following assessment:
 - Verify that the Borrower has all the necessary credentials
@@ -69,7 +69,7 @@ The key role in the process is played by the Risk Assessor who safely and secure
 - Optionally request and ensure that the loan application is reviewed and confirmed
 - Optionally request and ensure that the Borrower has the necessary credit score
   
-Upon succesful completion of all verification checks, the Risk Assessor creates a lightweight privacy-preserving **Verification Result** assesting that a given Borrower matches the eligibility criteria of a given pond. The Risk Assessor hashes and signs the result and return it back to the Borrowing App for further use in the smart contract transaction. Note that the verification result does not contain credentials to prevent leakage of sensitive personal information on-chain.
+Upon successful completion of all verification checks, the Risk Assessor creates a lightweight privacy-preserving **Verification Result** asserting that a given Borrower matches the eligibility criteria of a given pond. The Risk Assessor hashes and signs the result and return it back to the Borrowing App for further use in the smart contract transaction. Note that the verification result does not contain credentials to prevent leakage of sensitive personal information on-chain.
 
 Having the result from the Risk Assessor, the Distributor calls the loan application function of the Pond smart contract. The latter passes the verification result and Risk Assessor's signature as parameters to the Trusted Service Registry contract function for validation. The registry uses the signature and the verification result to confirm whether or not the result corresponds to the public address of a trusted Verifier configured in the registry contract.
 
