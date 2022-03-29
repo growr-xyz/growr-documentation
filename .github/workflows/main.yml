@@ -34,11 +34,11 @@ jobs:
         id: upload-document
         with:
           name: 'Growr-litepaper.pdf'
-          path: ${{ steps.publish-document.outputs.pdf }}
+          path: 'introduction/Growr-litepaper.pdf'
           
       # Concat MD files
       - name: Concat document files
         uses: bayssmekanique/action-md-concat@v1.1.0
         with:
-          srcDir: introduction
-          destFile: Growr-litepaper.md
+          srcDir: 'introduction'
+          destFile: 'Growr-litepaper.md'
