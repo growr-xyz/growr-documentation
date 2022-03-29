@@ -12,7 +12,7 @@ We propose the **Growr protocol** as a bridge to a new global financial environm
 
 Growr protocol addresses the problems stated above with the following elements: 
 - **Growr core protocol** – a decentralized smart contract ecosystem for funding and consuming loans on top of the RSK blockchain, with open access for everyone.
-- **Self-sovereign ﬁnancial identity (SSFI)** – a digital identity, based on W3C DID standard, owned and managed by the user.
+- **Self-sovereign ﬁnancial identity (SSFI)** – a digital identity, based on W3C's DID and VC standards, owned and managed by the user.
 - **Protocol access via web and mobile applications** - a simple and secure way for consumers and merchants to easily apply and obtain fair loans.
 - **Credit risk assessment** – a framework for establishing trust using a combination of alternative approaches such as on-chain activity, trusted off-chain sources, peer vouching, and others.
 - **Growr DAO** - a future decentralized autonomous organization for protocol governance and fair compensation of protocol contributors.
