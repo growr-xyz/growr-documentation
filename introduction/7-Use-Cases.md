@@ -10,7 +10,7 @@ The global microfinance market amounted to $124B in 2018 [(link)](https://www.co
 The global buy now pay later market size is expected to reach USD 20.40 billion by 2028, registering a CAGR of 22.4% from 2021 to 2028 [(link)](https://www.researchandmarkets.com/reports/5416019/global-buy-now-pay-later-market-size-share-and). However, this business model remains out of reach for micro-merchants in the developing world. Enabling access to a global lending protocol at a local shop could prove transformational for the local communities.
 
 ## Lending to vulnerable social groups
-Vulnerable populations such as victims of violence and micro-merchants from poor communities are a prime beneficiary of the protocol. Such populations can rely on memberships within local associations, who can become both credential providers and funding donors.
+Vulnerable populations such as victims of violence, natural and man-made disasters, as well as micro-merchants from poor communities are a prime beneficiary of the protocol. Such populations can rely on memberships within local associations, who can become both credential providers and funding donors.
 
 ## Donation impact transparency
 In addition to lending, donations can also benefit from a global and open protocol, giving the donors a complete transparency of the impact of each dollar they give.
