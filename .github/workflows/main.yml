@@ -44,9 +44,18 @@ jobs:
         with:
           srcDir: './introduction'
           destFile: './litepaper/Growr-litepaper.md'
-      
+  
+      - name: Convert MD to PDF
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_dir: litepaper
+          output_dir: litepaper
+          images_dir: images
+          image_import: ./images
+          build_html: false
+
       - name: Add to repo
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'Add new Litepaper MD'
-          add: './litepaper/Growr-litepaper.md --force'
+          message: 'Add new Litepaper PDF'
+          add: './litepaper/Growr-litepaper.pdf --force'
