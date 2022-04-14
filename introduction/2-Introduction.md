@@ -16,8 +16,7 @@ To addresses the problems stated above, the protocol implements at its core the 
 3. **Trusted parties** (financial providers, merchants, employers, NGOs) are incentivized to provide credentials for the borrowers.
 4. **Global investors** provide funds to a global marketplace to generate yield on excess capital. They receive flexibility in defining their risk/reward preferences and end-to-end transparency in their capital allocation.
 
-## How it works
-Below is a high-level overview of Growr protocol architecture:
+Below is a high-level overview of Growr protocol:
 ![How it works](../images/growr-how-it-works.png)
 
 The key components of the protocol are: 

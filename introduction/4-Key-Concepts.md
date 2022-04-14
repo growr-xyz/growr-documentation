@@ -62,7 +62,7 @@ Local ponds apply for funds from the pool resulting in so called "contract-to-co
 
 Therefore, the protocol implements automatic pond liquidity management. Moreover, in some of the future protocol versions, we envision integration with lending pools of other liquidity protocols.
 
-### Financial health
+## Financial health
 
 ### Financial health dimensions
 Dealing with money, especially borrowed from others, requires knowledge and high responsibility. That’s why it is very important that everyone gets a financial health treatment for long-term improvement of their financial health. It’s not about a single transaction, but achieving more throughout people's lives, and ultimately reaching a better lifestyle and financial independence.
