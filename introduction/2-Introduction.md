@@ -5,44 +5,28 @@ Financial health is an important factor in our daily life. However, bad financia
 
 At the same time, even people who have savings in cash or in a bank account are also impacted. On the one hand, macroeconomic events, such as high inflation, are literally “eating their money” and on the other hand, they are not able to acknowledge the disruptive change that is happening to the financial system.
 
-Today, most financial service providers do not solve those problems. They are clueless about people's real-life problems, needs and aspirations. There's a complete disconnect between the person and the provider. Banks, and even more so non-banking lenders, have a negative image especially with younger generation, who, as a result, are more likely to go to the dentist than visit a bank
+Today, most financial service providers do not solve those problems. They are clueless about people's real-life problems, needs and aspirations. There's a complete disconnect between the person and the provider. Banks, and even more so non-banking lenders, have a negative image especially with younger generation, who, as a result, are more likely to go to the dentist than visit a bank.
 
 ## Solution
-We propose the **Growr protocol** as a bridge to a new global financial environment. The Growr protocol advances financial inclusion by enabling borrowers to receive fair & instant unsecured loans based on a self-sovereign identity.
+We propose the **Growr protocol** as a bridge to a new global financial environment. The Growr protocol combines instant unsecured loans, innovative credit assessment models, decentralized identity and financial health incentivization.
 
-Growr protocol addresses the problems stated above with the following elements: 
-- **Growr core protocol** – a decentralized smart contract ecosystem for funding and consuming loans on top of the RSK blockchain, with open access for everyone.
-- **Self-sovereign financial identity (SSFI)** – a digital identity, based on W3C's DID and VC standards, owned and managed by the user.
-- **Protocol access via web and mobile applications** - a simple and secure way for consumers and merchants to easily apply and obtain fair loans.
-- **Credit risk assessment** – a framework for establishing trust using a combination of alternative approaches such as on-chain activity, trusted off-chain sources, peer vouching, and others.
-- **Growr DAO** - a future decentralized autonomous organization for protocol governance and fair compensation of protocol contributors.
+To addresses the problems stated above, the protocol implements at its core the following concepts:
+1. **Borrowers** collect credentials based on alternative data into their own self-sovereign financial record. This provides even unbanked and traditionally excluded population with access to loans with fair conditions.
+2. **Lenders** use these borrowers' credentials to better assess creditworthiness. They are able to apply flexible local risk policies such as social vouching or savings discipline.
+3. **Trusted parties** (financial providers, merchants, employers, NGOs) are incentivized to provide credentials for the borrowers.
+4. **Global investors** provide funds to a global marketplace to generate yield on excess capital. They receive flexibility in defining their risk/reward preferences and end-to-end transparency in their capital allocation.
 
-Growr protocol is built around the foundation Growr values:
-- **Freedom**. Growr ensures equal starting point and free access to the protocol for everyone.
-- **Transparency**. Growr provides services with fair conditions, end-to-end transparency in the process and visible impact.
-- **Contribution**. Growr promotes open-source, community-driven, and safe environment.
-- **Empowerment**. Growr delivers global life-first innovative financial services.
+## How it works
+Below is a high-level overview of Growr protocol architecture:
+![How it works](../images/growr-how-it-works.png)
+
+The key components of the protocol are: 
+- **Growr core protocol** – a decentralized smart contract ecosystem for funding and consuming loans on top of blockchain, with open access for everyone.
+- **Self-sovereign financial identity (SSFI)** – a digital identity, based on W3C's DID and VC standards, owned and managed by the user, and storing their credentials.
+- **Web and mobile applications for protocol access** (often provided by Distributors) - a simple and secure way for borrowers to easily apply and obtain fair loans.
+- **Credit risk assessment** – a framework for establishing trust including issuing of verifiable credentials, presenting those credentials to risk assessors for verification, and creation of verification record that asserts the borrower's eligibility.
+- **Growr DAO** - a future decentralized autonomous organization for protocol governance and fair compensation of trusted protocol contributors.
   
-## Benefits
-The Growr protocol distributes the generated value fairly between all ecosystem participants.
 
-### For Global Investors
-Growr protocol delivers value to **global investors** as Liquidity Providers:
-- Yield generation on excess capital
-- Flexibility in defining risk/reward preferences in a global marketplace
-- End-to-end transparency in capital allocation
 
-### For Local Communities
-Growr protocol delivers value to **local communities** and **last-mile financial service providers** as Lenders and Distributors:
-- Access to credit from a global marketplace
-- Facilitation of access to credit for community members by managing local risk policies and enabling social vouching 
-- Yield generation for local lenders
-- Revenue growth for merchants through buy now, pay later scheme
-
-### For Borrowers
-Growr protocol delivers value to **borrowers**:
-- Access to loans for unbanked and excluded population
-- Loans with fair conditions 
-- Self-sovereign credit record 
-- Promotion of financial health and savings accumulation
 
