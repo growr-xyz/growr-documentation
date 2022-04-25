@@ -11,10 +11,17 @@ Our goal is to develop Growr as an open source protocol. Lending, and especially
 Please, submit an issue or pull request at [Growr documentation repo in GitHub](https://github.com/growr-xyz/growr-documentation/).
 
 ## Contribution
-Growr protocol is an open-source decentralized project and anyone can permissionlessly contribute to its development. We truly hope that the mission and values we describe inspire teams across the world to join us and help contribute to the protocol.
+Growr protocol is an open-source decentralized project and anyone can permissionlessly contribute to its development. Developing the protocol, the team abide to the following values:
+- **Freedom**. Growr ensures equal starting point and free access to the protocol for everyone.
+- **Transparency**. Growr provides services with fair conditions, end-to-end transparency in the process and visible impact.
+- **Contribution**. Growr promotes open-source, community-driven, and safe environment.
+- **Empowerment**. Growr delivers global life-first innovative financial services.
+
+We truly hope that the mission and values we describe inspire teams across the world to join us and help contribute to the protocol.
 
 Join us!
 - [Growr repos in GitHub](https://github.com/growr-xyz)
+- [Growr protocol specification](https://growr-xyz.github.io/growr-documentation/)
 - [Growr official web site](https://www.growr.xyz)
 - [Growr in Twitter](link)
   
