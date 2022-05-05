@@ -3,7 +3,7 @@
 ## ToDo
 You are reading first version of Growr protocol documentation, intended to present the high-level design of the protocol for public feedback. It should not be considered complete or final. Future revisions will address incomplete elements and currently unforeseen aspects and issues.
 
-The present Growr documentation version is *0.2*.
+The present Growr documentation version is *0.2.1*.
 
 ## Feedback
 Our goal is to develop Growr as an open source protocol. Lending, and especially *decentralized uncollateralized lending*, is a very complex topic and there are many aspects that are yet to consider. We welcome your input on how to improve the protocol.

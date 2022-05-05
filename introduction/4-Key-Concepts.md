@@ -28,15 +28,20 @@ Verifiable credentials can be (but are not limited to):
 
 ## Decentralized lending
 
-### Lending protocols
+### Traditional lending & microfinance
+In traditional lending, a loan is given by lenders (banks and other financial institutions) to borrowers, and the borrowers repay the loan together with the lending price (the interest). The lender determines all loan conditions - accepted risk levels, required collaterals, interest rates, fees, and etc. If the lender feels there's a higher risk of not being paid back by a borrower, they will charge that borrower a higher interest rate. With this model, being poor is actually very expensive. Very often, the poorest are either excluded from the financial system or they fall prey to financial sharks offering loans at expensive and unfair conditions.
+
+Microfinance, as one of the lending model, aims at providing useful financial services to millions of people. Microfinance institutions (MFI) lend money on a large scale, usually to large group of people in dense regions, in a minimally subsidized, businesslike way. To monitor and manage multiple borrowing, MFIs rely on a combination of reputation, knowledge of the client, collateral, cosigners, and enforceable contracts. It is also very common for MFIs to use aggressive techniques to pursuit non-payers and press for repayment.
+
+All current lending models have something in common - they use intermediate organizations because it is impossible for the large capitalist to come into direct contact with each individual. The capitalist has no local knowledge of the individual and he could not keep millions of small accounts. We need a radically different way to include the poor population to the formal financial system and to connect them with the wealthy people and organizations.
+
+### Decentralized lending protocols
 Decentralized Finance (DeFi) have the potential to fundamentally reinvent the financial infrastructure enabling people to transact with each other globally, securely and permissionless. Important share in the DeFi ecosystem is taken by decentralized lending protocols and liquidity markets.
 
 Decentralized lending protocols let users lend or borrow digital assets without going to a centralized intermediary. Users deposit digital assets into liquidity pools, which become funds that the protocol can lend out to other users. A specific characteristic of the most popular protocols is that they require a collateral. This means that onchain assets of the borrower are used to secure a loan. The borrower provides the asset to secure the loan, and if the borrower defaults on the loan, the lender can take possession of the asset and sell it to cover their loss. Moreover, they often require overcollateralization i.e. the amount of locked assets as collateral exceeds the loan amount.
 
-### Growr's Decentralized risk management
-Growr protocol approaches lending differently. The protocol aims at providing instant insecure loans based on risk assessment instead of requiring an on-chain collateral. How it works? Borrowers collect credentials into their own private financial record, Lenders use these credentials to better assess creditworthiness, and Trusted parties are incentivized to provide the credentials.
-
-Smart contracts are usually not technically capable and economically practical at executing credit risk assessment operations themselves, and they cannot call upon external risk assessment services beyond the constraints of their own chain. Therefore, the credit risk assessment, the exchange and verification of credentials are all executed off-chain and then confirmed on-chain in a way that no personal data is stored on-chain.
+### Growr's decentralized credit risk management
+Growr protocol approaches lending differently. The protocol aims at providing instant insecure loans based on risk assessment and verifiable credentials instead of requiring an on-chain collateral. How it works? Borrowers collect credentials into their own private financial record, Lenders use these credentials to better assess creditworthiness, and Trusted parties are incentivized to provide the credentials.
 
 Growr protocol introduces an innovative approach for decentralized credit risk management, in which the responsibility is split between all protocol participants:
 - *Credential Issuers* assert facts about the borrowers in the form of credentials.
@@ -74,7 +79,7 @@ Financial Health treatment includes building knowledge and proper habits in 4 fi
 - *Planning*. The Plan dimension is perhaps the most important indicator for people's ability to maintain financial health in the long run. Most people do not have a systematic approach to considering two key elements in financial planning -  potential risks and key life events in the future. Tomorrow starts today!
 
 ### Growr's incentivization concept
-The Growr protocol incentivizes good financial health – that is, improving financial literacy and behaviors. 
+We, in Growr, understand that delivering money and financial services to the poor does not mean reducing their poverty. Therefore, the Growr protocol is designed to incentivize good financial health – that is, improving financial literacy and behaviors. 
 
 To promote improving financial literacy and behaviors, Growr protocol encourages the implementation and use of the following concepts:
 - **"Learn and earn"**; that is, before applying for a loan, the user must go through education and mentoring program in order to collect credentials for financial health improvement.

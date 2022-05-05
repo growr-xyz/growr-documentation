@@ -24,7 +24,7 @@ The key components of the protocol are:
 - **Self-sovereign financial identity (SSFI)** – a digital identity, based on W3C's DID and VC standards, owned and managed by the user, and storing their credentials.
 - **Web and mobile applications for protocol access** (often provided by Distributors) - a simple and secure way for borrowers to easily apply and obtain fair loans.
 - **Credit risk assessment** – a framework for establishing trust including issuing of verifiable credentials, presenting those credentials to risk assessors for verification, and creation of verification record that asserts the borrower's eligibility.
-- **Growr DAO** - a future decentralized autonomous organization for protocol governance and fair compensation of trusted protocol contributors.
+
   
 
 

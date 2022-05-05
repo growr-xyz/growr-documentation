@@ -9,5 +9,5 @@
 [Sample Risk Assessment service](https://github.com/growr-xyz/vc-issuer)
 
 ## SSFI Storage services
-[Sample decentralized storage service](https://github.com/rsksmart/rif-data-vault)
+[Sample decentralized secure data store](https://github.com/rsksmart/rif-data-vault)
 

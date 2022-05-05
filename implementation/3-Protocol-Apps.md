@@ -14,7 +14,7 @@ Growr Protocol App is an open-source application, built to demonstrate the conce
 
 For more details on Growr protocol app, please visit [Growr protocol app's repo in Github](https://github.com/growr-xyz/growr-protocol-app/wiki).
 
-To try out a demo app: [Click here](httf4-demo.app.protocol.growr.xyz)
+To try out a demo app: [Click here](https://httf4-demo.app.protocol.growr.xyz)
 
 ## Borrowing Apps
 Borrowing Apps are end-user web and mobile applications. Such applications can be provided either by an independent last-mile financial service providers in a regulated custodial scenario, by local communities or as completely decentralized dApps providing the necessary access to the protocol.
@@ -44,8 +44,8 @@ Growr SSFI Agent App has integration with:
 - Integration with Growr core protocol for applying for a loan, loan repayment and management.
 - Integration with sample credential issuing service for claiming VCs.
 - Integration with sample credential verifier service for verification of VCs.
-- Integration with RIF Data Vault for storage of SSFI and verifiable credentials.
+- Integration with RIF Data Vault for secure storage of SSFI and verifiable credentials.
 
 For more details on the application, please visit [Growr SSFI Agent App's repo in Github](https://github.com/growr-xyz/growr-ssfi-agent-app/wiki).
 
-To try out a demo app: [Click here](httf4-demo.ssfi.protocol.growr.xyz)
+To try out a demo app: [Click here](https://httf4-demo.ssfi.protocol.growr.xyz)

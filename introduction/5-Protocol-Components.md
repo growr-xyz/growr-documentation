@@ -10,7 +10,7 @@ Growr protocol ecosystem consists of the following components:
   * *Pond* smart contracts. Support deposit & withdrawal operations from its owner, provide loan offers and enable users to apply for loans.
   * *Trusted Service Registry* smart contract. Supports verification of risk assessment results.
   * *Loan Registry* smart contract. Registers privacy-preserving history of loan repayment commitments, supports issuing of on-chain verifiable credentials. 
-- **SSFI**. SSFI is a unique global decentralized identity storing various protocol-specific verifiable credentials. The SSFI is owned and managed by the user, and their data is cryptographically encrypted and stored in a secured storage.
+- **SSFI**. SSFI is a unique global decentralized identity storing various protocol-specific verifiable credentials. The SSFI is owned and managed by the user, and their data is cryptographically encrypted and stored in a secure data store.
 - **Protocol Apps**. Custodial or non-custodial web and mobile applications, integrated with the protocol. Include:
   * *Borrowing Apps* (Distribution Apps). End-user web or mobile application for the Borrowers to onboard, collect credentials and apply for loans to the protocol. Such applications can be provided either by an independent last-mile financial service providers in a regulated custodial scenario, by local communities or as completely decentralized dApps providing the necessary access to the protocol.
   * *Lending Apps* (Liquidity Apps). dApps for lending pools and pond management. Those applications include creation of pools/ponds, depositing and withdrawal of funds, and monitoring utilization and profitability performance.
