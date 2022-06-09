@@ -4,13 +4,12 @@ Growr protocol introduces an innovative approach for decentralized credit risk m
 The approach follows several key principles.
 ## Responsibility split
 Each participant in the ecosystem has a risk management role:
-- **Credential Issuers** assert facts about the Borrowers in the form of credentials.
-- **Credential Verifiers** validates the credentials.
-- **Risk Assessors** orchestrate the risk assessment activities and confirms that a Borrower matches the loan requirements.
-- **Trusted Registries** validate that credentials are issued by trusted Issuers and risk assessments are prepared by trusted Risk Assessors.
-- **Pond Smart Contracts** take decision based on the input from the above-mentioned risk management service providers.
-- **Lenders** distribute part of the profit with all participants to motivate them to properly execute their risk management functions.
-- **Protocol Governance Board** decides which participants are trusted and excludes the ones that misbehave.
+- *Credential Issuers* assert facts about the borrowers in the form of credentials.
+- *Credential Verifiers* validates the credentials and asserts borrower's eligibility to receive a loan from a given credit line.
+- *Risk Assessors* review credit line proposals and determine their credit rating.
+- *Trusted Registries* validate that credentials are issued by trusted issuers.
+- *Smart Contracts* take decision based on the input from the above-mentioned stakeholders.
+- *Protocol Governance Board* decides which participants are trusted and excludes the ones that misbehave.
   
 ## Incentivization
 Each participant is incentivized by the protocol to fairly fulfil its duties, as follows:

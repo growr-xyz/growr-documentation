@@ -17,8 +17,8 @@
 
 ## Protocol Apps
 **Protocol Apps** are custodial or non-custodial web and mobile applications, integrated with the protocol. Include:
-- *Borrowing Apps* (Distribution Apps). End-user web or mobile application for the Borrowers to onboard, collect credentials and apply for loans to the protocol. Such applications can be provided either by an independent last-mile financial service providers in a regulated custodial scenario, by local communities or as completely decentralized dApps providing the necessary access to the protocol.
-- *Lending Apps* (Liquidity Apps). dApps for lending pools and pond management. Those applications include creation of pools/ponds, depositing and withdrawal of funds, and monitoring utilization and profitability performance.
+- *Borrowing Apps* (Distribution Apps). End-user web or mobile applications for the Borrowers to onboard, collect credentials and apply for loans to the protocol. Such applications can be provided either by an independent last-mile financial service providers in a regulated custodial scenario, or by local communities, or as completely decentralized dApps providing the necessary access to the protocol.
+- *Lending Apps* (Liquidity Apps). dApps for lending pool and pond management. Those applications include creation of pools/ponds, depositing and withdrawal of funds, and monitoring utilization and profitability performance.
 - *Governance Apps*. dApps for protocol monitoring, changes implementation and fraud prevention.
 
 ## Protocol Services

@@ -3,10 +3,10 @@
 ## Decentralized identity
 
 ### DIDs
-Growr protocol implements W3C’s standard for decentralized identity (DID). DID is a new type of identifier that enables verifiable, decentralized digital identity. DIDs are URIs that associate a DID subject (e.g., a person, organization, thing, data model, abstract entity, etc.) with a DID document allowing trustable interactions associated with that subject. DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help enable the discovery of information related to a DID, the design enables only the controller of a DID to prove control over it without requiring permission from any other party. More info about DIDs on [https://www.w3.org/TR/did-core](https://www.w3.org/TR/did-core).
+Growr protocol implements W3C’s architecture for decentralized identity (DID). DID is a new type of identifier that enables verifiable, decentralized digital identity. DIDs are URIs that associate a DID subject (e.g., a person, organization, thing, data model, abstract entity, etc.) with a DID document allowing trustable interactions associated with that subject. DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help enable the discovery of information related to a DID, the design enables only the controller of a DID to prove control over it without requiring permission from any other party. More info about DIDs on [(this link)](https://www.w3.org/TR/did-core).
 
 ### VCs
-Growr protocol implements W3C’s standard for **Verifiable Credentials (VCs)**. Verifiable Credentials (VC) are global uniformed provable claims associated with the subject of the DID. They are cryptographically secure, privacy respecting, tamper-evident and machine verifiable. They can be used to build universally verifiable presentations, which can also be cryptographically-verified.
+Growr protocol implements W3C’s architecture for **Verifiable Credentials (VCs)**. Verifiable Credentials (VC) are global uniformed provable claims associated with the subject of the DID. They are cryptographically secure, privacy respecting, tamper-evident and machine verifiable. They can be used to build universally verifiable presentations, which can also be cryptographically-verified.
 
 Verifiable credentials are provided by **Credential Issuers** – that is, centralized or decentralized third parties, asserting certain facts about the DID owner. Verifiable credentials are consumed by **Verifiers** using the concepts and data models for **presentation exchange**. Verifiers verify that:
 - The credential presentation is signed with the subject's DID.
@@ -14,7 +14,7 @@ Verifiable credentials are provided by **Credential Issuers** – that is, centr
 - The credential is not expired.
 - The credential is not revoked.
 
-More info about VCs on [https://www.w3.org/TR/vc-data-model](https://www.w3.org/TR/vc-data-model).
+More info about VCs on [(this link)](https://www.w3.org/TR/vc-data-model).
 
 ### Growr's Self-sovereign financial identity
 The Growr protocol relies on a new type of decentralized identity that we call the **Self-sovereign Financial Identity (SSFI)**. The SSFI is intended to represent user's unique global identity and financial record, storing various protocol-specific verifiable credentials based on borrower's financial health metrics, on-chain activity, trusted off-chain data, peer vouching, and others. SSFI is the borrowers' financial record in their pocket.
@@ -22,13 +22,13 @@ The Growr protocol relies on a new type of decentralized identity that we call t
 Verifiable credentials in SSFI can be (but are not limited to):
 - *KYC* credential. This credential proves successfully passed KYC process (including AML/CFT risk check) and can be issued by any last-mile provider or a traditional third-party identity verification service.
 - *Financial Data* credential. This credential contains various financial data of a user (such as products and transaction history) and can be issued by any financial institution (where the user has a saving account) or trusted financial data processing service (to which the user provides account statement information).
-- *Savings History* credential. This credential proves that the user is making regular micro-payments to his saving account. It could be issued by any trusted financial institution or savings account provider.
+- *Savings History* credential. This credential proves that the user is making regular micro-payments to his/her saving account. It could be issued by any trusted financial institution or savings account provider.
 - *Financial Health* credential. This is a special credential issued by the protocol itself for successfully passed "financial health treatment" through education and/or mentoring, as well as earned through regular on-time repayments of past loans received by the protocol.
 - *Community certificate* credential. This credential is issued by a local organization (cooperative, union, chamber) or an employer, asserting the membership of the borrower in the organization.
 - *Social Vouching* credential. This credential is received by endorsement from other protocol users, who have certain reputation level and/or are trusted by the protocol.
 - *Credit Score* credential. This is a "combined" credential, summarizing other atomic credentials, and representing the overall credit score of the Borrower.
 
-## Decentralized lending
+## Lending
 
 ### Traditional lending 
 In traditional lending, a loan is given by lenders (banks and other financial institutions) to borrowers, and the borrowers repay the loan together with the lending price (the interest). But this price appears to be very high, especially for people around the world that live with less than $2 per day. 
@@ -55,7 +55,7 @@ Growr protocol introduces an innovative approach for decentralized credit risk m
 - *Credential Verifiers* validates the credentials and asserts borrower's eligibility to receive a loan from a given credit line.
 - *Risk Assessors* review credit line proposals and determine their credit rating.
 - *Trusted Registries* validate that credentials are issued by trusted issuers.
-- *Smart Contracts* take decision based on the input from the above-mentioned risk management service providers.
+- *Smart Contracts* take decision based on the input from the above-mentioned stakeholders.
 - *Protocol Governance Board* decides which participants are trusted and excludes the ones that misbehave.
 
 Each participant is incentivized by the protocol to fairly fulfil its duties, as follows:
@@ -63,12 +63,12 @@ Each participant is incentivized by the protocol to fairly fulfil its duties, as
 - Trusted parties (*Credential Issuers* and *Risk Assessors*) receive a fee for the services they provide. In case of poor execution of their risk management function, the respective participant is blacklisted from the protocol. 
 - *Lenders* and *Liquidity Providers* distribute part of the profit with all participants to motivate them to properly execute their risk management functions in order to decrease their cost of default and respectively to increase their profit.
 
-### Growr's 2-level pooling
-The Growr protocol is able to operate on 2 levels – global pools and local ponds. Global pools are funded by Liquidity Providers who then delegate the actual lending activity to local guilds with local lending ponds.
+### Growr's two-tier pooling
+The Growr protocol is able to operate on 2 tiers – global pools and local ponds. Global pools are funded by Liquidity Providers who then delegate the actual lending activity to local guilds with local lending ponds.
 
 A lending pool can be created by any institutional investor with enough capital who specifies the initial pool parameters. Liquidity Providers can safely deposit funds into lending pools according to their preferences. Lending pools can be provided either by traditional financial service providers, as well as by DeFi lending protocols.
 
-Lending ponds represent specific loan offers in the global marketplace. There are 2 common ways to create a lending pond. In the first use case, lending ponds are created by local lenders (FinTechs or other financial service providers). Different lenders have varying levels of risk tolerance, depending on the laws and regulations in their jurisdictions, as well as on their profit goals. Therefore, each pond can have its own parameters (such as loan amount and duration), rates and eligibility criteria. 
+Lending ponds (credit lines) represent specific loan offers in the global marketplace. There are 2 common ways to create a lending pond. In the first use case, lending ponds are created by local lenders (FinTechs or other financial service providers). Different lenders have varying levels of risk tolerance, depending on the laws and regulations in their jurisdictions, as well as on their profit goals. Therefore, each pond can have its own parameters (such as loan amount and duration), rates and eligibility criteria. 
 
 In the second use case, local organizations or cooperatives, in partnership with retailers or employers or other participants in the respective local economy, submit a joint proposal for credit line to one or more lenders. The lender assesses the proposed loan parameters, price (rate and fees) and eligibility criteria, and approve or reject the credit line. In case of positive outcome, the lender publishes the new loan offer to the marketplace and thus creates the pond.
 
@@ -91,7 +91,7 @@ We, in Growr, understand that delivering money and financial services to the poo
 To promote improving financial literacy and behaviors, Growr protocol includes a set of embedded features that will enable borrowers to receive better financial services:
 - **"Learn and earn"**; that is, before applying for a loan, the user must go through education and mentoring program in order to collect credentials for financial health improvement.
 - **"Goal-based" financing"**; that is, before applying for a loan, the user must declare a specific goal related to his/her real-life need, and deposit initial savings towards it.
-- **"Savings discipline"**; that is, before applying for a loan, the user must create a saving habit by executing regular micro-payments to his saving account.
+- **"Savings discipline"**; that is, before applying for a loan, the user must create a saving habit by executing regular micro-payments to his/her saving account.
 - **"Financial reputation"**; that is, with regularly repaid loans and controlled spending habits, the user creates a long-term positive financial reputation that ultimately provide him access to benefits such as cash-back amounts and future loans with better conditions.
 
 The tools above are just the starting point of Growr's incentivization program, other tools will be designed and implemented with each future protocol version.

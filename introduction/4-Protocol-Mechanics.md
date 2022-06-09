@@ -2,10 +2,18 @@
 
 ## How it works
 Below is a high-level overview of Growr protocol:
-![How it works](../images/growr-how-it-works.png)
+![How it works](../images/growr-how-it-works.svg)
+
+How Growr works?
+(1) Local distributors (such as cooperatives, guilds, wholesale buyers or even MFIs) create credit line applications with details about their local activities and their financing needs. The distributors could also provide a partial collateral as a first-loss capital to cover potential losses from bad debtors.
+(2) Risk Assessors, working for a lender or provided by a third-party, review each credit line application, to assess the risk and provide a credit rating.
+(3) The lender (traditional financial institution or a fintech) approve the credit line if it fulfils the risk policy. Upon approval, the Lender creates and setups a lending pond in the loan marketplace with a predefined eligibility criteria.
+(4) Global liquidity providers can approve additional funding to the lending pond, fully delegating the actual lending activity to the lender and the protocol.
+(5) To enable the local community to access the loan marketplace, the distributor provides a borrowing application to its trusted community members. After quick onboarding, the borrowers must receive the required verifiable credentials in their financial record - either from the distributor or from other third parties (financial providers, merchants, wholesalers, employers, NGOs).
+(6) Borrowers go through a simple application process to receive the loan from the credit line after asserting their eligibility with the verifiable credentials. The disbursed amount is received by the borrowers in the borrowing application, where they can make a direct payment to a merchant or use it in another way to achieve their goals.
 
 The Growr protocol aims at standardization of the protocol mechanics. However, depending on the protocol participants and the tools and services they use, implementation details might vary. In general, we can distinguish the following use case specifics.
-- Protocol access: Custodial vs Non-custodial 
+- Protocol access: Custodial vs Non-custodial borrowing application
 - Liquidity: Separate Lender and Liquidity provider vs Lender providing the liquidity
 - Distribution: Separate Lender and Distributor vs Lender covering the distribution process
 - Loan payments: On-chain vs Off-chain
@@ -14,14 +22,14 @@ The Growr protocol aims at standardization of the protocol mechanics. However, d
 Before reviewing the participants in the protocol and their role, it is important to understand the abstract *layers* of the protocol:
 ![Growr protocol layers](../images/growr-layers-participants.svg)  
 
-Growr is a DeFi protocol with processes split on the several layers:
+Growr is a DeFi (dencetralized finance) protocol on top of RSK (bitcoin side-chain) with processes split on the several layers:
 - The processes in **Liquidity layer** are related to provisioning of the necessary funds for the protocol operation. Liquidity Providers and Lenders are collaborating on this layer.
 - The **Risk Management layer** is the key layer of the protocol, it's the "magic" of the protocol. All processes related to risk scoring and assessment, as well as loan management are happening on this layer.
 - The **Distribution** layer covers the processes of onboarding and providing Borrowers with access to the protocol.
 - The **Payments** layer combines all payment processes that occurs across all layers.
 - The processes for smart contract governance and fraud prevention are covered in the **Governance layer**.
 
-Detailed description of the processes can be found in the Protocol Specification on [https://growr-xyz.github.io/growr-documentation](https://growr-xyz.github.io/growr-documentation).
+Detailed description of the processes can be found in the [Protocol Specification](https://growr-xyz.github.io/growr-documentation).
 
 ## Protocol Participants
 
