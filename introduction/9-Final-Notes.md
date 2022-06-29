@@ -8,7 +8,7 @@ The present Growr documentation version is *0.3.0*.
 ## Feedback
 Our goal is to develop Growr as an open source protocol. Lending, and especially *decentralized uncollateralized lending*, is a very complex topic and there are many aspects that are yet to consider. We welcome your input on how to improve the protocol.
 
-Please, submit an issue or pull request at Growr documentation repo in GitHub on [https://github.com/growr-xyz/growr-documentation/](https://github.com/growr-xyz/growr-documentation/).
+Please, submit an issue or pull request at [Growr documentation repo in GitHub](https://github.com/growr-xyz/growr-documentation/).
 
 ## Contribution
 Growr protocol is an open-source decentralized project and anyone can permissionlessly contribute to its development. Developing the protocol, the team abide to the following values:
@@ -20,8 +20,8 @@ Growr protocol is an open-source decentralized project and anyone can permission
 We truly hope that the mission and values we describe inspire teams across the world to join us and help contribute to the protocol.
 
 Join us!
-- Growr repos in GitHub [https://github.com/growr-xyz](https://github.com/growr-xyz)
-- Growr protocol specification [https://growr-xyz.github.io/growr-documentation/](https://growr-xyz.github.io/growr-documentation/)
-- Growr official web site [https://www.growr.xyz](https://www.growr.xyz)
+- Growr repos in [GitHub](https://github.com/growr-xyz)
+- Growr [protocol specification](https://growr-xyz.github.io/growr-documentation/)
+- Growr [official web site](https://www.growr.xyz)
 - Growr in Twitter/Discord
   

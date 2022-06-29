@@ -1,7 +1,7 @@
 # Credentials Issuing
 
 ## Credentials Issuing
-Below is a standard process for credential issuing for Borrowers using a custodial distribution app, managing Borrower' SSFI and storing his credentials. In non-custodial model, the process is the almost the same - instead of custodial distribution app, the user would use a dApp with connected self-custody wallet. The process follows the same pattern in the cases when credentials are issued to other protocol participants (eg. Lenders and Liquidity providers).
+Below is a standard process for credential issuing for Borrowers using a custodial distribution app, managing Borrower' SSFI and storing his/her credentials. In non-custodial model, the process is the almost the same - instead of custodial distribution app, the user would use a dApp with connected self-custody wallet. The process follows the same pattern in the cases when credentials are issued to other protocol participants (eg. Lenders and Liquidity providers).
 ```mermaid
 sequenceDiagram
     participant Borrower
@@ -43,7 +43,7 @@ The Growr protocol incentivizes good financial health and improving financial li
 Financial Health Credential Issuer could be any educational service, voted as "trusted" by the protocol.
 
 ### Savings History Credential
-The Growr protocol incentivizes good financial discipline and habits. With this regard, the protocol encourages including "savings history" credentials to every pond eligibility criteria; that is, before applying for a loan, the user must create a habit for regular micro-payments to his saving account.
+The Growr protocol incentivizes good financial discipline and habits. With this regard, the protocol encourages including "savings history" credentials to every pond eligibility criteria; that is, before applying for a loan, the user must create a habit for regular micro-payments to his/her saving account.
   
 Savings History Credential Issuer could be any financial institution (where the user has a saving account) or financial data processing service (to which the user provides account statement information), voted as "trusted" by the protocol.
 
@@ -58,4 +58,4 @@ Growr protocol aims at incentivizing positive financial behavior. With this rega
 Loan History Credential Issuer is the Growr protocol itself. For more details, see [Loan History section](../layer-risk/6-Loan-History.md).
 
 ## Credentials Revocation
-Issuers might need to revoke a certain credential before is expires - when the subject is no longer eligible for the credential or when they need to correct or update the information in the credential. In order to achieve this, they must implement the W3C's standard for Status List - during credential issuing they would embed in the credential a url to fetch the revocation list and the index in the list that corresponds to the given credential.
+Issuers might need to revoke a certain credential before is expires - when the subject is no longer eligible for the credential or when they need to correct or update the information in the credential. In order to achieve this, they must implement the W3C's architecture design for Status List - during credential issuing they would embed in the credential a url to fetch the revocation list and the index in the list that corresponds to the given credential.
