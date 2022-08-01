@@ -12,8 +12,8 @@
 - *Trusted Service Registry* smart contract. Supports verification of risk assessment results.
 - *Loan Registry* smart contract. Registers privacy-preserving history of loan repayment commitments, supports issuing of on-chain verifiable credentials. 
 
-## SSFI
-**SSFI** is a unique global decentralized identity storing various protocol-specific verifiable credentials. The SSFI is owned and managed by the user, and their data is cryptographically encrypted and stored in a secure data store. The SSFI includes a DID and set of verifiable credentials stored in secure encrypted storage.
+## SSCR
+**SSCR** is a unique global decentralized identity storing various protocol-specific verifiable credentials. The SSCR is owned and managed by the user, and their data is cryptographically encrypted and stored in a secure data store. The SSCR includes a DID and set of verifiable credentials stored in secure encrypted storage.
 
 ## Protocol Apps
 **Protocol Apps** are custodial or non-custodial web and mobile applications, integrated with the protocol. Include:
@@ -25,6 +25,6 @@
 The Growr core protocol and applications is integrated with various internal or third-party services, covering mainly risk management functions. 
   * *Credential issuing services*. Issue verifiable credentials asserting certain facts about the borrower.
   * *Credential verification services*. Verify that presented credentials are trusted and valid, and owned by the subject.
-  * *Credential storage services*. Securely store the credentials and the declarative details, part of borrower's SSFI.
+  * *Credential storage services*. Securely store the credentials and the declarative details, part of borrower's SSCR.
   * *Payment services*. Cover various on-ramp, off-ramp services, and fiat settlement services.
 To implement the above services, the protocol utilizes various building blocks from RSK Infrastructure Framework (RIF).

@@ -16,10 +16,10 @@ Verifiable credentials are provided by **Credential Issuers** – that is, centr
 
 More info about VCs on [(this link)](https://www.w3.org/TR/vc-data-model).
 
-### Growr's Self-sovereign financial identity
-The Growr protocol relies on a new type of decentralized identity that we call the **Self-sovereign Financial Identity (SSFI)**. The SSFI is intended to represent user's unique global identity and financial record, storing various protocol-specific verifiable credentials based on borrower's financial health metrics, on-chain activity, trusted off-chain data, peer vouching, and others. SSFI is the borrowers' financial record in their pocket.
+### Growr's Self-sovereign credit record
+The Growr protocol relies on a new type of decentralized identity that we call the **Self-sovereign Credit Record (SSCR)**. The SSCR is intended to represent user's unique global identity and financial record, storing various protocol-specific verifiable credentials based on borrower's financial health metrics, on-chain activity, trusted off-chain data, peer vouching, and others. SSCR is the borrowers' financial record in their pocket.
 
-Verifiable credentials in SSFI can be (but are not limited to):
+Verifiable credentials in SSCR can be (but are not limited to):
 - *KYC* credential. This credential proves successfully passed KYC process (including AML/CFT risk check) and can be issued by any last-mile provider or a traditional third-party identity verification service.
 - *Financial Data* credential. This credential contains various financial data of a user (such as products and transaction history) and can be issued by any financial institution (where the user has a saving account) or trusted financial data processing service (to which the user provides account statement information).
 - *Savings History* credential. This credential proves that the user is making regular micro-payments to his/her saving account. It could be issued by any trusted financial institution or savings account provider.
@@ -33,24 +33,28 @@ Verifiable credentials in SSFI can be (but are not limited to):
 ### Traditional lending 
 In traditional lending, a loan is given by lenders (banks and other financial institutions) to borrowers, and the borrowers repay the loan together with the lending price (the interest). But this price appears to be very high, especially for people around the world that live with less than $2 per day. 
 
-The lenders determine by themselves all loan conditions - accepted risk levels, required collaterals, interest rates, fees, and etc. Very often, lenders don’t know the borrower and they lack the proper risk assessment tools to determine the creditworthiness of the borrowers. If the lenders feel there is a higher risk of not being paid back by a borrower, they will charge that borrower a higher interest rate. 
+The lenders determine by themselves all loan conditions - accepted risk levels, required collaterals, interest rates, fees, and etc. Very often, lenders don’t know the borrower and they lack the proper risk assessment tools to determine the creditworthiness of the borrowers. If the lenders feel there is a higher risk of not being paid back by a borrower, they will charge that borrower a higher interest rate.
+
+In the traditional lending, the lenders use the services of private companies or government agencies, playing the role of a credit bureau. They collect data about borrowers, they calculate their credit rating and sell it for their own benefit.
 
 With this model, being poor is actually very expensive because the poorest are either excluded from the financial system or they fall prey to financial sharks offering loans at expensive and unfair conditions.
 
 ### Microfinance
-Microfinance, as one of the lending models, aims at providing useful financial services to millions of people. Microfinance institutions (MFI) lend money on a large scale, usually to large group of people in dense regions, in a minimally subsidized, businesslike way. To monitor and manage multiple borrowing, MFIs rely on a combination of reputation, knowledge of the client, collateral, cosigners, and enforceable contracts. It is also very common for MFIs to use aggressive techniques to pursuit non-payers and press for repayment.
+Microfinance, as one of the lending models, aims at providing useful financial services to millions of people. Microfinance institutions (MFI) lend money on a large scale, usually to large group of people in dense regions, in a minimally subsidized, businesslike way. To monitor and manage multiple borrowing, MFIs rely on a combination of reputation, knowledge of the client, collateral, cosigners, and enforceable contracts. 
 
-Microfinance institutions often struggle to come into direct contact with each individual and to build knowledge of millions of small accounts. They may use intermediate organizations to reach local knowledge of the individuals, which brings another layer of complexity and cost increase for the lenders. We need a radically different way to include the poor population to the formal financial system and to connect them with the wealthy people and organizations.
+Microfinance was reinvented in the late 1970s with the noble vision of Dr. Muhammad Yunus to provide micro-credit and later more financial services to poor communities, in a fair and sustainable manner. However, over the course of the last decades, there has been a significant deviation from this original purpose, with many MFIs changing their focus from social impact to profit and replicating the narrative but not the good practices. In some well publicized cases, MFIs have contributed to increasing poverty rather than decreasing it.
 
 ### Decentralized lending protocols
 Over the past 2 years, decentralized borrowing and lending protocols entered the DeFi space with the potential to fundamentally reinvent the financial infrastructure enabling people to transact with each other globally, securely and permissionless. Decentralized lending protocols target advanced users and let them lend or borrow digital assets without going to a centralized intermediary. Users deposit digital assets into liquidity pools, which become funds that the protocol can lend out to other users. 
 
-A specific characteristic of the most popular protocols is that they require a collateral. This means that onchain assets of the borrower are used to secure a loan. The borrower provides the asset to secure the loan, and if the borrower defaults on the loan, the lender can take possession of the asset and sell it to cover their loss. Moreover, they often require overcollateralization i.e. the amount of locked assets as collateral exceeds the loan amount.
+DeFi protocols aim to automate lending and would not be willing to assess individual borrowers. That is why, they require a collateral. This means that onchain assets of the borrower are used to secure a loan. The borrower provides the asset to secure the loan, and if the borrower defaults on the loan, the lender can take possession of the asset and sell it to cover their loss. Moreover, they often require overcollateralization i.e. the amount of locked assets as collateral exceeds the loan amount.
 
 ### Growr's decentralized credit risk management
-Growr protocol approaches lending differently. The protocol aims at providing instant insecure loans based on risk assessment and verifiable credentials instead of requiring an on-chain collateral. How it works? Borrowers collect credentials into their own private financial record, Lenders use these credentials to better assess creditworthiness, and Trusted parties are incentivized to provide the credentials.
+Growr protocol approaches lending differently. The protocol aims at providing instant insecure loans based on risk assessment and verifiable credentials instead of requiring an on-chain collateral. Instead of relying on risk data locked within proprietary databases, Growr provides an open credit rating model, which also preserves the privacy of the borrowers through a self-sovereign identity. In contrast to the traditional credit bureaus, Growr puts the users in control of their data by storing their credit record in "their own pocket" without dependence on any central authority or intermediary. 
 
-Growr protocol introduces an innovative approach for decentralized credit risk management, in which the responsibility is split between all protocol participants:
+In addition, the unbanked population is very often part of the blacklists of the credit bureaus, on which the traditional lenders rely, and thus they are excluded from the current lending market. Growr aims at providing credit rating based on alternative data sources, such as financial health metrics, trusted organizations, and peer vouching.
+
+But how does it works? Borrowers collect credentials into their own private financial record, Lenders use these credentials to better assess creditworthiness, and Trusted parties are incentivized to provide the credentials. This innovative approach for decentralized credit risk management splits the responsibility between all protocol participants:
 - *Credential Issuers* assert facts about the borrowers in the form of credentials.
 - *Credential Verifiers* validates the credentials and asserts borrower's eligibility to receive a loan from a given credit line.
 - *Risk Assessors* review credit line proposals and determine their credit rating.
