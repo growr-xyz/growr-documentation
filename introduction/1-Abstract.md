@@ -1,5 +1,5 @@
 # Abstract
-Growr is open, fair and sustainable micro-lending protocol on top of bitcoin. Growr enables micro-entrepreneurs to receive **instant productive loans** based on their **self-sovereign credit record**, without the need for over-collateralization.
+Growr is open, fair and sustainable micro-lending protocol on top of bitcoin. Growr enables micro-entrepreneurs to  build their **self-sovereign credit record** and receive **fair productive loans** without over-collateralization, bringing **real-world yield** to decentralized finance.
 
 Growr aims to bridge the financial gap in the productive microfinance using decentralized tools to bring microfinance to its roots and goals. They are using self-sovereign identity to give the identity holders the access and ownership of their credit record, which can then enable access to uncollaterized and undercollaterized loans from traditional and DeFi liquidity. They are using smart contracts on top of Bitcoin to automate the process of funding and to provide end-to-end transparency to the lenders about how their funds are spent. 
 
