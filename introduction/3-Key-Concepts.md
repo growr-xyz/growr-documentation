@@ -49,6 +49,8 @@ Over the past 2 years, decentralized borrowing and lending protocols entered the
 
 DeFi protocols aim to automate lending and would not be willing to assess individual borrowers. That is why, they require a collateral. This means that onchain assets of the borrower are used to secure a loan. The borrower provides the asset to secure the loan, and if the borrower defaults on the loan, the lender can take possession of the asset and sell it to cover their loss. Moreover, they often require overcollateralization i.e. the amount of locked assets as collateral exceeds the loan amount.
 
+On top of that, most DeFi yield at the moment comes from financing speculative activities and not the real-world economy, or from liquidity subsidies (so-called "yield farming"). It is a well-recognized problem that DeFi needs real-world yield. 
+
 ### Growr's decentralized credit risk management
 Growr protocol approaches lending differently. The protocol aims at providing instant insecure loans based on risk assessment and verifiable credentials instead of requiring an on-chain collateral. Instead of relying on risk data locked within proprietary databases, Growr provides an open credit rating model, which also preserves the privacy of the borrowers through a self-sovereign identity. In contrast to the traditional credit bureaus, Growr puts the users in control of their data by storing their credit record in "their own pocket" without dependence on any central authority or intermediary. 
 
