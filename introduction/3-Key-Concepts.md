@@ -10,9 +10,9 @@ Growr protocol implements W3C’s architecture for **Verifiable Credentials (VCs
 
 Verifiable credentials are provided by **Credential Issuers** – that is, centralized or decentralized third parties, asserting certain facts about the DID owner. Verifiable credentials are consumed by **Verifiers** using the concepts and data models for **presentation exchange**. Verifiers verify that:
 - The credential presentation is signed with the subject's DID.
-- The credential is signed by a trusted Issuer.
-- The credential is not expired.
-- The credential is not revoked.
+- The credential is signed by a trusted Issuer. 
+- The credential is not expired. 
+- The credential is not revoked. 
 
 More info about VCs on [(this link)](https://www.w3.org/TR/vc-data-model).
 
