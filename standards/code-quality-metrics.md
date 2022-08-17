@@ -5,7 +5,7 @@ High coverage and low dependencies show that the code is testable and therefore 
 
 Code Quality Metrics | New and Project Code 
 --------- | --------- 
-Unit test coverage | >= 75% block coverage 
+Unit test coverage | >= 80% block coverage 
 Unit test speed | <= 10 seconds 
 Dependencies/method | <= 10 
 Complexity/method | <= 7 
