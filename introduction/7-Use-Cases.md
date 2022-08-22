@@ -2,7 +2,7 @@
 
 ## Microfinance
 
-The global microfinance market amounted to $124B in 2018 [[23]](#bookmark=id.lwa2nrlejm2k). 139.9 million borrowers benefited from the services of microfinance institutions, compared to only 98 million in 2009. Of these 139.9 million borrowers, 80% are women and 65% are rural borrowers. The main regions of microfinance are Latin America with $48.3B, South Asia with $36.8B, East Asia and Pacific with $21.5B, and Africa with $10.3B. In the developing and emerging markets, a large segment of the population is still unbanked and more than 50% of the economy is informal. The majority of micro-businesses don't have a bank account and access traditional financial services. They mostly rely on support from their friends and family or they go to loan sharks charging as high as 15-20% per month. Connecting this market to the Growr protocol that provides a global decentralized micro-lending marketplace will bring efficiency in capital allocation, fair conditions, and transparency of the impact. Using the protocol, unbanked micro-entrepreneurs can apply for productive unsecured micro-loans with their self-sovereign credit record.
+The global microfinance market amounted to $124B in 2018 [[23]](#ref23). 139.9 million borrowers benefited from the services of microfinance institutions, compared to only 98 million in 2009. Of these 139.9 million borrowers, 80% are women and 65% are rural borrowers. The main regions of microfinance are Latin America with $48.3B, South Asia with $36.8B, East Asia and Pacific with $21.5B, and Africa with $10.3B. In the developing and emerging markets, a large segment of the population is still unbanked and more than 50% of the economy is informal. The majority of micro-businesses don't have a bank account and access traditional financial services. They mostly rely on support from their friends and family or they go to loan sharks charging as high as 15-20% per month. Connecting this market to the Growr protocol that provides a global decentralized micro-lending marketplace will bring efficiency in capital allocation, fair conditions, and transparency of the impact. Using the protocol, unbanked micro-entrepreneurs can apply for productive unsecured micro-loans with their self-sovereign credit record.
 
 ## Agriculture finance
 
@@ -14,7 +14,7 @@ Vulnerable populations such as victims of violence, natural and man-made disaste
 
 ## Crowdfunding
 
-The crowdfunding business model continues to grow fast globally. In addition to the established platforms for investment in startups and product R&D, impact finance providers such as Kiva are helping micro-businesses with loans for as little as $25. Crowdfunding transition to the blockchain is a matter of time, as the example of Kickstarter shows [[24]](#bookmark=id.hr9qrq4yd59a).
+The crowdfunding business model continues to grow fast globally. In addition to the established platforms for investment in startups and product R&D, impact finance providers such as Kiva are helping micro-businesses with loans for as little as $25. Crowdfunding transition to the blockchain is a matter of time, as the example of Kickstarter shows [[24]](#ref24).
 
 ## Islamic finance
 

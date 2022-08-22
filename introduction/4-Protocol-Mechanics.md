@@ -34,7 +34,7 @@ _Borrowers_, represented by self-employed, micro-businesses, and smallholder far
 _Distributors_ facilitate the access to the protocol by grouping several borrowers with similar needs and presenting project applications to the marketplace on their behalf. They can be:
 
 * _Local cooperatives, guilds or other community organizations_ that are formed by borrowers to gain better access to loans and to standardize their relationship with the rest of the participants in the ecosystem.
-* _Federated mints_ [[21]](#bookmark=id.bc8raj1v22ja), enabling access to micro-lending to their users.
+* _Federated mints_ [[21]](#ref21), enabling access to micro-lending to their users.
 * _Telcos, retailers and gig-economy platforms_ that onboard and vet the users into their services and then facilitate their access to the protocol as embedded financial service.
 * _Digital wallets and fintech providers_ that already offer financial services and can expand to unsecured decentralized lending.
 

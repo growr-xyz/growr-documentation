@@ -8,7 +8,7 @@ The following diagram provides a high-level overview of the protocol components.
 
 ## Decentralized micro-lending marketplace
 
-The decentralized micro-lending marketplace is where lenders publish their loan offers with predefined conditions and eligibility criteria, and borrowers apply to get financing based on the automatic matching of these criteria with the credentials in their self-sovereign credit record. It is implemented as a smart contract system on top of Rootstock (RSK) mainnet, a side-chain secured by approximately 66% of Bitcoin’s miners as of August 2022 [[22]](#bookmark=id.g7ztems9y9lo).
+The decentralized micro-lending marketplace is where lenders publish their loan offers with predefined conditions and eligibility criteria, and borrowers apply to get financing based on the automatic matching of these criteria with the credentials in their self-sovereign credit record. It is implemented as a smart contract system on top of Rootstock (RSK) mainnet, a side-chain secured by approximately 66% of Bitcoin’s miners as of August 2022 [[22]](#ref22).
 
 The Growr protocol consists of a set of smart contracts:
 
