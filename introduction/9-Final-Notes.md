@@ -69,5 +69,3 @@ To provide your feedback, please submit an issue or a pull request in the [Growr
 <a name="ref23"></a>[23] Convergences: Microfinance Barometer 2019. Source: [https://www.convergences.org/wp-content/uploads/2019/09/Microfinance-Barometer-2019_web-1.pdf](https://www.convergences.org/wp-content/uploads/2019/09/Microfinance-Barometer-2019_web-1.pdf). Accessed in August 2022. 
 
 <a name="ref24"></a>[24] TechCrunch: Kickstarter plans to move its crowdfunding platform to the blockchain. Published on 08 Dec 2021. Source: [https://techcrunch.com/2021/12/08/kickstarter-plans-to-move-its-crowdfunding-platform-to-the-blockchain/](https://techcrunch.com/2021/12/08/kickstarter-plans-to-move-its-crowdfunding-platform-to-the-blockchain/). Accessed in August 2022.
-
-<div style="page-break-after: always;"></div>
