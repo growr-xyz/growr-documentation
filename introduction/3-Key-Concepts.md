@@ -2,100 +2,79 @@
 
 ## Decentralized identity
 
-### DIDs
-Growr protocol implements W3C’s architecture for decentralized identity (DID). DID is a new type of identifier that enables verifiable, decentralized digital identity. DIDs are URIs that associate a DID subject (e.g., a person, organization, thing, data model, abstract entity, etc.) with a DID document allowing trustable interactions associated with that subject. DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help enable the discovery of information related to a DID, the design enables only the controller of a DID to prove control over it without requiring permission from any other party. More info about DIDs on [(this link)](https://www.w3.org/TR/did-core).
+### Decentralized identifiers and verifiable credentials 
 
-### VCs
-Growr protocol implements W3C’s architecture for **Verifiable Credentials (VCs)**. Verifiable Credentials (VC) are global uniformed provable claims associated with the subject of the DID. They are cryptographically secure, privacy respecting, tamper-evident and machine verifiable. They can be used to build universally verifiable presentations, which can also be cryptographically-verified.
+The protocol implements the W3C’s standards (recommendations) for _Decentralized Identifiers_ (DIDs) [[14]](#bookmark=id.y3hcmvjabvaz) and the _Verifiable Credentials Data Model_ (VCs) [[15]](#bookmark=id.u5n5uyrbkhhy). 
 
-Verifiable credentials are provided by **Credential Issuers** – that is, centralized or decentralized third parties, asserting certain facts about the DID owner. Verifiable credentials are consumed by **Verifiers** using the concepts and data models for **presentation exchange**. Verifiers verify that:
-- The credential presentation is signed with the subject's DID.
-- The credential is signed by a trusted Issuer.
-- The credential is not expired.
-- The credential is not revoked.
+The DID is a new type of identifier that enables verifiable, decentralized digital identity. DIDs are URIs that associate a DID subject (e.g., a person, organization, thing, data model, abstract entity, etc.) with a DID document allowing trustable interactions associated with that subject. DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help enable the discovery of information related to a DID, the design enables only the controller of a DID to prove control over it without requiring permission from any other party.
 
-More info about VCs on [(this link)](https://www.w3.org/TR/vc-data-model).
+The VCs are global uniformed provable claims associated with the subject of the DID. They are cryptographically secure, privacy respecting, tamper-evident and machine verifiable. They can be used to build universally verifiable presentations, which can also be cryptographically verified.
 
-### Growr's Self-sovereign credit record
-The Growr protocol relies on a new type of decentralized identity that we call the **Self-sovereign Credit Record (SSCR)**. The SSCR is intended to represent user's unique global identity and financial record, storing various protocol-specific verifiable credentials based on borrower's financial health metrics, on-chain activity, trusted off-chain data, peer vouching, and others. SSCR is the borrowers' financial record in their pocket.
+Verifiable credentials are provided by _credential issuers_—i.e., centralized or decentralized third parties—asserting certain facts about the DID owner. Verifiable credentials are consumed by _verifiers_ using the concepts and data models for _presentation exchange_. Verifiers ensure that the credential presentation is signed with the subject’s DID, it is signed by a trusted Issuer, it is not expired and it is not revoked.
 
-Verifiable credentials in SSCR can be (but are not limited to):
-- *KYC* credential. This credential proves successfully passed KYC process (including AML/CFT risk check) and can be issued by any last-mile provider or a traditional third-party identity verification service.
-- *Financial Data* credential. This credential contains various financial data of a user (such as products and transaction history) and can be issued by any financial institution (where the user has a saving account) or trusted financial data processing service (to which the user provides account statement information).
-- *Savings History* credential. This credential proves that the user is making regular micro-payments to his/her saving account. It could be issued by any trusted financial institution or savings account provider.
-- *Financial Health* credential. This is a special credential issued by the protocol itself for successfully passed "financial health treatment" through education and/or mentoring, as well as earned through regular on-time repayments of past loans received by the protocol.
-- *Community certificate* credential. This credential is issued by a local organization (cooperative, union, chamber) or an employer, asserting the membership of the borrower in the organization.
-- *Social Vouching* credential. This credential is received by endorsement from other protocol users, who have certain reputation level and/or are trusted by the protocol.
-- *Credit Score* credential. This is a "combined" credential, summarizing other atomic credentials, and representing the overall credit score of the Borrower.
+### Self-sovereign credit record
 
-## Lending
+The Growr protocol relies on a new type of decentralized identity built using DIDs and VCs that we call the _self-sovereign credit record (SSCR)_. The SSCR is intended to represent a borrower's unique global identity and financial record, storing various general-purpose and protocol-specific verifiable credentials based on the borrower’s on-chain activity, trusted off-chain data, peer vouching, financial health metrics, and others.
 
-### Traditional lending 
-In traditional lending, a loan is given by lenders (banks and other financial institutions) to borrowers, and the borrowers repay the loan together with the lending price (the interest). But this price appears to be very high, especially for people around the world that live with less than $2 per day. 
+The SSCR contains both hard information (facts such as credit score and history, debt-to-income ratio, bank account verification, and business financial indicators) and soft information (such as endorsement, community membership, and self-declared business plans) that are used in the credit risk assessment.
 
-The lenders determine by themselves all loan conditions - accepted risk levels, required collaterals, interest rates, fees, and etc. Very often, lenders don’t know the borrower and they lack the proper risk assessment tools to determine the creditworthiness of the borrowers. If the lenders feel there is a higher risk of not being paid back by a borrower, they will charge that borrower a higher interest rate.
+Verifiable credentials in an SSCR can be (but are not limited to):
 
-In the traditional lending, the lenders use the services of private companies or government agencies, playing the role of a credit bureau. They collect data about borrowers, they calculate their credit rating and sell it for their own benefit.
+* _KYC credential_ (hard information). This credential proves, possibly in a zero-knowledge manner, a successfully passed KYC process (including AML/CFT risk check) and can be issued by any distributor or a traditional third-party identity verification service. While not necessarily contributing to the risk assessment, the presence of such credentials may be a prerequisite for certain regulated lenders to provide funding.
+* _Financial data credential_ (hard information). This credential contains various financial data of a borrower, such as products and transaction history, and can be issued by any account servicing financial institution or a trusted financial data provider.
+* _Business activity credential_ (hard information). Data about the business activity such as income statement, cash flow, and/or balance sheet.
+* _Savings history credential_. This credential proves that the user is making regular micro-payments to his/her saving account. It could be issued by any trusted financial institution or savings account provider.
+* _Credit history credential_ (hard information). History of the borrower’s past loans from the protocol or any external trusted sources.
+* _Credit score credential_ (hard information). This is a credential that summarizes other atomic credentials and represents the overall credit score of the borrower.
+* _Community membership credential_ (soft information). This credential is issued by a local organization (cooperative, union, chamber) or an employer, asserting the membership of the borrower in the organization.
+* _Social vouching credential_ (soft information). This credential is received by endorsement from other protocol users, who have a certain reputation level and/or are trusted by the protocol.
+* _Financial health credential_ (soft information). This is a special credential issued by the protocol itself for successfully passing “financial health treatment” through education and/or mentoring, as well as earned through regular on-time repayments of past loans received by the protocol.
 
-With this model, being poor is actually very expensive because the poorest are either excluded from the financial system or they fall prey to financial sharks offering loans at expensive and unfair conditions.
+## Lending and borrowing
+
+### A brief history of debt
+
+The concept of lending and borrowing is probably as old as the Sumer civilization around 3500 BC [[5]](#bookmark=id.9l1qiem2c68u). However, this often brought social tension—a significant part of the farmers would become over-indebted and be forced to sell their kids into debt slavery. Due to this fact, jubilees (cancellations of all debts) were often initiated by the rulers.
+
+After the advent of coinage, banking and lending money against interest emerged as a business activity. This however often led to usury, or lending money at unreasonably high rates of interest out of the formal institutions, which was naturally considered sinful by most religions and outlawed by many states throughout history. Still, this practice continues today around the world, especially in communities with high informality and without access to financial services [[16]](#bookmark=id.mssbep7msgaq).
+
+In the Middle Ages, the notion of _interesse_ (from which “interest” originally comes from) began to be accepted as a non-usurious compensation for the profit a merchant would have made, had they placed it in some profitable investment.
+
+### Modern banking and financial inclusion
+
+In modern banking, a loan is given to a borrower against interest and fees, which highly depend on the local context. Today, most countries have regulations on maximum interest rates. In Islamic banking where interest (riba) is forbidden, productive financing is provided through risk-sharing instruments.
+
+However, even with regulated interest rates, the price of banking services is high, especially for almost a billion people around the world who live under the international poverty line of around $2/day. This is mostly due to the cost of distribution, as banks traditionally rely on physical infrastructure, as well as due to information asymmetry, which limits the appetite of banks to lend to informal micro-enterprises and leads to credit rationing.
+
+To assess borrower risk, banks use the services of credit bureaus—private companies or government agencies that collect data about borrowers from various sources. But people without prior credit history may find themselves trapped in a loophole as banks may not be willing to serve them at all. Being poor actually becomes very expensive because the financially excluded easily fall prey to loan sharks with usurious conditions.
+
 
 ### Microfinance
-Microfinance, as one of the lending models, aims at providing useful financial services to millions of people. Microfinance institutions (MFI) lend money on a large scale, usually to large group of people in dense regions, in a minimally subsidized, businesslike way. To monitor and manage multiple borrowing, MFIs rely on a combination of reputation, knowledge of the client, collateral, cosigners, and enforceable contracts. 
 
-Microfinance was reinvented in the late 1970s with the noble vision of Dr. Muhammad Yunus to provide micro-credit and later more financial services to poor communities, in a fair and sustainable manner. However, over the course of the last decades, there has been a significant deviation from this original purpose, with many MFIs changing their focus from social impact to profit and replicating the narrative but not the good practices. In some well publicized cases, MFIs have contributed to increasing poverty rather than decreasing it.
+Microfinance has emerged as an alternative to banking, as a large-scale, businesslike provision of financial services to the poor. Microfinance institutions (MFIs) usually lend money to large groups of people in dense regions, in a minimally subsidized way. To monitor and manage multiple borrowing, MFIs rely on a combination of reputation, knowledge of the client, collateral, cosigners, and enforceable contracts.
+
+Although it has its roots in the Middle Ages, microfinance was reinvented in a scalable model in the late 1970s. Witnessing extreme poverty and a deadly famine in his country Bangladesh, Professor Muhammad Yunus came up with the noble vision to provide microcredit—and later more financial services—to poor communities, in a fair and sustainable manner, and help them out of poverty [[17]](#bookmark=id.vx0j6zej75h).
+
+However, over the course of the last decades, there has been a significant deviation from this original purpose, with many MFIs changing their focus from social impact to profit and replicating the narrative but not the good practices. In some well-publicized cases, MFIs have contributed to increasing poverty rather than decreasing it.
 
 ### Decentralized lending protocols
-Over the past 2 years, decentralized borrowing and lending protocols entered the DeFi space with the potential to fundamentally reinvent the financial infrastructure enabling people to transact with each other globally, securely and permissionless. Decentralized lending protocols target advanced users and let them lend or borrow digital assets without going to a centralized intermediary. Users deposit digital assets into liquidity pools, which become funds that the protocol can lend out to other users. 
 
-DeFi protocols aim to automate lending and would not be willing to assess individual borrowers. That is why, they require a collateral. This means that onchain assets of the borrower are used to secure a loan. The borrower provides the asset to secure the loan, and if the borrower defaults on the loan, the lender can take possession of the asset and sell it to cover their loss. Moreover, they often require overcollateralization i.e. the amount of locked assets as collateral exceeds the loan amount.
+Since 2020, an increasing number of decentralized borrowing and lending protocols have been emerging fast in the decentralized finance (DeFi) space. They aim to fundamentally reinvent the financial infrastructure, enabling people to transact with each other globally, securely and in a permissionless manner. 
 
-### Growr's decentralized credit risk management
-Growr protocol approaches lending differently. The protocol aims at providing instant insecure loans based on risk assessment and verifiable credentials instead of requiring an on-chain collateral. Instead of relying on risk data locked within proprietary databases, Growr provides an open credit rating model, which also preserves the privacy of the borrowers through a self-sovereign identity. In contrast to the traditional credit bureaus, Growr puts the users in control of their data by storing their credit record in "their own pocket" without dependence on any central authority or intermediary. 
+While most of the activity in the space is outside of the Bitcoin ecosystem, projects such as Tropykus and Sovryn built on Bitcoin’s side-chain Rootstock (RSK) are promising to bring decentralized lending to Bitcoin. 
 
-In addition, the unbanked population is very often part of the blacklists of the credit bureaus, on which the traditional lenders rely, and thus they are excluded from the current lending market. Growr aims at providing credit rating based on alternative data sources, such as financial health metrics, trusted organizations, and peer vouching.
+Decentralized finance protocols still target mostly advanced users and let them lend or borrow digital assets without going to a centralized intermediary. Users deposit digital assets into liquidity pools, which become funds that the protocol can lend out to other users. Decentralized finance protocols aim to automate lending and would not be willing to assess individual borrowers. That is why they require collateral. This means that the on-chain assets of the borrower are used to secure a loan. The borrower provides the asset to secure the loan, and if the borrower defaults on the loan, the lender can take possession of the asset and sell it to cover their loss. Moreover, they often require over-collateralization, i.e. the value of locked assets as collateral must significantly exceed the loan amount. Currently, decentralized finance usage is higher in developed markets and by institutional investors [[18]](#bookmark=id.ngznh0tg4ryt).
 
-But how does it works? Borrowers collect credentials into their own private financial record, Lenders use these credentials to better assess creditworthiness, and Trusted parties are incentivized to provide the credentials. This innovative approach for decentralized credit risk management splits the responsibility between all protocol participants:
-- *Credential Issuers* assert facts about the borrowers in the form of credentials.
-- *Credential Verifiers* validates the credentials and asserts borrower's eligibility to receive a loan from a given credit line.
-- *Risk Assessors* review credit line proposals and determine their credit rating.
-- *Trusted Registries* validate that credentials are issued by trusted issuers.
-- *Smart Contracts* take decision based on the input from the above-mentioned stakeholders.
-- *Protocol Governance Board* decides which participants are trusted and excludes the ones that misbehave.
+### Decentralized credit risk management
 
-Each participant is incentivized by the protocol to fairly fulfil its duties, as follows:
-- With positive behavior in terms of regularly repaid loans, *Borrowers* increase their credit risk score. And better risk score translates to better lending conditions - increased amount limit and decreased interest rate.
-- Trusted parties (*Credential Issuers* and *Risk Assessors*) receive a fee for the services they provide. In case of poor execution of their risk management function, the respective participant is blacklisted from the protocol. 
-- *Lenders* and *Liquidity Providers* distribute part of the profit with all participants to motivate them to properly execute their risk management functions in order to decrease their cost of default and respectively to increase their profit.
+The Growr protocol approaches lending differently. The protocol aims at providing instant unsecured loans based on risk assessment and verifiable credentials, instead of requiring on-chain collateral. It provides an open credit record model, which also preserves the privacy of the borrowers through a self-sovereign identity, instead of relying on risk data locked within proprietary databases. 
 
-### Growr's two-tier pooling
-The Growr protocol is able to operate on 2 tiers – global pools and local ponds. Global pools are funded by Liquidity Providers who then delegate the actual lending activity to local guilds with local lending ponds.
+A large percentage of the global population remains with limited access to credit due to immigration, lack of credit history or due to negative reporting to credit bureaus in case of late bills—even when the invoice was never received by the debtor [[19]](#bookmark=id.ay3ebsynm0gz). In contrast to the traditional credit bureaus, the protocol puts the users in control of their data by storing their credit record in “their own pocket” without dependence on any central authority or intermediary. This way, the protocol aims at enabling borrowers to build a credit record based on alternative and relevant data sources, such as trusted organizations, financial health metrics, and peer vouching.
 
-A lending pool can be created by any institutional investor with enough capital who specifies the initial pool parameters. Liquidity Providers can safely deposit funds into lending pools according to their preferences. Lending pools can be provided either by traditional financial service providers, as well as by DeFi lending protocols.
-
-Lending ponds (credit lines) represent specific loan offers in the global marketplace. There are 2 common ways to create a lending pond. In the first use case, lending ponds are created by local lenders (FinTechs or other financial service providers). Different lenders have varying levels of risk tolerance, depending on the laws and regulations in their jurisdictions, as well as on their profit goals. Therefore, each pond can have its own parameters (such as loan amount and duration), rates and eligibility criteria. 
-
-In the second use case, local organizations or cooperatives, in partnership with retailers or employers or other participants in the respective local economy, submit a joint proposal for credit line to one or more lenders. The lender assesses the proposed loan parameters, price (rate and fees) and eligibility criteria, and approve or reject the credit line. In case of positive outcome, the lender publishes the new loan offer to the marketplace and thus creates the pond.
-
-The protocol supports automatic pond liquidity management. It allows local ponds to apply for funds from a pool resulting in so called "contract-to-contract (C2C) lending". Based on the Pond utilization, a Pond smart contract can automatically apply to a Pool smart contract for a loan (up to the approved credit limit). Depending on the pond financing period, fund requirements, proposed risk model and eligibility criteria, the pool owner decides to approve (i.e., to whitelist the Pond address in the Pool smart contract) or not the funding to the pond. The Pond is required to regularly repay the interest fee to the Pool. Depending on the configured utilization threshold, the Pond can repay partially or fully the loan to the Pool smart contract. 
+Borrowers collect credentials into their own self-sovereign credit record, lenders use these credentials to better assess creditworthiness, and trusted parties are incentivized by the protocol to provide the credentials.
 
 ## Financial health
 
-### Financial health dimensions
-Dealing with money, especially borrowed from others, requires knowledge and high responsibility. That’s why it is very important that everyone gets a financial health treatment for long-term improvement of their financial health. It’s not about a single transaction, but achieving more throughout people's lives, and ultimately reaching a better lifestyle and financial independence.
+Dealing with money, especially borrowed from others, requires knowledge and high responsibility. Unfortunately, only 33% of people are financially literate [[20]](#bookmark=id.o6k9bsovwda5) and more than half of the global population is living without any savings [[1]](#bookmark=id.bfrz3agnh7dk).
 
-Financial Health treatment includes building knowledge and proper habits in 4 financial dimensions:
-- *Spending*. The Spending dimension is measuring how well people are balancing between the money they earn and the money they spend. Surprisingly, even people who earn a lot can spend their income without thinking too much. As a result, they live a paycheck-to-paycheck lifestyle, which prevents them to follow their long-term goals and dreams. Budgeting is a powerful tool in this dimension.
-- *Savings*. The Saving dimension shows how people are doing in terms of putting some money aside. Many people do not understand where to keep their money in order to protect it from inflation and other dangers that may prevent it to keep its value over time. Savings are very important as they can take people's financial life in their hands.
-- *Borrowing*. The Borrowing dimension demonstrates how well people are able to manage their debt. It assesses whether people are debt-free, whether they feel comfortable having a loan, and whether their debt is manageable or too much and leading to overdue payments.  Remember that debt is not always bad – if people know how to use it.
-- *Planning*. The Plan dimension is perhaps the most important indicator for people's ability to maintain financial health in the long run. Most people do not have a systematic approach to considering two key elements in financial planning -  potential risks and key life events in the future. However, tomorrow starts today.
-
-### Growr's financial health tools
-We, in Growr, understand that delivering money and financial services to the poor does not automatically reduce their poverty. Therefore, the Growr protocol is designed to incentivize good financial health – that is, improving financial literacy and behaviors. 
-
-To promote improving financial literacy and behaviors, Growr protocol includes a set of embedded features that will enable borrowers to receive better financial services:
-- **"Learn and earn"**; that is, before applying for a loan, the user must go through education and mentoring program in order to collect credentials for financial health improvement.
-- **"Goal-based" financing"**; that is, before applying for a loan, the user must declare a specific goal related to his/her real-life need, and deposit initial savings towards it.
-- **"Savings discipline"**; that is, before applying for a loan, the user must create a saving habit by executing regular micro-payments to his/her saving account.
-- **"Financial reputation"**; that is, with regularly repaid loans and controlled spending habits, the user creates a long-term positive financial reputation that ultimately provide him access to benefits such as cash-back amounts and future loans with better conditions.
-
-The tools above are just the starting point of Growr's incentivization program, other tools will be designed and implemented with each future protocol version.
+That is why the Growr protocol aims to incentivize providers who help the borrowers to improve their financial health through education and tools promoting good behavior. Borrowers’ financial health credentials can be used in the risk assessment to improve loan conditions and providers get rewarded based on the actual benefit provided to the borrowers.
