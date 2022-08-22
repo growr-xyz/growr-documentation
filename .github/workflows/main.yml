@@ -31,7 +31,7 @@ jobs:
           destFile: './litepaper/Growr-litepaper.md'
   
       - name: Convert MD to PDF
-        uses: baileyjm02/markdown-to-pdf@v1
+        uses: baileyjm02/markdown-to-pdf@v1.1.0
         with:
           input_dir: litepaper
           output_dir: litepaper
@@ -40,7 +40,7 @@ jobs:
           build_html: false
 
       - name: Add to repo
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v9.0.0
         with:
           message: 'Add new Litepaper PDF'
           add: './litepaper/Growr-litepaper.pdf --force'
