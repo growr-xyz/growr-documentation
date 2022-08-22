@@ -20,7 +20,7 @@ To provide your feedback, please submit an issue or a pull request in the [Growr
 
 # References
 
-[1] “The Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience in the Age of COVID-19”. The World Bank. Source: [https://www.worldbank.org/en/publication/globalfindex](https://www.worldbank.org/en/publication/globalfindex). Accessed in August 2022.
+<a name="ref1">[1]</a> “The Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience in the Age of COVID-19”. The World Bank. Source: [https://www.worldbank.org/en/publication/globalfindex](https://www.worldbank.org/en/publication/globalfindex). Accessed in August 2022.
 
 [2] Ledgerwood, Joanna et al. (2013). “The New Microfinance Handbook: A Financial Market System Perspective”. The World Bank.
 
