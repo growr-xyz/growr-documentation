@@ -37,10 +37,10 @@ jobs:
           output_dir: litepaper
           images_dir: images
           image_import: ../images
-          build_html: false
+          build_html: true
 
       - name: Add to repo
         uses: EndBug/add-and-commit@v9.0.0
         with:
           message: 'Add new Litepaper PDF'
-          add: './litepaper/Growr-litepaper.pdf --force'
+          add: './litepaper/Growr-litepaper.pdf ./litepaper/Growr-litepaper.html --force'
