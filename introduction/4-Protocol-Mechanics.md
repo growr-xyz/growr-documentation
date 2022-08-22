@@ -132,3 +132,5 @@ The _global decentralized micro-lending marketplace_ is the open-source smart co
   </tr>
 </table>
 
+<div style="page-break-after: always;"></div>
+

@@ -38,3 +38,5 @@ The Growr core protocol and applications are integrated with various internal or
 * _Credential verification services._ Verify that the presented credentials are trusted and valid and owned by the subject.
 * _Credential storage services._ Securely store the credentials and the declarative details, part of the borrower’s SSCR.
 * _Payment services._ Cover various on-ramp, off-ramp services, and fiat settlement services. To implement the above services, the protocol utilizes various building blocks from RSK Infrastructure Framework (RIF).
+
+<div style="page-break-after: always;"></div>

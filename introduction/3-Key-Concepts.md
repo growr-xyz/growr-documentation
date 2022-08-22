@@ -78,3 +78,5 @@ Borrowers collect credentials into their own self-sovereign credit record, lende
 Dealing with money, especially borrowed from others, requires knowledge and high responsibility. Unfortunately, only 33% of people are financially literate [[20]](#ref20) and more than half of the global population is living without any savings [[1]](#ref1).
 
 That is why the Growr protocol aims to incentivize providers who help the borrowers to improve their financial health through education and tools promoting good behavior. Borrowers’ financial health credentials can be used in the risk assessment to improve loan conditions and providers get rewarded based on the actual benefit provided to the borrowers.
+
+<div style="page-break-after: always;"></div>

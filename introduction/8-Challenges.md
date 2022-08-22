@@ -19,3 +19,5 @@ Some of the technologies described in this whitepaper are new and unproven at su
 ## User experience
 
 Setting up Bitcoin and RSK wallets is still complicated for technically unsophisticated users. As part of the work on the Growr protocol, we will seek the most user-friendly implementations for accessing the protocol and interacting with its smart contracts, including facilitating access through custodial solutions.
+
+<div style="page-break-after: always;"></div>

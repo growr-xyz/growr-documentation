@@ -23,3 +23,5 @@ Islamic finance forbids interest (riba) and therefore traditional interest-based
 ## Bitcoin-native unsecured lending
 
 Bitcoin and its ecosystem have already demonstrated its great potential as a financial inclusion tool. The Growr protocol can be a complementary solution to Bitcoin-based circular economies and community custody solutions such as federated mints, by enabling groups of people to jointly apply and use credit from the decentralized marketplace. This will create a stronger incentive for more communities to join the Bitcoin inclusion movement.
+
+<div style="page-break-after: always;"></div>

@@ -18,6 +18,8 @@ To provide your feedback, please submit an issue or a pull request in the [Growr
 * Growr [official website](https://www.growr.xyz/)
 * Growr on [Twitter](https://www.twitter.com/growrxyz)
 
+<div style="page-break-after: always;"></div>
+
 # References
 
 <a name="ref1"></a>[1] “The Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience in the Age of COVID-19”. The World Bank. Source: [https://www.worldbank.org/en/publication/globalfindex](https://www.worldbank.org/en/publication/globalfindex). Accessed in August 2022.
@@ -67,3 +69,5 @@ To provide your feedback, please submit an issue or a pull request in the [Growr
 <a name="ref23"></a>[23] Convergences: Microfinance Barometer 2019. Source: [https://www.convergences.org/wp-content/uploads/2019/09/Microfinance-Barometer-2019_web-1.pdf](https://www.convergences.org/wp-content/uploads/2019/09/Microfinance-Barometer-2019_web-1.pdf). Accessed in August 2022. 
 
 <a name="ref24"></a>[24] TechCrunch: Kickstarter plans to move its crowdfunding platform to the blockchain. Published on 08 Dec 2021. Source: [https://techcrunch.com/2021/12/08/kickstarter-plans-to-move-its-crowdfunding-platform-to-the-blockchain/](https://techcrunch.com/2021/12/08/kickstarter-plans-to-move-its-crowdfunding-platform-to-the-blockchain/). Accessed in August 2022.
+
+<div style="page-break-after: always;"></div>
