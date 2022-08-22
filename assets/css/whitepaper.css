@@ -1,5 +1,13 @@
 body {
     font-family: Rubik, sans-serif;
-    margin: 3rem;
+    margin: 2rem;
     text-align: justify;
+}
+
+table {
+    text-align: left;
+}
+
+div.refs {
+    text-align: left;
 }
