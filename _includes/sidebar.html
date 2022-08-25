@@ -5,6 +5,9 @@
     <ul id="ul-introduction" style="list-style: none;">
         {% for doc in doclist %}
         {% if doc.name contains '.md' and doc.url contains '/introduction/' %}
+        {% if doc.name contains '1-Abstract' %}
+        <li><a id="Abstract" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">Abstract</a></li>
+        {% else %}
         <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
         {% endif %}
         {% endfor %}
