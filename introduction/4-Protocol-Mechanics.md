@@ -134,3 +134,12 @@ The _global decentralized micro-lending marketplace_ is the open-source smart co
 
 <div style="page-break-after: always;"></div>
 
+## How does the Growr protocol contribute to Bitcoin?
+
+The protocol contributes to the development of the Bitcoin ecosystem in several important dimensions:
+
+* _Ethos:_ The protocol—built on top of Bitcoin—is used for solving real-life problems. We believe there is a gap in the available financial services for the poor—instead of building these on legacy or speculative rails, building them on Bitcoin strengthens Bitcoin's ethos.
+* _Bringing more users._ Our vision is to bring the next 1B people on Bitcoin. By bringing more accessible financial services to the Bitcoin ecosystem—such as unsecured micro-loans—we bet on making Bitcoin even more attractive and accelerating its adoption. We are building a complementary solution to what already exists in the Bitcoin ecosystem.
+* _Incentivizing adoption:_ The protocol enables the monetization of credentials issued by financial health providers (part of the trusted parties' role outlined above). Bitcoin missionaries promoting adoption can also act as such providers when they educate people about money and good financial habits. This works in the following way: a financial health provider issues verifiable credentials to a user (e.g., based on a test or proven skills), who stores these credentials as part of their self-sovereign credit record. When the borrower applies for a loan through the protocol, a risk assessor/lender uses these credentials for assessing the risk and providing access to micro-loans. And after the borrower repays the micro-loans in full without delays, a reward (a predefined part of the interest) goes to the financial health provider. This accelerates the adoption network effect through additional incentivization.
+* _Additional revenue for miners:_ 80% of the fees of each transaction on the Rootstock (RSK) network goes as reward to Bitcoin miners. The protocol will increase the usage and adoption of the Rootstock network, and this will increase the miners’ revenue. For more details, please see the “Why RSK is Important for the Bitcoin Ecosystem” section in the RSK whitepaper [[13]](#ref13).
+
