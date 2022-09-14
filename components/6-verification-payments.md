@@ -30,6 +30,7 @@ The Payment Registry is used to store a hashed signed payment proof, generated b
 
 ### Implementation
 
-The protocol implements a *Payment registry smart contract*...
+The protocol has a *Payment registry smart contract* that validates and stores payment proof records.
 
-TBD - do we need this registry? We have an alternative - the signed result can be returned to the initiator of the payment verification and then passed to the protocol by himself...
+We envision an alternative implementation scenario without this registry. In this payment verification flow, the signed payment proof is returned to the borrower app, stored in his SSCR and then passed to the marketplace for repayment of the loan.
+

@@ -30,6 +30,6 @@ The Loan Assessment Registry is used to store the hashed signed verification res
 
 ### Implementation
 
-The protocol has a *Verification registry smart contract*...
+The protocol has a *Loan Assessment registry smart contract* that validates and stores verification result records.
 
-TBD - do we need this registry? We have an alternative - the signed result can be returned to the borrower, stored in his SSCR and passed to the protocol by the borrower himself...
+We envision an alternative implementation scenario without this registry. In this credential verification flow, the signed verification result is returned to the borrower app, stored in his SSCR and then passed to the marketplace for approval of the loan.
