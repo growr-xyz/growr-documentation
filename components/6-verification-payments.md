@@ -1,4 +1,4 @@
-# Payment Verification
+<a name="ref-c6"></a># Payment Verification
 
 Payment operations within a given project can be executed off-chain via traditional payment providers, who issue and provide the protocol with "proofs-of-pay" to attest the payments are settled. Each proof-of-pay contains information about the status of a given external financial transaction (eg. invoice payment).
 
@@ -34,3 +34,4 @@ The protocol has a *Payment registry smart contract* that validates and stores p
 
 We envision an alternative implementation scenario without this registry. In this payment verification flow, the signed payment proof is returned to the borrower app, stored in his SSCR and then passed to the marketplace for repayment of the loan.
 
+<div style="page-break-after: always;"></div>

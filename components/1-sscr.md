@@ -1,4 +1,4 @@
-# Self-sovereign Credit Record
+<a name="ref-c1"></a># Self-sovereign Credit Record
 
 ## Description
 
@@ -75,3 +75,5 @@ This credential is received by endorsement from other protocol participants, who
 - Type: Soft information
 - Used to prove: Reputation
 - Issued by: Any protocol participant
+
+<div style="page-break-after: always;"></div>

@@ -1,4 +1,4 @@
-# Pools
+<a name="ref-c4"></a># Pools
 
 ## Description
 
@@ -34,3 +34,5 @@ Pool contract functions:
 Pools may vary depending on the following specifics:
 1. Funding
 Each pool can attract liquidity in 2 ways - (1) direct deposits from investors or (2) integration with DeFi protocols.
+
+<div style="page-break-after: always;"></div>

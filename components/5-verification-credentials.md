@@ -1,4 +1,4 @@
-# Credential Verification
+<a name="ref-c5"></a># Credential Verification
 
 When Borrowers apply for a loan from the marketplace, loan approval in the protocol is performed in an innovative decentralized manner. The goal of the approval process is to validate the credentials of the borrower and to assert his/her eligibility to receive a loan from a given project.
 
@@ -33,3 +33,5 @@ The Loan Assessment Registry is used to store the hashed signed verification res
 The protocol has a *Loan Assessment registry smart contract* that validates and stores verification result records.
 
 We envision an alternative implementation scenario without this registry. In this credential verification flow, the signed verification result is returned to the borrower app, stored in his SSCR and then passed to the marketplace for approval of the loan.
+
+<div style="page-break-after: always;"></div>

@@ -1,4 +1,4 @@
-# Projects
+<a name="ref-c2"></a># Projects
 
 ## Description
 
@@ -46,3 +46,5 @@ Optionally, each project can have safety reserves - collateral used as a safety 
 4. Debt sharing
 In terms of loan repayment, the projects can operate in two models. 
 In the first model (*individual*), each borrower repays only his/her loan(s) from the project and unpaid loans remain in default. In the second model (*community*), unpaid loans are compensated by overpaid amounts of the repaid loans.
+
+<div style="page-break-after: always;"></div>
