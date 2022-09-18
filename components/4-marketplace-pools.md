@@ -1,4 +1,6 @@
-<a name="ref-c4"></a># Pools
+# Pools
+
+<a name="ref-c4"></a>
 
 ## Description
 

@@ -1,4 +1,6 @@
-<a name="ref-m1"></a># Borrower Onboarding
+# Borrower Onboarding
+
+<a name="ref-m1"></a>
 
 The Growr protocol does not enforce any specific requirements upon wallet implementation. Wallet developers may design features and functionalities that correspond to the desired user experience. 
 

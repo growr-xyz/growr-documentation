@@ -1,4 +1,6 @@
-<a name="ref-c5"></a># Credential Verification
+# Credential Verification
+
+<a name="ref-c5"></a>
 
 When Borrowers apply for a loan from the marketplace, loan approval in the protocol is performed in an innovative decentralized manner. The goal of the approval process is to validate the credentials of the borrower and to assert his/her eligibility to receive a loan from a given project.
 

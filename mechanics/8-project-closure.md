@@ -1,4 +1,6 @@
-<a name="ref-m8"></a># Project Closure
+# Project Closure
+
+<a name="ref-m8"></a>
 
 Projects can be closed either by their owner (only when there are no active loans) or automatically by the *Project Factory smart contract* when the following conditions are met:
 

@@ -1,4 +1,6 @@
-<a name="ref-m6"></a># Project Setup
+# Project Setup
+
+<a name="ref-m6"></a>
 
 ## Process
 

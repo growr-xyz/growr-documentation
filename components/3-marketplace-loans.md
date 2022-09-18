@@ -1,4 +1,6 @@
-<a name="ref-c3"></a># Loans
+# Loans
+
+<a name="ref-c3"></a>
 
 ## Description
 

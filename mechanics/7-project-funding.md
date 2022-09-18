@@ -1,4 +1,6 @@
-<a name="ref-m7"></a># Project Funding
+# Project Funding
+
+<a name="ref-m7"></a>
 
 Projects are funded by their owners who provide the first-loss capital, as well as by *investors* who provide additional senior tranches.
 

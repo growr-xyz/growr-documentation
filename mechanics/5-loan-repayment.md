@@ -1,4 +1,6 @@
-<a name="ref-m5"></a># Loan Repayment
+# Loan Repayment
+
+<a name="ref-m5"></a>
 
 The loan repayment process depends on several project parameters:
 - *Payment Model:* On-chain/Off-chain

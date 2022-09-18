@@ -1,4 +1,6 @@
-<a name="ref-m2"></a># Borrower Credit Record
+# Borrower Credit Record
+
+<a name="ref-m2"></a>
 
 ## Credit Record and Verifiable Credentials
 

@@ -1,4 +1,6 @@
-<a name="ref-c2"></a># Projects
+# Projects
+
+<a name="ref-c2"></a>
 
 ## Description
 

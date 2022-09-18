@@ -1,4 +1,6 @@
-<a name="ref-m4"></a># Loan Disbursement
+# Loan Disbursement
+
+<a name="ref-m4"></a>
 
 Loans can be disbursed in two ways depending on the *payment model* parameter of the project. 
 

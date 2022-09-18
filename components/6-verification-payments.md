@@ -1,4 +1,6 @@
-<a name="ref-c6"></a># Payment Verification
+# Payment Verification
+
+<a name="ref-c6"></a>
 
 Payment operations within a given project can be executed off-chain via traditional payment providers, who issue and provide the protocol with "proofs-of-pay" to attest the payments are settled. Each proof-of-pay contains information about the status of a given external financial transaction (eg. invoice payment).
 

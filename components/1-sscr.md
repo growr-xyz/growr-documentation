@@ -1,4 +1,6 @@
-<a name="ref-c1"></a># Self-sovereign Credit Record
+# Self-sovereign Credit Record
+
+<a name="ref-c1"></a>
 
 ## Description
 

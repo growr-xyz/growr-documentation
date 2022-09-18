@@ -1,4 +1,4 @@
-# Mechanics Overview
+# Growr Mechanics Overview
 
 ## Protocol Processes
 
