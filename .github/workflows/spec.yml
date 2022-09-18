@@ -6,7 +6,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'components/**.md'
+      - 'components/**.md mechanics/**.md'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,11 +23,25 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      # Concat MD files
+      # Concat components MD files
       - name: Concat document files
         uses: bayssmekanique/action-md-concat@v1.1.0
         with:
           srcDir: './components'
+          destFile: './litepaper/spec-1.md'
+          
+      # Concat mechanics MD files
+      - name: Concat document files
+        uses: bayssmekanique/action-md-concat@v1.1.0
+        with:
+          srcDir: './mechanics'
+          destFile: './litepaper/spec-2.md'
+      
+      # Concat all MD files
+      - name: Concat document files
+        uses: bayssmekanique/action-md-concat@v1.1.0
+        with:
+          srcDir: './litepaper'
           destFile: './litepaper/Growr-spec.md'
   
       - name: Convert MD to PDF
