@@ -77,7 +77,7 @@ The _global decentralized micro-lending marketplace_ is the open-source smart co
   <tr>
    <td><strong>Borrower</strong>
    </td>
-   <td>Access to productive capital at a fair price. Optional “cash back”-like rewards paid by the lender for positive behavior (e.g., on-time repayment).
+   <td>Access to productive capital at a fair price. Optional “cash-back”-like rewards paid by the lender for positive behavior (e.g., on-time repayment).
    </td>
    <td>Build their self-sovereign credit record with the ability to use it for future financing needs.
    </td>

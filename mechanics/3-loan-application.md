@@ -10,8 +10,8 @@ There are different scenarios for getting the loan offers, depending on the prot
 sequenceDiagram
     participant Borrower
     participant Borrowing App
-    participant PRFC as Pond Factory contract
-    participant PRC as Pond contract
+    participant PRFC as Project Factory contract
+    participant PRC as Project contract
     Note over Borrower: Borrower has credentials
     Borrower->>Borrowing App: Apply for loan
     activate Borrowing App
@@ -104,10 +104,10 @@ Once the loan is approved, the *Project smart contract* registers it in its loan
 - *Approved loan amount:* requested by the borrower but if outside of the predefined project range, then it is the nearest acceptable
 - *Approved duration (in months):* requested by the borrower but if outside of the predefined project range, then it is the nearest acceptable
 - *Interest rate (APR) %:* Depending on project parameters and borrower's credentials
-- *Interest amount:* Formula = Amount x APR x Duration/12
+- *Interest amount:* Formula = Amount x APR x Duration in months / 12
 - *Total amount to be repaid:* Formula = Amount + Interest amount
-- *Installment amount:* Formula = Total amount / Duration
-- *Document Ref Id:* If of a payment document that will assert the loan disbursement (in case of off-chain payment model)
+- *Installment amount:* Formula = Total amount / Duration in months
+- *Document Ref Id:* Id of a payment document that will assert the loan disbursement (in case of an off-chain payment model)
 
 Loan parameters cannot be changed after the loan is created.
 

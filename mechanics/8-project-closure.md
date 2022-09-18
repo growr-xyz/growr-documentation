@@ -26,7 +26,7 @@ Upon project closure and in the case of an *on-chain payment model*, the *Projec
         loop For each borrower
             PRC->>Borrower: Transfer outstanding risk deposits proportionally
             opt Individual loan repaid on-time?
-                PRC->>Borrower: Transfer "cash back" reward
+                PRC->>Borrower: Transfer "cash-back" reward
             end
         end
     end
