@@ -54,6 +54,7 @@ jobs:
           image_import: ../images
           build_html: true
           theme: assets/css/whitepaper.css
+          template: _layouts/spec_template.html
           extend_default_theme: true
 
       - name: Add to repo
