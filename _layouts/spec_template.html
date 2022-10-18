@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>{{{title}}}</title>
+    <style>
+        {{{style}}}
+    </style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.14.0/mermaid.min.js"></script>
+</head>
+
+<body>
+    <nav id="table-of-contents">
+        {{{toc}}}
+    </nav>
+    <main>
+        {{{content}}}
+    </main>
+</body>
+
+<script>
+    //activate mermaid diagrams:
+    const config = {
+        startOnLoad: true,
+        bottomMarginAdj: '1',
+        securityLevel: 'loose',
+        theme: 'base',
+        themeVariables: {
+            primaryColor: '#A9F5EB',
+            background: '#f4f4f4',
+            fontFamily: 'Rubik, sans-serif',
+            primaryTextColor: '#157878',
+            noteBkgColor: '#A9F5EB',
+            actorBkg: '#009D8B',
+            actorTextColor: '#ffffff',
+            noteTextColor: '#000000',
+            signalTextColor: '#157878',
+            activationBkgColor: '#16D1BA',
+            activationBorderColor: '#16D1BA',
+            loopTextColor: '#000000'
+        },
+        sequence: {
+            actorFontSize: '16px',
+            actorFontFamily: 'Rubik, sans-serif',
+            actorFontWeight: '300',
+            messageFontSize: '14px',
+            messageFontFamily: 'Rubik, sans-serif',
+            messageFontWeight: '200',
+            noteFontFamily: 'Rubik, sans-serif',
+            noteFontSize: '14px',
+            noteFontWeight: '200',
+            showSequenceNumbers: 'true'
+        },
+        themeCSS: '.messageText { stroke: none; }'
+    };
+    mermaid.initialize(config);
+    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    //set auto height of the diagrams:
+    const diagrams = document.getElementsByTagName('svg');
+    console.log(diagrams);
+    for (let diagram of diagrams) {
+        diagram.setAttribute('height', 'auto');
+    }
+
+</script>
+
+</html>
