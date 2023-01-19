@@ -6,37 +6,55 @@ The following diagram provides a high-level overview of the protocol components.
 
 ![Architecture](../images/growr-architecture.svg)
 
-## Decentralized micro-lending marketplace
+The protocol works as a _decentralized micro-lending marketplace_. It allows lenders, using a Lending portal or protocol’s API, publish their loan offers with predefined conditions and eligibility criteria. The borrowers then apply to get financing based on the automatic matching of these criteria with the credentials in their self-sovereign credit record. The architecture presents the minimum set of services and applications to make the marketplace fully operational.
 
-The decentralized micro-lending marketplace is where lenders publish their loan offers with predefined conditions and eligibility criteria, and borrowers apply to get financing based on the automatic matching of these criteria with the credentials in their self-sovereign credit record. It is implemented as a smart contract system on top of Rootstock (RSK) mainnet, a side-chain secured by approximately 66% of Bitcoin’s miners as of August 2022 [[22]](#ref22).
+## Protocol applications
 
-The Growr protocol consists of a set of smart contracts:
+On the top of the diagram are the front-facing applications.
+* _Borrower apps:_ Set of applications that are used by the borrower to operate their self-sovereign credit record and to apply for funding from different projects. Depending on the local environment and user base, those might be web, mobile or USSD applications.
+* _Investor apps:_ Applications used by lenders and investors to create and fund projects, and to monitor their performance.
+* _Impact portal:_ An open-source standalone web application that can use aggregated data from the protocol to display a dashboard presenting the global impact of the marketplace.
 
-* _Pool factory_: enables the creation of new liquidity pools for senior tranche funding.
-* _Pool_: supports deposit & withdrawal operations from its owner and enables projects to apply for credit lines.
-* _Project factory_: enables the creation of new projects with credit line parameters and eligibility criteria.
-* _Project_: supports deposit & withdrawal operations from its owner, provides loan offers and enables users to apply for micro-loans within the approved credit limit and eligibility criteria.
-* _Trusted service registry_: supports verification of risk assessment results.
-* _Loan registry_: registers privacy-preserving history of loan repayment commitments and supports issuing of on-chain verifiable credentials.
+The front-facing applications are connected to a _project-specific service layer_, which depends on each implementation. The services in this layer are responsible for the integrations with the third-party systems, for the authentication and authorization of the users, as well as for the communication with the core services of the protocol.
 
-## Self-sovereign credit record storage
+## Protocol core components
 
-The _self-sovereign credit record (SSCR)_ is a unique global decentralized identity containing general-purpose and protocol-specific verifiable credentials. The SSCR is owned and managed by the user, and the credential data is encrypted and kept in decentralized storage.
+The core of the Growr protocol consists of four groups of components:
+* Protocol core identity services
+* Protocol core financing services
+* Protocol core data services
+* Protocol credit record store
 
-## Protocol apps
+All the services in these groups are open-source, deployed with a proof that the running service has a well-known identity or a public key, and its code is identical to the source code in the Growr repositories.
 
-Protocol apps are custodial or non-custodial web and mobile applications, integrated with the protocol, including:
+### Identity services
 
-* _Borrowing (distribution) apps._ End-user web or mobile applications for the Borrowers to onboard, collect credentials and apply for loans to the protocol. Such applications can be provided either by an independent financial service provider in a regulated custodial scenario, by local communities, or as a completely decentralized app providing the necessary access to the protocol.
-* _Lending apps._ Decentralized applications for lending pool and project management. Those applications include the creation of pools and projects, depositing and withdrawing of funds, and monitoring utilization and profitability performance.
+The Growr protocol’s core identity services are:
+* _Credential issuing service:_ Issues verifiable credentials based on data received or verified for given borrowers.
+* _Credential verification service:_ Verifies presentations of credentials in order to access funding
+* _SSCR agent service:_ A custodial service that operates with the self-sovereign credit of the user with his permissions.
 
-## Protocol services
+To be trusted by all participants, the Credential issuing and the Credential verification services will have well-known DIDs and deployment addresses.
 
-The Growr core protocol and applications are integrated with various internal or third-party services, covering mainly risk management functions.
+### Financing services
 
-* _Credential issuing services._ Issue verifiable credentials asserting certain facts about the borrower.
-* _Credential verification services._ Verify that the presented credentials are trusted and valid and owned by the subject.
-* _Credential storage services._ Securely store the credentials and the declarative details, part of the borrower’s SSCR.
-* _Payment services._ Cover various on-ramp, off-ramp services, and fiat settlement services. To implement the above services, the protocol utilizes various building blocks from RSK Infrastructure Framework (RIF).
+The Growr protocol’s core financing services are:
+* _Project management service:_ Provides an API to create and manage lending projects in the marketplace. It reads and writes data to the Project book.
+* _Loan management service:_ Controls the creation, utilization and repayment of loans from the marketplace. It reads and writes data to the Loan book.
+* _Funding and payment services:_ A set of services with payment management functions. They provide integration with supported funding sources such as Lightning Network channels and on-chain multi-sign accounts.
+
+### Data services
+
+The Growr protocol’s core data services are:
+* _Project book:_ Enables the creation of new projects with strictly defined eligibility criteria and funding source.
+* _Loan book:_ Enables the creation of loans after eligibility check of the borrower against a given project.
+* _Payment registry:_ Contains history of loan utilization, repayment and other related events. It supports the issuing of a proof of positive credit history.
+* _Read-only copies:_ Contains aggregated data plus audit logs of the above services, sanitized from any personal-revealing data. It is publicly exposed to ensure transparency of the marketplace and to monitor its global impact.
+
+To implement those operational data storage services, the Growr protocol leverages Holepunch’s Hyperbee, an append-only B-tree based on Hypercore. The read-only copies are implemented as a Hyperswarm with published well-known Public Key and Topic.
+
+### Protocol credit record store
+
+The _credit record store_ provides a decentralized storage of the self-sovereign credit record (SSCR) of the users. Each record represents a unique global decentralized identity and contains general-purpose and protocol-specific verifiable credentials. The credentials data is encrypted and accessible only by the identity owner.
 
 <div style="page-break-after: always;"></div>

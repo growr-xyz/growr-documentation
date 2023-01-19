@@ -4,13 +4,13 @@
 
 This Growr protocol’s documentation is a work in progress, intended to present the high-level design of the protocol for public feedback. It should not be considered complete or final. Future revisions will address incomplete elements and currently unforeseen aspects and issues.
 
-The present Growr documentation version is 0.5 from August 2022.
+The present Growr documentation version is 0.6 from January 2023.
 
 ## Feedback and contribution
 
 We are developing the Growr protocol as an open-source project. Lending, and especially _decentralized micro-lending_, is a very complex topic and many aspects are yet to consider. We welcome your input on how to improve the protocol and support its development.
 
-To provide your feedback, please submit an issue or a pull request in the [Growr documentation repo on GitHub](https://github.com/growr-xyz/growr-documentation/).
+To provide your feedback, please submit an issue or a pull request in the [Growr documentation repo on GitHub](https://github.com/growr-xyz/growr-documentation/), or send an email to [info@growr.xyz](mailto:info@growr.xyz).
 
 ## Additional information
 
