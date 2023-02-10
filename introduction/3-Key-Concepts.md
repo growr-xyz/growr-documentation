@@ -20,14 +20,14 @@ The SSCR contains both hard information (facts such as credit score and history,
 
 Verifiable credentials in an SSCR can be (but are not limited to):
 
-* _KYC credential_ (hard information). This credential proves, possibly in a zero-knowledge manner, a successfully passed KYC process (including AML/CFT risk check) and can be issued by any distributor or a traditional third-party identity verification service. While not necessarily contributing to the risk assessment, the presence of such credentials may be a prerequisite for certain regulated lenders to provide funding.
-* _Financial data credential_ (hard information). This credential contains various financial data of a borrower, such as products and transaction history, and can be issued by any account servicing financial institution or a trusted financial data provider.
+* _KYC credential_ (hard information). This credential proves, possibly in a zero-knowledge manner, a successfully passed KYC process (including AML/CFT risk check) and can be issued by any user platform integrated with the protocol or by a traditional third-party identity verification service. While not necessarily contributing to the risk assessment, the presence of such credentials may be a prerequisite for certain regulated lenders to provide funding.
+* _Financial data credential_ (hard information). This credential contains various financial data of a borrower, such as products and transaction history, and can be issued by any account servicing financial institution, by a trusted financial data provider or based on on-chain bitcoin or side-chain activity.
 * _Business activity credential_ (hard information). Data about the business activity such as income statement, cash flow, and/or balance sheet.
 * _Savings history credential_ (hard information). This credential proves that the user is making regular micro-payments to his/her saving account. It could be issued by any trusted financial institution or savings account provider.
 * _Credit history credential_ (hard information). History of the borrower’s past loans from the protocol or any external trusted sources.
 * _Credit score credential_ (hard information). This is a credential that summarizes other atomic credentials and represents the overall credit score of the borrower.
 * _Community membership credential_ (soft information). This credential is issued by a local organization (cooperative, union, chamber) or an employer, asserting the membership of the borrower in the organization.
-* _Social vouching credential_ (soft information). This credential is received by endorsement from other protocol users, who have a certain reputation level and/or are trusted by the protocol.
+* _Social vouching credential_ (soft information). This credential is received through endorsement from other protocol users, who have a certain reputation level and/or are trusted by the protocol.
 * _Financial health credential_ (soft information). This is a special credential issued by the protocol itself for successfully passing “financial health treatment” through education and/or mentoring, as well as earned through regular on-time repayments of past loans received through the protocol.
 
 ## Lending and borrowing
@@ -71,7 +71,7 @@ The Growr protocol approaches lending differently. The protocol aims at providin
 
 A large percentage of the global population remains with limited access to credit due to immigration, lack of credit history or due to negative reporting to credit bureaus in case of late bills—even when the invoice was never received by the debtor [[19]](#ref19). In contrast to the traditional credit bureaus, the protocol puts the users in control of their data by storing their credit record in “their own pocket” without dependence on any central authority or intermediary. This way, the protocol aims at enabling borrowers to build a credit record based on alternative and relevant data sources, such as trusted organizations, financial health metrics, and peer vouching.
 
-Borrowers collect credentials into their self-sovereign credit record, lenders use these credentials to better assess creditworthiness, and trusted parties are incentivized by the protocol to provide the credentials.
+Borrowers collect credentials into their self-sovereign credit record, originators use these credentials to better assess creditworthiness, and trusted parties are incentivized by the protocol to provide the credentials.
 
 ## Financial health
 
