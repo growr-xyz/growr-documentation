@@ -48,6 +48,9 @@ However, even with regulated interest rates, the price of banking services is hi
 
 To assess borrower risk, banks use the services of credit bureaus—private companies or government agencies that collect data about borrowers from various sources. But people without prior credit history may find themselves trapped in a loophole as banks may not be willing to serve them at all. In the end, being poor becomes very expensive because the financially excluded easily fall prey to loan sharks with usurious conditions.
 
+### Microfinance
+
+Informal or semi-formal community financial groups (such as rotating savings and credit associations, village savings and loan associations, savings and credit cooperative societies and many other varieties) have existed for hundreds and even possibly thousands of years. They remain the primary way to save and borrow for the population in the Global South that does not have access to formal financial institutions. However, these groups remain disconnected from the global financial system and suffer from bad practices and physical cash security.
 
 ### Microfinance
 
@@ -59,9 +62,9 @@ However, over the last decades, there has been a significant deviation from this
 
 ### Decentralized lending protocols
 
-Since 2020, an increasing number of decentralized borrowing and lending protocols have been emerging fast in the decentralized finance (DeFi) space. They aim to fundamentally reinvent the financial infrastructure, enabling people to transact with each other globally, securely and in a permissionless manner. 
+Since 2020, an increasing number of decentralized borrowing and lending protocols have been emerging fast in the decentralized finance (DeFi) space. They aim to fundamentally reinvent the financial infrastructure, enabling people to transact with each other globally, securely and in a permissionless manner.
 
-While most of the activity in the space is outside of the Bitcoin ecosystem, projects such as Tropykus and Sovryn built on Bitcoin’s side-chain Rootstock (RSK) are promising to bring decentralized lending to Bitcoin. 
+While most of the activity in the space is outside of the Bitcoin ecosystem, projects such as Tropykus and Sovryn built on Bitcoin’s side-chain Rootstock (RSK) are promising to bring decentralized lending to Bitcoin.
 
 Decentralized finance protocols still target mostly advanced users and let them lend or borrow digital assets without going to a centralized intermediary. Users deposit digital assets into liquidity pools, which become funds that the protocol can lend out to other users. Decentralized finance protocols aim to automate lending and would not be willing to assess individual borrowers. That is why they require collateral. This means that the on-chain assets of the borrower are used to secure a loan. The borrower provides the asset to secure the loan, and if the borrower defaults on the loan, the lender can take possession of the asset and sell it to cover the loss. Moreover, they often require over-collateralization, i.e. the value of locked assets as collateral must significantly exceed the loan amount. Currently, decentralized finance usage is higher in developed markets and by institutional investors [[18]](#ref18).
 

@@ -32,7 +32,7 @@ _Borrowers_, represented by self-employed, micro-businesses, and smallholder far
 _Originators_ facilitate access to the protocol by grouping several borrowers with similar needs and presenting project applications to the marketplace on their behalf. They publish offers to the loan marketplace by creating _projects_ on behalf of the borrowers. The originators provide junior (first-loss) capital to finance the whole project or part of it. They can be:
 
 * _Local cooperatives, guilds or other community organizations_ that are formed by borrowers to gain better access to loans and to standardize their relationship with the rest of the participants in the ecosystem.
-* _Federated mints_ [[21]](#ref21), enabling access to micro-lending to their users.
+* _Federated Chaumian mints_ [[21]](#ref21), enabling access to micro-financing to their users.
 * _Telcos, retailers and gig-economy platforms_ that onboard and vet the users into their services and then facilitate their access to the protocol as an embedded financial service.
 * _Digital wallets and fintech providers_ that already offer financial services and that can expand to unsecured decentralized lending.
 
@@ -108,12 +108,14 @@ The _global decentralized micro-lending marketplace_ is provided by Growr throug
 
 <div style="page-break-after: always;"></div>
 
-## How does the Growr protocol contribute to Bitcoin?
+## How does Bitcoin enable this in a fundamentally better way?
 
-The protocol contributes to the development of the Bitcoin ecosystem in several important dimensions:
+First, Bitcoin provides a sound monetary foundation. It is the perfect store of value for long-term capital accumulation, which cannot be inflated or seized by governments or adversaries. It’s fully open and censorship-resistant in nature, which allows anyone to participate directly without the need to rely on intermediaries, creating a platform for building financial services outside of the traditional system.
 
-* _Ethos:_ The protocol—built on top of Bitcoin—is used for solving real-life problems. We believe there is a gap in the available financial services for the poor—instead of building these on legacy or speculative rails, building them on Bitcoin strengthens Bitcoin's ethos.
-* _Bringing more users._ Our vision is to bring the next 1B people on Bitcoin. By bringing more accessible financial services to the Bitcoin ecosystem—such as unsecured micro-loans—we bet on making Bitcoin even more attractive and accelerating its adoption. We are building a complementary solution to what already exists in the Bitcoin ecosystem.
-* _Incentivizing adoption:_ The protocol enables the monetization of credentials issued by financial health providers (part of the trusted parties' role outlined above). Bitcoin missionaries promoting adoption can also act as such providers when they educate people about money and good financial habits. This works in the following way: a financial health provider issues verifiable credentials to a user (e.g., based on a test or proven skills), who stores these credentials as part of their self-sovereign credit record. When the borrower applies for a loan through the protocol, an originator uses these credentials for assessing the risk and providing access to micro-loans. And after the borrower repays the micro-loans in full without delays, a reward (a predefined part of the interest) goes to the financial health provider. This accelerates the adoption network effect through additional incentivization.
-* _Additional revenue for miners:_ 80% of the fees of each transaction on the Rootstock (RSK) network goes as rewards to Bitcoin miners. The protocol will increase the usage and adoption of the Rootstock network, and this will increase the miners’ revenue. For more details, please see the “Why RSK is Important for the Bitcoin Ecosystem” section in the RSK whitepaper [[13]](#ref13).
+Second, the Lightning network enables low-cost instant and global transfer of value—in bitcoin or fiat-pegged digital assets. This way, capital from anywhere in the world can reach even the most distant community directly, avoiding unnecessary costs.
+
+Third, solutions such as federated Chaumian mints enable the creation of local circular economies based on bitcoin, based on community custody of self-sovereign digital identities, bitcoin and other digital assets. Bitcoin mints connected to the Lightning network make it possible for informal financial groups to become digital micro-banks and empower their members with a full set of financial services.
+
+Fourth, smart contracts on Bitcoin side-chains such as Rootstock [[13]](#ref13) and Liquid enable global digital capital infrastructure and automated pooling of funds by capital providers, matching their investment criteria to community projects.
+With the Growr protocol, community members can also build their self-sovereign identities and credit records, enabling them to apply for financing from capital providers connected to the global digital capital infrastructure.
 
