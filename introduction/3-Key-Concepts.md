@@ -48,7 +48,7 @@ However, even with regulated interest rates, the price of banking services is hi
 
 To assess borrower risk, banks use the services of credit bureaus—private companies or government agencies that collect data about borrowers from various sources. But people without prior credit history may find themselves trapped in a loophole as banks may not be willing to serve them at all. In the end, being poor becomes very expensive because the financially excluded easily fall prey to loan sharks with usurious conditions.
 
-### Microfinance
+### Informal financial groups
 
 Informal or semi-formal community financial groups (such as rotating savings and credit associations, village savings and loan associations, savings and credit cooperative societies and many other varieties) have existed for hundreds and even possibly thousands of years. They remain the primary way to save and borrow for the population in the Global South that does not have access to formal financial institutions. However, these groups remain disconnected from the global financial system and suffer from bad practices and physical cash security.
 
