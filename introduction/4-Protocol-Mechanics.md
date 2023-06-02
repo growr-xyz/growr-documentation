@@ -69,9 +69,9 @@ _Capital providers_ allocate senior capital to the loan marketplace and delegate
 - Large institutional investors or digital asset managers.
 - Decentralized finance protocols.
 
-### Decentralized marketplace
+### Growr protocol
 
-The _global decentralized micro-lending marketplace_ represents a P2P network of Growr nodes providing a set of open-source services. It enables originators to publish loan offers with predefined conditions and eligibility criteria, and borrowers to apply and get financing using credentials from their self-sovereign credit record. It also enables capital providers to fund projects either by accessing the Growr node of an originator directly, or by running their own node.
+_Growr protocol_ implements a global decentralized micro-lending marketplace as a P2P network of Growr nodes. Each _Growr node_ represents a package of open-source components and a set of lending projects. It enables originators to publish projects with predefined conditions and eligibility criteria, and borrowers to apply and get financing using credentials from their self-sovereign credit record. It also enables capital providers to fund projects either by accessing the Growr node of an originator directly, or by running their own node.
 
 ## Participant incentives
 

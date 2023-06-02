@@ -8,17 +8,17 @@ The following diagram provides a high-level overview of Growr functional archite
 
 The protocol works as a _P2P network of Growr nodes_... TBD
 
-## Front-end components
+## Front-end applications
 
-At the top of the diagram are the front-facing applications. These apps and services are on top of FOSS protocol and services. They can be developed by Growr or other integrators per deployment. The protocol can be extended with other services and apps fitting the purpose.
+At the top of the diagram are the front-facing applications. These apps and services are on top of FOSS protocol and services. They can be developed by Growr or other integrators per deployment. The protocol can be extended with applications fitting the purpose.
 
-- _Community front apps:_ Set of applications that are used by the borrowers to operate their self-sovereign credit record and to apply for funding from different projects. Depending on the local environment and user base, those might be web, mobile or USSD applications.
-- _Investor apps:_ Applications used by originators and investors to create and fund projects, and to monitor their performance.
+- _Borrowing and Community front apps:_ Set of applications that are used by the borrowers to operate their self-sovereign credit record and to apply for funding from different projects. Depending on the local environment and user base, those might be web, mobile or USSD applications.
+- _Lending and Investor apps:_ Applications used by originators and investors to create and fund projects, and to monitor their performance.
 - _Impact portal:_ An open-source standalone web application that can use aggregated data from the protocol to display a dashboard presenting the global impact of the marketplace.
 
 The front-facing applications are connected to Growr node via an API layer, which is responsible for the authentication and authorisation of the users, as well as for the communication with the core services of the protocol.
 
-## Growr node components
+## Growr core services
 
 Growr node contains a group of services that are maintained as open-source software under an open license but can be extended by following the community and product guidelines.
 All the services in these groups are deployed with proof that the running service has a well-known identity or a public key, and its code is identical to the source code in the Growr repositories.
@@ -28,9 +28,9 @@ All the services in these groups are deployed with proof that the running servic
 The Growr protocol’s core identity services are:
 
 - _Credential issuing service:_ Issues verifiable credentials based on data received or verified for given borrowers.
-- _Credential verification service:_ Verifies presentations of credentials in order to access funding
+- _Credential verification service:_ Verifies presentations of credentials in order to access funding.
 - _SSCR agent service:_ A custodial service that operates with the self-sovereign credit of the user with his permissions.
-- _User management service_: TBD
+- _User management service_: A service that is responsible for registration and management of the node applications’ users.
 
 To be trusted by all participants, the Credential issuing and the Credential verification services will have well-known DIDs and deployment addresses.
 
@@ -38,17 +38,18 @@ To be trusted by all participants, the Credential issuing and the Credential ver
 
 The Growr protocol’s core financing services are:
 
-- _Project management service:_ Provides an API to create and manage lending projects in the marketplace. It reads and writes data to the Project book.
-- _Loan management service:_ Controls the creation, utilization and repayment of loans from the marketplace. It reads and writes data to the Loan book.
-- _Funding and payment services:_ A set of services with payment management functions. They provide integration with supported payment rails such as Bitcoin network, Lightning Network channels and others.
+- _Project service:_ Provides an API to create and manage lending projects. It reads and writes data to the _Project book_.
+- _Loan service:_ Controls the creation, utilization and repayment of loans. It reads and writes data to the _Loan book_.
+- _Funding service:_ Manages the funding and repayment operations. It reads and writes data to the _Funding book_.
+- _Investor service:_ Provides onboarding and contract management services for project investors.
 
-### NOSTR services
+### Payment services
 
-TBD
+A set of services with payment management functions. They provide integration with supported payment rails such as Bitcoin network, Lightning Network channels and others
 
 ### Credit record storage
 
-The _credit record storage_ provides decentralized storage of the self-sovereign credit record (SSCR) of the users. Each record represents a unique global decentralized identity and contains general-purpose and protocol-specific verifiable credentials. The credentials data is encrypted and accessible only by the identity owner.
+The _Credit record storage_ provides decentralized storage of the self-sovereign credit record (SSCR) of the users. Each record represents a unique global decentralized identity and contains general-purpose and protocol-specific verifiable credentials. The credentials data is encrypted and accessible only by the identity owner.
 
 ### Distributed data services
 
