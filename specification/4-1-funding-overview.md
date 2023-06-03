@@ -15,6 +15,10 @@ Below is a diagram that summarizes the funding processes:
 
 The next sections describes the following processes:
 
-- TBD
+- Project discovery
+- Investor onboarding
+- Project funding
+- Project funds utilization
+- Project repayment
 
 <div style="page-break-after: always;"></div>

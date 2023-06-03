@@ -1,10 +1,10 @@
-## Borrowing onboarding
+## Borrower onboarding
 
 ### Borrower registration
 
 See [User registration](#ref-2-3-ur)
 
-### Borrower profile setup
+### Borrower profile setup with phone
 
 ```mermaid
 sequenceDiagram
@@ -37,7 +37,7 @@ Process steps:
 7. Optionally, Growr User service sends the data to external Originator system (eg. scoring system).
 8. The borrower is now authorized to access the "loans" option from the menu.
 
-### Credentials issuing
+### Credentials issuing with phone
 
 ```mermaid
 sequenceDiagram

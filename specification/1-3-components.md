@@ -1,21 +1,13 @@
-## Growr protocol components
+## Growr components
 
-### Overview
+The following section contains a list of the main Growr components, participating in the lending and funding processes of the protocol. For more details, see [Growr components](#ref-8-2).
 
-Below is a high-level overview of Growr protocol architecture:
-
-![Growr components](../images/growr-components.svg)
-
-_Growr protocol_ implements a global decentralized micro-lending marketplace as a P2P network of Growr nodes. Each _Growr node_ represents a package of open-source components and a set of lending projects. It enables originators to publish projects with predefined conditions and eligibility criteria, and borrowers to apply and get financing using credentials from their self-sovereign credit record. It also enables capital providers to fund projects either by accessing the Growr node of an originator directly, or by running their own node.
-
-### Front-end applications
+Front-end applications:
 
 - Node operator portal
 - Lending portal
 - Investor portal
 - Borrowing applications
-
-### Core services
 
 Identity services:
 
@@ -29,7 +21,6 @@ Financing services:
 
 - Project service
 - Loan service
-- Lending events service
 - Investor service
 - Funding service
 

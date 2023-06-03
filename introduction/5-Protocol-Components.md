@@ -2,15 +2,19 @@
 
 ## Overview
 
-The following diagram provides a high-level overview of Growr functional architecture with the open-source protocol components and the necessary apps and services for a working case example.
+The following diagram provides a high-level overview of Growr functional architecture.
 
 ![Architecture](../images/growr-architecture.svg)
 
-The protocol works as a _P2P network of Growr nodes_... TBD
+_Growr protocol_ implements a global decentralized micro-lending marketplace as a P2P network of Growr nodes. Each _Growr node_ represents a package of open-source components and a set of lending projects. It enables originators to publish projects with predefined conditions and eligibility criteria, and borrowers to apply and get financing using credentials from their self-sovereign credit record. It also enables capital providers to fund projects either by accessing the Growr node of an originator directly, or by running their own node.
+
+Growr architecture provides the opportunity to pack the applications and services in few options, based on the deployment requirements and specifics. There are several deployment blueprints for Growr node depending on the use cases, for example: self-hosted originator node, cloud-hosted originator node or cloud-hosted investor node. The backend services can be packed as a single docker image and can be included in different configurations to run all or few services per deployment target.
+
+The Growr nodes communicates between each other in 2 ways. The first option is through a Discovery service, using the TCP Gossip transport protocol. The second option is through replication of the distributed data across the network, using Holepunch's Hyperbee and Hyperswarm protocols.
 
 ## Front-end applications
 
-At the top of the diagram are the front-facing applications. These apps and services are on top of FOSS protocol and services. They can be developed by Growr or other integrators per deployment. The protocol can be extended with applications fitting the purpose.
+At the top of the diagram are the front-facing applications. These apps and services are on top of FOSS protocol and services. They can be developed by Growr or other integrators per deployment. The node can be extended with different applications fitting the purpose.
 
 - _Borrowing and Community front apps:_ Set of applications that are used by the borrowers to operate their self-sovereign credit record and to apply for funding from different projects. Depending on the local environment and user base, those might be web, mobile or USSD applications.
 - _Lending and Investor apps:_ Applications used by originators and investors to create and fund projects, and to monitor their performance.
@@ -20,16 +24,15 @@ The front-facing applications are connected to Growr node via an API layer, whic
 
 ## Growr core services
 
-Growr node contains a group of services that are maintained as open-source software under an open license but can be extended by following the community and product guidelines.
-All the services in these groups are deployed with proof that the running service has a well-known identity or a public key, and its code is identical to the source code in the Growr repositories.
+The backend of Growr node consists of a group of services that are maintained as open-source software under an open license but can be extended following the community and product guidelines. All the services in these groups are deployed with proof that the running service has a well-known identity or a public key, and its code is identical to the source code in the Growr repositories.
 
 ### Identity services
 
 The Growr protocol’s core identity services are:
 
+- _SSCR agent service:_ A custodial service that operates the self-sovereign credit record (SSCR) of the user with his permissions.
 - _Credential issuing service:_ Issues verifiable credentials based on data received or verified for given borrowers.
 - _Credential verification service:_ Verifies presentations of credentials in order to access funding.
-- _SSCR agent service:_ A custodial service that operates with the self-sovereign credit of the user with his permissions.
 - _User management service_: A service that is responsible for registration and management of the node applications’ users.
 
 To be trusted by all participants, the Credential issuing and the Credential verification services will have well-known DIDs and deployment addresses.
@@ -45,7 +48,7 @@ The Growr protocol’s core financing services are:
 
 ### Payment services
 
-A set of services with payment management functions. They provide integration with supported payment rails such as Bitcoin network, Lightning Network channels and others
+A set of services with payment management functions. They provide integration with supported payment rails such as Bitcoin network, Lightning Network channels and others.
 
 ### Credit record storage
 

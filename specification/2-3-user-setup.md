@@ -53,7 +53,7 @@ Currently, Growr User service supports 3 types of registration:
 
 - Social account (Google, Facebook): applicable to users with type _Originator admin_ and _Investor_
 - Email + password: applicable to users with type _Originator admin_ and _Investor_
-- Phone: applicable to users with type _Originator agent_ and _Borrower_
+- Phone (USSD): applicable to users with type _Originator agent_ and _Borrower_
 
 ### User registration with Social account
 
