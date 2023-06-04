@@ -171,7 +171,7 @@ The _Loan service:_ controls the approval, creation, utilization and repayment o
 
 The _Funding service:_ is responsible for project funding and project repayment operations. It reads and writes data to the _Funding book_.
 
-The _Investor service:_ provides onboarding and contract management services for project investors. It reads and writes data to a database collection having the same name.
+The _Project investor service:_ provides onboarding and contract management services for project investors. It reads and writes data to a database collection having the same name.
 
 ### Payment services
 
@@ -189,7 +189,7 @@ Growr _Nostr service_ is responsible for creating a public Nostr profile and pos
 
 ### Supporting services
 
-The backend of Growr protocol contains also a set of supporting services that are not directly exposed via API but are used internally by the other services. They include:
+The backend of Growr protocol contains also a set of supporting services that are not directly exposed via APIs but are used internally by the other services. They include:
 
 - Database management, MongoDB
 - Append-only log, Hyperbee and Hyperswarm

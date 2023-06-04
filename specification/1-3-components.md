@@ -21,7 +21,7 @@ Financing services:
 
 - Project service
 - Loan service
-- Investor service
+- Project investor service
 - Funding service
 
 Payment services:
