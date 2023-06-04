@@ -6,8 +6,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'components/**.md'
-      - 'mechanics/**.md'
+      - 'specification/**.md'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,21 +27,7 @@ jobs:
       - name: Concat document files
         uses: bayssmekanique/action-md-concat@v1.1.0
         with:
-          srcDir: './components'
-          destFile: './litepaper/spec-1.md'
-          
-      # Concat mechanics MD files
-      - name: Concat document files
-        uses: bayssmekanique/action-md-concat@v1.1.0
-        with:
-          srcDir: './mechanics'
-          destFile: './litepaper/spec-2.md'
-      
-      # Concat all MD files
-      - name: Concat document files
-        uses: bayssmekanique/action-md-concat@v1.1.0
-        with:
-          srcDir: './litepaper'
+          srcDir: './specification'
           destFile: './litepaper/Growr-spec.md'
   
       - name: Convert MD to PDF
@@ -60,5 +45,5 @@ jobs:
       - name: Add to repo
         uses: EndBug/add-and-commit@v9.0.0
         with:
-          message: 'Add new Litepaper PDF'
+          message: 'Add new Growr spec PDF'
           add: './litepaper/Growr-spec.pdf ./litepaper/Growr-spec.html --force'
