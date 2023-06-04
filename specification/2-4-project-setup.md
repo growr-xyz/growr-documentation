@@ -1,7 +1,5 @@
 ## Project setup
 
-TBD - description of project object (from old specification & refactoring doc), project statuses
-
 ### Project creation
 
 ```mermaid

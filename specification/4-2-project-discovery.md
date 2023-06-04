@@ -28,21 +28,35 @@ Process steps:
 ### Project feed
 
 ```mermaid
+sequenceDiagram
+  actor o as Originator
+  participant lp as Lending portal
+  participant ns as Growr Nostr service
+  participant nr as Nostr relay
 
+  o->>lp: Review projects
+  o->>+lp: Add an update
+  lp->>+ns: Send update
+  ns->>nr: Send message
+  ns-->>-lp: Confirmation
+  lp-->>-o: Confirmation
 ```
 
 Process steps:
 
-1. TBD
+1. An originator reviews the projects in the Lending portal and selects one (that is public).
+2. The originator enters a new message with description about project status or achievements.
+3. The Lending portal sends the information to Growr Nostr service.
+4. Growr Nostr service posts a message to project's Nostr profile through Nostr relay.
+5. Response message.
+6. Response message.
 
 ### Project discovery
 
-```mermaid
+Investors can discover lending projects in 3 ways:
 
-```
-
-Process steps:
-
-1. TBD
+- Review the Nostr profile of a public project.
+- Review a public project in the project directory in Investor portal.
+- Review a non-public project in Investor portal after he/she has been invited as an investor to this project.
 
 <div style="page-break-after: always;"></div>

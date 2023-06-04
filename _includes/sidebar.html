@@ -14,28 +14,10 @@
         {% endfor %}
     </ul>
 
-    <h3>Protocol components</h3>
-    <ul id="ul-components" style="list-style: none;">
+    <h3>Specification</h3>
+    <ul id="ul-spec" style="list-style: none;">
         {% for doc in doclist %}
-        {% if doc.name contains '.md' and doc.url contains '/components/' %}
-        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    <h3>Protocol mechanics</h3>
-    <ul id="ul-mechanics" style="list-style: none;">
-        {% for doc in doclist %}
-        {% if doc.name contains '.md' and doc.url contains '/mechanics/' %}
-        <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    <h3>Protocol implementation</h3>
-    <ul id="ul-implementation" style="list-style: none;">
-        {% for doc in doclist %}
-        {% if doc.name contains '.md' and doc.url contains '/implementation/' %}
+        {% if doc.name contains '.md' and doc.url contains '/specification/' %}
         <li><a id="{{ doc.title }}" class="sidenav-a" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
         {% endif %}
         {% endfor %}

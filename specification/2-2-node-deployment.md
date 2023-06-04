@@ -7,11 +7,11 @@ There are 2 main options for Growr node deployment:
 
 ### Self-hosting
 
-In progress...
+In progress
 
 ### Managed service
 
-In progress...
+In progress
 
 ### Organization setup
 

@@ -1,4 +1,4 @@
-## Components
+## Architecture components
 
 <a name="ref-8-2"></a>
 
@@ -14,7 +14,5 @@ Growr node relies on 2 types of _data services_:
 
 - _Local data services:_ Database collection that stores editable and manageable data locally in the node.
 - _Distributed data services:_ Append-only B-tree logs with read-only copies that are shared and can be discovered by external services by their public key.
-
-Growr node also contains _network nodes_ ... TBD
 
 <div style="page-break-after: always;"></div>
