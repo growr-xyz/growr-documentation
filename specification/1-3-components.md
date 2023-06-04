@@ -1,6 +1,6 @@
 ## Growr components
 
-The following section contains a list of the main Growr components, participating in the lending and funding processes of the protocol. For more details, see [Growr components](#ref-8-2).
+The following section contains a list of the main Growr components, participating in the lending and funding processes of the protocol. For more details, see [Architecture components](#ref-8-2).
 
 Front-end applications:
 

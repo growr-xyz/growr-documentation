@@ -32,7 +32,7 @@
    </td>
    <td>organizationId
 <p>
-userId
+userId</p>
    </td>
    <td>Information about who created the project
    </td>
@@ -42,7 +42,7 @@ userId
    </td>
    <td>name
 <p>
-description
+description</p>
    </td>
    <td>Descriptive attributes of the project
    </td>
@@ -60,9 +60,9 @@ description
    </td>
    <td>profileUrl
 <p>
-bannerUrl
+bannerUrl</p>
 <p>
-npub
+npub</p>
    </td>
    <td>Publishing attributes of the project
    </td>
@@ -88,7 +88,7 @@ npub
    </td>
    <td>amount
 <p>
-currency
+currency</p>
    </td>
    <td>Total target amount and currency of the loans from the project 
    </td>
@@ -106,13 +106,13 @@ currency
    </td>
    <td>loanType
 <p>
-loanMinDuration
+loanMinDuration</p>
 <p>
-loanMaxDuration
+loanMaxDuration</p>
 <p>
-loanMinAmount
+loanMinAmount</p>
 <p>
-loanMaxAmount
+loanMaxAmount</p>
    </td>
    <td>Restrictive parameters for the loans from the project
    </td>
@@ -146,11 +146,11 @@ loanMaxAmount
    </td>
    <td>networkName
 <p>
-tokenName
+tokenName</p>
 <p>
-fundingAddress
+fundingAddress</p>
 <p>
-repaymentAddress
+repaymentAddress</p>
    </td>
    <td>Details of the payment rail and currency
    </td>
@@ -160,9 +160,9 @@ repaymentAddress
    </td>
    <td>terms
 <p>
-interestRate
+interestRate</p>
 <p>
-leverageFactor
+leverageFactor</p>
    </td>
    <td>Descriptive attributes of the funding source
    </td>
@@ -172,7 +172,7 @@ leverageFactor
    </td>
    <td>fundingMinAmount
 <p>
-fundingMaxAmount
+fundingMaxAmount</p>
    </td>
    <td>Restrictive parameters for the project investments
    </td>
@@ -190,9 +190,9 @@ fundingMaxAmount
    </td>
    <td>fundingType
 <p>
-fundingNetwork
+fundingNetwork</p>
 <p>
-fundingToken
+fundingToken</p>
    </td>
    <td>Details of the payment rail and currency
    </td>
@@ -306,9 +306,9 @@ fundingToken
    </td>
    <td>startDate
 <p>
-endDate
+endDate</p>
 <p>
-duration
+duration</p>
    </td>
    <td>Loan duration parameters
    </td>
@@ -318,11 +318,11 @@ duration
    </td>
    <td>interestRate
 <p>
-disbursementFee
+disbursementFee</p>
 <p>
-cashBackRate
+cashBackRate</p>
 <p>
-gracePeriod
+gracePeriod</p>
    </td>
    <td>Loan financial parameters
    </td>
@@ -433,7 +433,7 @@ gracePeriod
    </td>
    <td>findById
 <p>
-findByUser
+findByUser</p>
    </td>
    <td>Get organizations by different filters
    </td>
@@ -459,7 +459,7 @@ findByUser
    </td>
    <td>findById
 <p>
-findByOrganization
+findByOrganization</p>
    </td>
    <td>Get users by different filters
    </td>
@@ -469,11 +469,11 @@ findByOrganization
    </td>
    <td>addUser
 <p>
-registerBorrower
+registerBorrower</p>
 <p>
-registerOriginator
+registerOriginator</p>
 <p>
-registerInvestor
+registerInvestor</p>
    </td>
    <td>Add a new user
    </td>
@@ -491,15 +491,15 @@ registerInvestor
    </td>
    <td>getOTP
 <p>
-validateOTP
+validateOTP</p>
 <p>
-setPIN
+setPIN</p>
 <p>
-validatePIN
+validatePIN</p>
 <p>
-loginByEmail
+loginByEmail</p>
 <p>
-loginBySocial
+loginBySocial</p>
    </td>
    <td>Actions required for the different types of user authentication
    </td>
@@ -509,11 +509,11 @@ loginBySocial
    </td>
    <td>findByKey
 <p>
-findByOrganization
+findByOrganization</p>
 <p>
-findByAddress
+findByAddress</p>
 <p>
-findPublic
+findPublic</p>
    </td>
    <td>Get projects by different filters
    </td>
@@ -531,9 +531,9 @@ findPublic
    </td>
    <td>updateProject
 <p>
-modifyProjectParams
+modifyProjectParams</p>
 <p>
-addProjectFunding
+addProjectFunding</p>
    </td>
    <td>Update different project attributes
    </td>
@@ -543,7 +543,7 @@ addProjectFunding
    </td>
    <td>activateProject
 <p>
-deactivateProject
+deactivateProject</p>
    </td>
    <td>Enable or pause the lending activities within a project 
    </td>
@@ -553,11 +553,11 @@ deactivateProject
    </td>
    <td>findByKey
 <p>
-findByProject
+findByProject</p>
 <p>
-findByOrganization
+findByOrganization</p>
 <p>
-findByUser
+findByUser</p>
    </td>
    <td>Get loans by different filters
    </td>
@@ -591,7 +591,7 @@ findByUser
    </td>
    <td>findByProject
 <p>
-findByInvestor
+findByInvestor</p>
    </td>
    <td>Get project 
    </td>
@@ -601,9 +601,9 @@ findByInvestor
    </td>
    <td>requestInvitation
 <p>
-acceptInvitation
+acceptInvitation</p>
 <p>
-rejectInvitation
+rejectInvitation</p>
    </td>
    <td>Actions executed by the investor during the project investment setup
    </td>
@@ -613,9 +613,9 @@ rejectInvitation
    </td>
    <td>inviteInvestor
 <p>
-approveInvestor
+approveInvestor</p>
 <p>
-rejectInvestor
+rejectInvestor</p>
    </td>
    <td>Actions executed by the originator during the project investment setup
    </td>
@@ -625,7 +625,7 @@ rejectInvestor
    </td>
    <td>findByKey
 <p>
-findByProject
+findByProject</p>
    </td>
    <td>Get funding events by different filters
    </td>
@@ -643,7 +643,7 @@ findByProject
    </td>
    <td>refund
 <p>
-revert
+revert</p>
    </td>
    <td>Create a new repayment event
    </td>
@@ -661,7 +661,7 @@ revert
    </td>
    <td>findByLoan
 <p>
-findByAddress
+findByAddress</p>
    </td>
    <td>Get loan payments by different filters
    </td>
@@ -671,11 +671,11 @@ findByAddress
    </td>
    <td>addDisbursement
 <p>
-confirmDisbursement
+confirmDisbursement</p>
 <p>
-addRepayment
+addRepayment</p>
 <p>
-confirmRepayment
+confirmRepayment</p>
    </td>
    <td>Create and confirm payment events
    </td>
@@ -683,11 +683,11 @@ confirmRepayment
   <tr>
    <td>Network 
 <p>
-(Bitcoin, 
+(Bitcoin,</p>
 <p>
-Lightning,
+Lightning,</p>
 <p>
-Rootstock)
+Rootstock)</p>
    </td>
    <td>createWallet
    </td>
@@ -723,7 +723,7 @@ Rootstock)
    </td>
    <td>createPost
 <p>
-createDM
+createDM</p>
    </td>
    <td>Post different kind of messages
    </td>
@@ -733,9 +733,9 @@ createDM
    </td>
    <td>getFeed
 <p>
-getZapRequests
+getZapRequests</p>
 <p>
-getZaps
+getZaps</p>
    </td>
    <td>Get of list of different events associated with a given profile
    </td>

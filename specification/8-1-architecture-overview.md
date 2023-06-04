@@ -1,4 +1,4 @@
-# Architecture
+# ARCHITECTURE OVERVIEW
 
 ## Overview
 
