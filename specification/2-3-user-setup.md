@@ -1,12 +1,12 @@
 ## User setup
 
-Currently, Growr User service supports 5 type of users:
+Currently, the Growr User service supports 5 types of users:
 
-- _Node operator (super-admin):_ manages growr node configuration.
-- _Originator admin:_ manages projects, lending and funding parameters, monitors the performance.
+- _Node operator (super-admin):_ manages the Growr node configuration.
+- _Originator admin:_ manages projects, lending and funding parameters, and monitors the performance.
 - _Originator agent:_ manages operations with the borrowers.
 - _Investor:_ discovers and invests in projects.
-- _Borrower:_ onboards and subscribes for lending services.
+- _Borrower:_ onboards and subscribes to lending services.
 
 ### User invitation
 
@@ -39,25 +39,25 @@ Process steps:
 
 1. A registered user reviews the list of users in the Lending portal.
 2. The user configures a new user.
-3. The portal routes the request to Growr Organization service.
-4. Growr Organization service sends a request to Growr User service to create a new user related to the organization.
-5. Growr User service creates a new record record in Users collection.
+3. The portal routes the request to the Growr Organization service.
+4. Growr Organization service sends a request to the Growr User service to create a new user related to the organization.
+5. Growr User service creates a new record in the Users collection.
 6. Response message.
-7. Growr Organization service sends an invitation email with link to the Lending portal and (optional) OTP code.
+7. Growr Organization service sends an invitation email with a link to the Lending portal and (optional) OTP code.
 
 ### User registration
 
 <a name="ref-2-3-ur"></a>
 
-Currently, Growr User service supports 3 types of registration:
+Currently, the Growr User service supports 3 types of registration:
 
-- Social account (Google, Facebook): applicable to users with type _Originator admin_ and _Investor_
-- Email + password: applicable to users with type _Originator admin_ and _Investor_
-- Phone (USSD): applicable to users with type _Originator agent_ and _Borrower_
+- Social account (Google, Facebook): applicable to users with the type _Originator admin_ and _Investor_
+- Email + password: applicable to users with the type _Originator admin_ and _Investor_
+- Phone (USSD): applicable to users with the type _Originator agent_ and _Borrower_
 
-### User registration with Social account
+### User registration with a social account
 
-Prerequisite: User has received an invitation email.
+Prerequisite: The user has received an invitation email.
 
 ```mermaid
 sequenceDiagram
@@ -88,19 +88,19 @@ sequenceDiagram
 Process steps:
 
 1. An invited user opens the Lending portal and is automatically redirected to the /signup page where the user initiates the signup process.
-2. The Lending portal redirects the user to the authentication route of Growr API service.
+2. The Lending portal redirects the user to the authentication route of the Growr API service.
 3. Growr API service calls the Google authentication API.
 4. Google authentication server redirects the user to the authentication page.
 5. The user selects one of his available Google accounts and provides the requested consent.
-6. Google authentication server confirms the authentication and returns the user data to Growr API service.
-7. Growr API service redirects the request to Growr User service.
+6. Google authentication server confirms the authentication and returns the user data to the Growr API service.
+7. Growr API service redirects the request to the Growr User service.
 8. Growr User service updates the record (changes the status to ACTIVE) in the Users collection.
 9. Growr User service returns a token to the Lending Portal. The token will be used for all subsequent calls to Growr services.
 10. The Lending portal lets the user in and redirects him/her to the main page (Dashboard).
 
 ### User registration with email and password
 
-Prerequisite: User has received an invitation email with OTP code.
+Prerequisite: The user has received an invitation email with an OTP code.
 
 ```mermaid
 sequenceDiagram
@@ -129,7 +129,7 @@ Process steps:
 
 ### User registration with phone
 
-Prerequisite: User has received an invitation SMS with OTP code.
+Prerequisite: The user has received an invitation SMS with an OTP code.
 
 ```mermaid
 sequenceDiagram
@@ -158,7 +158,7 @@ Process steps:
 
 1. An invited user dials a number to receive a USSD menu.
 2. The user provides the OTP code that was received as an SMS.
-3. The USSD provider sends a request for registration of the new user with phone.
+3. The USSD provider sends a request for registration of the new user with a phone number.
 4. Growr User service validates the provided OTP code.
 5. Growr User service requests a PIN to be provided by the user.
 6. The user enters and confirms a PIN using the USSD menu.

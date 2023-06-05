@@ -2,7 +2,7 @@
 
 ### Node operator portal
 
-The _Node operator portal_ is used by the deployment and administration team to setup and manage the Growr node.
+The _Node operator portal_ is used by the deployment and administration team to set up and manage the Growr node.
 
 ### Borrowing and Community front apps
 
@@ -37,6 +37,6 @@ The _Investor portal_ is used by investors to:
 
 ### Impact portal
 
-The _Impact portal_ is an open-source standalone web application that use aggregated data from different nodes from the protocol. It displays a dashboard presenting the global impact of the network.
+The _Impact portal_ is an open-source standalone web application that uses aggregated data from different nodes from the protocol. It displays a dashboard presenting the global impact of the network.
 
 <div style="page-break-after: always;"></div>

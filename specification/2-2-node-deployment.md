@@ -3,7 +3,7 @@
 There are 2 main options for Growr node deployment:
 
 - Self-hosted by originators or capital providers
-- Managed by Growr team
+- Managed by the Growr team
 
 ### Self-hosting
 
@@ -15,7 +15,7 @@ In progress
 
 ### Organization setup
 
-Once Growr node is deployed, the first thing to do is to create an organization with one initial user.
+Once the Growr node is deployed, the first thing to do is to create an organization with one initial user.
 
 ```mermaid
 sequenceDiagram
@@ -38,9 +38,9 @@ sequenceDiagram
 Process steps:
 
 1. Growr node operator setups a new organization through the Node Operator portal.
-2. The portal routes the request to Growr Organization service.
-3. Growr Organization service creates a new record in Organizations collection.
-4. Growr Organization service sends a request to Growr User service to create an initial admin user for the new organization.
-5. Growr User service creates a new record record in Users collection.
+2. The portal routes the request to the Growr Organization service.
+3. Growr Organization service creates a new record in the Organizations collection.
+4. Growr Organization service sends a request to the Growr User service to create an initial admin user for the new organization.
+5. Growr User service creates a new record in the Users collection.
 
 <div style="page-break-after: always;"></div>

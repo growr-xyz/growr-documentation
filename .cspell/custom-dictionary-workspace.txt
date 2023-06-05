@@ -8,6 +8,7 @@ grammarly
 Growr
 interesse
 microcredit
+npub
 onboards
 Telcos
 underserved

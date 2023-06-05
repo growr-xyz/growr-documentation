@@ -13,7 +13,7 @@ Below is a diagram that summarizes the funding processes:
 5. The _capital provider_ monitors the performance of their investment through Growr protocol that provides reporting of real-time events and full transparency into how the capital is deployed into borrower subscriptions.
 6. According to the agreed funding terms, the _originator_ repays back the senior tranche plus the generated yield.
 
-The next sections describes the following processes:
+The next sections describe the following processes:
 
 - Project discovery
 - Investor onboarding

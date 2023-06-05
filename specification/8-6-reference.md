@@ -122,7 +122,7 @@ loanMaxAmount</p>
    </td>
    <td>isInviteOnly
    </td>
-   <td>Whether the project requires invitation in order to become an investor
+   <td>Whether the project requires an invitation to become an investor
    </td>
   </tr>
   <tr>
@@ -451,7 +451,7 @@ findByUser</p>
    </td>
    <td>addMember
    </td>
-   <td>Add user to an oganization
+   <td>Add user to an organization
    </td>
   </tr>
   <tr>
@@ -653,7 +653,7 @@ revert</p>
    </td>
    <td>detect
    </td>
-   <td>Process detected payment and call a method for new event
+   <td>Process detected payment and call a method for the new event
    </td>
   </tr>
   <tr>
@@ -707,7 +707,7 @@ Rootstock)</p>
    </td>
    <td>getPayments
    </td>
-   <td>Get all onchain payments detected by a given listener
+   <td>Get all on-chain payments detected by a given listener
    </td>
   </tr>
   <tr>
@@ -725,7 +725,7 @@ Rootstock)</p>
 <p>
 createDM</p>
    </td>
-   <td>Post different kind of messages
+   <td>Post different kinds of messages
    </td>
   </tr>
   <tr>
@@ -737,7 +737,7 @@ getZapRequests</p>
 <p>
 getZaps</p>
    </td>
-   <td>Get of list of different events associated with a given profile
+   <td>Get a list of different events associated with a given profile
    </td>
   </tr>
 </table>

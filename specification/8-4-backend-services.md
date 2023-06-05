@@ -2,7 +2,7 @@
 
 ### Overview
 
-The backend of Growr has microservices architecture based on _MoleculerJS_. Besides the traditional features, such as such as load balancing, service discovery, and fault tolerance, MoleculerJS has the ability to distribute messages across multiple nodes using the TCP gossip protocol and allows easy switching of the transport technology depending on the use case.
+The backend of Growr has microservices architecture based on _MoleculerJS_. Besides the traditional features, such as load balancing, service discovery, and fault tolerance, MoleculerJS has the ability to distribute messages across multiple nodes using the TCP gossip protocol and allows easy switching of the transport technology depending on the use case.
 
 Below is a table containing a summarized list of the back-end services:
 
@@ -52,7 +52,7 @@ Below is a table containing a summarized list of the back-end services:
    </td>
    <td>Identity
    </td>
-   <td>Local / external
+   <td>Local / External
    </td>
   </tr>
   <tr>
@@ -147,7 +147,7 @@ Below is a table containing a summarized list of the back-end services:
 
 ### API gateway
 
-The _API gateway_ controls the access to the back-end services. It exposes APIs using GraphQL, providing flexible and efficient way to retrieve data from the services.
+The _API gateway_ controls access to the back-end services. It exposes APIs using GraphQL, providing a flexible and efficient way to retrieve data from the services.
 
 ### Discovery service
 
@@ -157,11 +157,11 @@ The _Discovery service_ ensures the discoverability of Growr nodes and the possi
 
 The main _Identity service_ (also called _SSCR Agent_) is based on Self Sovereign Identity (SSI) standard. SSI is designed for managing identity data in a decentralized, secure way. It supports the creation, management, and sharing of verifiable credentials that can be used to prove identity attributes without revealing sensitive personal information.
 
-In the current protocol implementation, the _Identity service_ is implemented as a custodial service that operates the self-sovereign credit record (SSCR) of the user with his permissions. It controls the DID of the borrower and his/her verifiable credentials.
+In the current protocol implementation, the _Identity service_ is implemented as a custodial service that operates the self-sovereign credit record (SSCR) of the user with his permission. It controls the DID of the borrower and his/her verifiable credentials.
 
-The _Credential issuing service:_ is responsible for issuing verifiable credentials for given borrowers based on data received or verified by the originator or other third parties. The _Credential verification service:_ is responsible for validation of presentations of verifiable credentials and assessing the eligibility of a given user to apply for a loan. To be trusted by all network participants, those two services have well-known DIDs and deployment addresses.
+The _Credential issuing service_ is responsible for issuing verifiable credentials for given borrowers based on data received or verified by the originator or other third parties. The _Credential verification service_ is responsible for the validation of presentations of verifiable credentials and assessing the eligibility of a given user to apply for a loan. To be trusted by all network participants, those two services have well-known DIDs and deployment addresses.
 
-The _Organization service_ and the _User service_ are responsible for registration and management of the users of the frontend applications in the node. They read and write data to database collections having the same name.
+The _Organization service_ and the _User service_ are responsible for the registration and management of the users of the frontend applications in the node. They read and write data to database collections having the same name.
 
 ### Financing services
 
@@ -189,7 +189,7 @@ Growr _Nostr service_ is responsible for creating a public Nostr profile and pos
 
 ### Supporting services
 
-The backend of Growr protocol contains also a set of supporting services that are not directly exposed via APIs but are used internally by the other services. They include:
+The backend of the Growr protocol contains also a set of supporting services that are not directly exposed via APIs but are used internally by the other services. They include:
 
 - Database management, MongoDB
 - Append-only log, Hyperbee and Hyperswarm

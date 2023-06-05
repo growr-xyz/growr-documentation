@@ -6,7 +6,7 @@ Below is a diagram that summarizes the setup processes:
 
 In progress...
 
-The next sections describes the following processes:
+The next sections describe the following processes:
 
 - Growr node deployment
 - User setup
