@@ -2,13 +2,13 @@
 
 ## How it works
 
-The following diagram provides a high-level overview of Growr protocol.
+The following diagram provides a high-level overview of the Growr protocol.
 
 ![How it works](../images/growr-how-it-works.png)
 
-Originators manage the “last-mile” processes through their Growr node. They help community members to build their self-sovereign credit record and facilitate the access to the protocol services & project funding for them.
+Originators manage the “last-mile” processes through their Growr node. They help community members to build their self-sovereign credit record and facilitate access to the protocol services & project funding for them.
 
-Capital providers fund projects either by accessing the Growr node of an originator directly, or by running their own node and using the protocol discoverability features. The P2P data exchange enables real-time reporting of the project portfolio for full transparency.
+Capital providers fund projects either by accessing the Growr node of an originator directly; or by running their own node and using the protocol discoverability features. The P2P data exchange enables real-time reporting of the project portfolio for full transparency.
 
 ## Lending
 
@@ -47,7 +47,7 @@ _Borrowers_, represented by self-employed, micro-businesses, and smallholder far
 
 _Originators_ facilitate access to the protocol by grouping several borrowers with similar needs and presenting project applications to the marketplace on their behalf. They publish offers to the loan marketplace by creating _projects_ on behalf of the borrowers. The originators provide junior (first-loss) capital to finance the whole project or part of it. They can be:
 
-- _Local cooperatives, guilds or other community organizations_ that are formed by borrowers to gain better access to loans and to standardize their relationship with the rest of the participants in the ecosystem.
+- _Local cooperatives, guilds or other community organizations_ formed by borrowers to gain better access to loans and to standardize their relationship with the rest of the participants in the ecosystem.
 - _Bitcoin circular economies_ using solutions such as Federated Chaumian mints [[20]](#ref20), enabling access to micro-financing to their users.
 - _Telcos, retailers and gig-economy platforms_ that onboard and vet the users into their services and then facilitate their access to the protocol as an embedded financial service.
 - _Digital wallets and fintech providers_ that already offer financial services and that can expand to unsecured decentralized lending.
@@ -65,13 +65,13 @@ _Trusted parties_ assert facts about the borrowers in the form of verifiable cre
 
 _Capital providers_ allocate senior capital to the loan marketplace and delegate the actual lending activity to the originators in the form of senior tranches for the financed projects. They can be:
 
-- Individual bitcoin investors.
+- Individual Bitcoin investors.
 - Large institutional investors or digital asset managers.
 - Decentralized finance protocols.
 
 ### Growr protocol
 
-_Growr protocol_ implements a global decentralized micro-lending marketplace as a P2P network of Growr nodes. Each _Growr node_ represents a package of open-source components and a set of lending projects. It enables originators to publish projects with predefined conditions and eligibility criteria, and borrowers to apply and get financing using credentials from their self-sovereign credit record. It also enables capital providers to fund projects either by accessing the Growr node of an originator directly, or by running their own node.
+_Growr protocol_ implements a global decentralized micro-lending marketplace as a P2P network of Growr nodes. Each _Growr node_ represents a package of open-source components and a set of lending projects. It enables originators to publish projects with predefined conditions and eligibility criteria, and borrowers to apply and get financing using credentials from their self-sovereign credit record. It also enables capital providers to fund projects either by accessing the Growr node of an originator directly; or by running their own node.
 
 ## Participant incentives
 

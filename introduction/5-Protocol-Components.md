@@ -2,15 +2,15 @@
 
 ## Overview
 
-The following diagram provides a high-level overview of Growr functional architecture.
+The following diagram provides a high-level overview of the Growr functional architecture.
 
 ![Architecture](../images/growr-architecture.svg)
 
-_Growr protocol_ implements a global decentralized micro-lending marketplace as a P2P network of Growr nodes. Each _Growr node_ represents a package of open-source components and a set of lending projects. It enables originators to publish projects with predefined conditions and eligibility criteria, and borrowers to apply and get financing using credentials from their self-sovereign credit record. It also enables capital providers to fund projects either by accessing the Growr node of an originator directly, or by running their own node.
+_Growr protocol_ implements a global decentralized micro-lending marketplace as a P2P network of Growr nodes. Each _Growr node_ represents a package of open-source components and a set of lending projects. It enables originators to publish projects with predefined conditions and eligibility criteria, and borrowers to apply and get financing using credentials from their self-sovereign credit record. It also enables capital providers to fund projects either by accessing the Growr node of an originator directly; or by running their own node.
 
-Growr architecture provides the opportunity to pack the applications and services in few options, based on the deployment requirements and specifics. There are several deployment blueprints for the Growr node depending on the use cases, for example: self-hosted originator node, cloud-hosted originator node or cloud-hosted investor node. The backend services can be packed as a single docker image and can be included in different configurations to run all or few services per deployment target.
+Growr architecture provides the opportunity to pack the applications and services in a few options, based on the deployment requirements and specifics. There are several deployment blueprints for the Growr node depending on the use cases; for example, a self-hosted originator node, a cloud-hosted originator node or a cloud-hosted investor node. The backend services can be packed as a single docker image and can be included in different configurations to run all or a few services per deployment target.
 
-The Growr nodes communicate between each other in 2 ways. The first option is through a Discovery service, using the TCP Gossip transport protocol. The second option is through replication of the distributed data across the network, using Holepunch's Hyperbee and Hyperswarm protocols.
+The Growr nodes communicate with each other in 2 ways. The first option is through a Discovery service, using the TCP Gossip transport protocol. The second option is through replication of the distributed data across the network, using Holepunch's Hyperbee and Hyperswarm protocols.
 
 ## Front-end applications
 
@@ -20,19 +20,19 @@ At the top of the diagram are the front-facing applications. These apps and serv
 - _Lending and Investor apps:_ Applications used by originators and investors to create and fund projects, and to monitor their performance.
 - _Impact portal:_ An open-source standalone web application that can use aggregated data from the protocol to display a dashboard presenting the global impact of the marketplace.
 
-The front-facing applications are connected to Growr node via an API layer, which is responsible for the authentication and authorisation of the users, as well as for the communication with the core services of the protocol.
+The front-facing applications are connected to the Growr node via an API layer, which is responsible for the authentication and authorization of the users, as well as for the communication with the core services of the protocol.
 
 ## Growr core services
 
-The backend of Growr node consists of a group of services that are maintained as open-source software under an open license but can be extended following the community and product guidelines. All the services in these groups are deployed with proof that the running service has a well-known identity or a public key, and its code is identical to the source code in the Growr repositories.
+The backend of the Growr node consists of a group of services that are maintained as open-source software under an open license but can be extended following the community and product guidelines. All the services in these groups are deployed with proof that the running service has a well-known identity or a public key, and its code is identical to the source code in the Growr repositories.
 
 ### Identity services
 
 The Growr protocol’s core identity services are:
 
-- _Identity (SSCR agent) service:_ A custodial service that operates the self-sovereign credit record (SSCR) of the user with his permissions.
+- _Identity (SSCR agent) service:_ A custodial service that operates the self-sovereign credit record (SSCR) of the user with his permission.
 - _Credential issuing service:_ Issues verifiable credentials based on data received or verified for given borrowers.
-- _Credential verification service:_ Verifies presentations of credentials in order to access funding.
+- _Credential verification service:_ Verifies presentations of credentials to access funding.
 - _User management service_: A service that is responsible for registration and management of the node applications’ users.
 
 To be trusted by all participants, the Credential issuing and the Credential verification services will have well-known DIDs and deployment addresses.
@@ -48,11 +48,11 @@ The Growr protocol’s core financing services are:
 
 ### Payment services
 
-A set of services with payment management functions. They provide integration with supported payment rails such as Bitcoin network, Lightning Network channels and others.
+A set of services with payment management functions. They provide integration with supported payment rails such as the Bitcoin network, Lightning Network channels and others.
 
 ### Credit record storage
 
-The _Credit record storage_ provides decentralized storage of the self-sovereign credit record (SSCR) of the users. Each record represents a unique global decentralized identity and contains general-purpose and protocol-specific verifiable credentials. The credentials data is encrypted and accessible only by the identity owner.
+The _credit record storage_ provides decentralized storage of the self-sovereign credit record (SSCR) of the users. Each record represents a unique global decentralized identity and contains general-purpose and protocol-specific verifiable credentials. The credentials data is encrypted and accessible only by the identity owner.
 
 ### Distributed data services
 
