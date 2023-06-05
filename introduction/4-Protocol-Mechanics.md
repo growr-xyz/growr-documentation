@@ -48,7 +48,7 @@ _Borrowers_, represented by self-employed, micro-businesses, and smallholder far
 _Originators_ facilitate access to the protocol by grouping several borrowers with similar needs and presenting project applications to the marketplace on their behalf. They publish offers to the loan marketplace by creating _projects_ on behalf of the borrowers. The originators provide junior (first-loss) capital to finance the whole project or part of it. They can be:
 
 - _Local cooperatives, guilds or other community organizations_ that are formed by borrowers to gain better access to loans and to standardize their relationship with the rest of the participants in the ecosystem.
-- _Bitcoin circular economies_ using solutions such as Federated Chaumian mints [[21]](#ref21), enabling access to micro-financing to their users.
+- _Bitcoin circular economies_ using solutions such as Federated Chaumian mints [[20]](#ref20), enabling access to micro-financing to their users.
 - _Telcos, retailers and gig-economy platforms_ that onboard and vet the users into their services and then facilitate their access to the protocol as an embedded financial service.
 - _Digital wallets and fintech providers_ that already offer financial services and that can expand to unsecured decentralized lending.
 

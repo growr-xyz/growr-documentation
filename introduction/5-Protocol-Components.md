@@ -30,7 +30,7 @@ The backend of Growr node consists of a group of services that are maintained as
 
 The Growr protocol’s core identity services are:
 
-- _SSCR agent service:_ A custodial service that operates the self-sovereign credit record (SSCR) of the user with his permissions.
+- _Identity (SSCR agent) service:_ A custodial service that operates the self-sovereign credit record (SSCR) of the user with his permissions.
 - _Credential issuing service:_ Issues verifiable credentials based on data received or verified for given borrowers.
 - _Credential verification service:_ Verifies presentations of credentials in order to access funding.
 - _User management service_: A service that is responsible for registration and management of the node applications’ users.

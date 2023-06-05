@@ -14,7 +14,7 @@ Vulnerable populations such as victims of violence, and natural and man-made dis
 
 ## Crowdfunding
 
-The crowdfunding business model continues to grow fast globally. In addition to the established platforms for investment in startups and product R&D, impact finance providers such as Kiva are helping micro-businesses with loans for as little as $25. Crowdfunding transition to distributed ledgers and Bitcoin is a matter of time, as the example of Kickstarter and Geyser Fund shows [[24]](#ref24).
+The crowdfunding business model continues to grow fast globally. In addition to the established platforms for investment in startups and product R&D, impact finance providers such as Kiva are helping micro-businesses with loans for as little as $25. Crowdfunding transition to distributed ledgers and Bitcoin is a matter of time, as the example of Kickstarter [[24]](#ref24) and Geyser Fund [[25]](#ref25) shows.
 
 ## Islamic finance
 
